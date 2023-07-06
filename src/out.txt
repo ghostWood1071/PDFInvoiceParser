@@ -1,0 +1,445 @@
+
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+1GH63-19971A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc70.000191.330.000
+2GH02-22458ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc40.6301.66767.730.210
+3GH02-22362ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc42.00036915.498.000
+4GH02-22181A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc144.00016724.048.000
+5GH02-22296ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc60.000472.820.000
+6GH02-22171ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc45.00019855.000
+7GH02-22297ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc43.5001707.395.000
+8GH02-22493ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc46.00072833.488.000
+9GH02-22469ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc90.000171.530.000
+10GH02-22506ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc39.000612.379.000
+11GH63-19805A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc55.000361.980.000
+12GH63-19806A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc62.000472.914.000
+13GH63-19810A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc64.6001137.299.800
+14GH63-19809A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc72.00014610.512.000
+15GH63-19807A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc45.00021945.000
+16GH63-19808A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc45.000231.035.000
+17GH02-22183A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc5.000184920.000
+18GH02-22184A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc5.0004122.060.000
+1/6
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+19GH02-22185A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc6.0003001.800.000
+20GH02-22186A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc4.000112448.000
+21GH02-22174ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc5.00074370.000
+22GH02-22610ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc5.0001.3326.660.000
+23GH63-19684A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc5.0002.08510.425.000
+24GH63-19685A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc5.00081405.000
+25GH02-22470ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc55.0001166.380.000
+26GH02-22361ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc95.00010910.355.000
+27GH02-22503A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc394.000297117.018.000
+28GH02-22703A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc232.00027764.264.000
+29GH02-23800A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc44.0002149.416.000
+30GH02-24320ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc187.850668125.483.800
+31GH02-24321ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc102.80015315.728.400
+32GH02-24165ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc42.500833.527.500
+33GH02-24146ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc90.00070363.270.000
+34GH02-24147ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc91.800938.537.400
+35GH02-21327A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc140.000385.320.000
+36GH02-21328ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc140.000608.400.000
+2/6
+tiep theo trang truoc – trang 2/6
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+37GH63-19026A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc71.12837826.886.384
+38GH02-21415ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc136.100577.757.700
+39GH02-21329ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc65.00081653.040.000
+40GH63-18835A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc57.74634219.749.132
+41GH02-22177ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc190.0006311.970.000
+42GH02-23961ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc465.00010850.220.000
+43GH02-23799A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc54.00021411.556.000
+44GH63-21185A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc150.000446.600.000
+45GH02-23735ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc2.000371742.000
+46GH02-23821ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc1.000211211.000
+47GH63-20424A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc2.0005741.148.000
+48GH63-20425A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc5.00036180.000
+49GH63-20488A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc5.000128640.000
+50GH02-23622ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc2.000317634.000
+51GH02-21793ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc40.000682.720.000
+52GH02-21003A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc9.0002051.845.000
+53GH02-22208ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc12.00055660.000
+3/6
+tiep theo trang truoc – trang 3/6
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+54GH02-22201A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc9.8405235.146.320
+55GH02-22203A
+Miếng đệm bằng cao su xốp dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc10.0003883.880.000
+56GH02-22234ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc5.0003.89719.485.000
+57GH63-20815A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc82.000413.362.000
+58GH63-20817A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc83.000302.490.000
+59GH02-23893ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc51.0001346.834.000
+60GH02-23921ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc105.0003.173333.165.000
+61GH02-21330ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc121.00043052.030.000
+62GH02-21331ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc130.0008210.660.000
+63GH02-21334ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc86.400504.320.000
+64GH02-24149ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc59.00056433.276.000
+65GH02-24150ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc57.5002.330133.975.000
+66GH02-24163ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc84.0006.203521.052.000
+67GH63-18834A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc60.21148829.382.968
+68GH63-18836A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc76.73482663.382.284
+69GH63-20825A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc159.10054186.073.100
+70GH88-00023A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động (3900-11768-00)
+Chiếc50.00055527.750.000
+4/6
+tiep theo trang truoc – trang 4/6
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+71GH63-20826A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc148.68054180.435.880
+72GH02-23345A
+Miếng đệm bằng vải có dính dùng cho linh kiện sản xuất
+vỏ điện thoại di động
+Chiếc10.00029290.000
+73GH02-23625A-ROBăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc23.60039920.400
+74GH02-23736ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc452.000304137.408.000
+75GH02-22295ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc39.7502519.977.250
+76GH02-22298ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc40.000722.880.000
+77GH02-23631ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc70.000835.810.000
+78GH02-23900ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc30.000772.310.000
+79GH02-23896ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc50.60068534.661.000
+80GH02-23737ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc12.0003043.648.000
+81GH02-23570ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc4.0003041.216.000
+82GH02-23617ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc6.0003081.848.000
+83GH02-23618ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc6.000153918.000
+84GH02-23621ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc3.0008342.502.000
+85GH02-23623ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc6.0008505.100.000
+86GH02-23626A-ROBăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc30.0001333.990.000
+87GH02-23628ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc5.00068340.000
+88GH02-23629ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc2.000102204.000
+89GH02-23698ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc4.000174696.000
+90GH02-23700ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc5.0002051.025.000
+91GH02-23817ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc8.0003342.672.000
+92GH63-20384A
+Màng bảo vệ bằng nylon dùng sản xuất vỏ điện thoại di
+động
+Chiếc6.0002.52815.168.000
+5/6
+tiep theo trang truoc – trang 5/6
+
+CÔNG TY TNHH NANO TECH
+Mã số thuế(Tax code):2300318693
+Địa chỉ(Address):Khu công nghiệp Quế Võ, Phường Vân Dương, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam
+Điện thoại(Tel):0222 3634 730
+STK VND(Bank account):55 6688 6688 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+STK USD(Bank account):55 3333 7777 - Tại Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Bắc Ninh
+Họ tên người mua hàng(Buyer):
+Tên đơn vị(Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế(Tax code):2500243660
+Địa chỉ(Address):Lô 44F,44J KCN Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán(Payment method):Chuyển khoảnSố tài khoản(Bank account):
+Đồng tiền thanh toán(Payment Currency):VND
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)29tháng(month)05năm(year)2023
+Mã CQT(Code):00F93220A07BEB460281161DEBCF217540
+Ký hiệu(Serial):1C23TNN
+Số(No.):00000573
+STT
+(No)
+Mã hàng
+(Item code)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị
+tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+93GH02-23625ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc75.000392.925.000
+94GH02-22235ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc2.0004.8159.630.000
+95GH02-24821ABăng dính dùng cho linh kiện, vỏ điện thoại di độngChiếc20.0003066.120.000
+Cộng tiền hàng(Total amount excluding VAT):
+2.508.064.528
+Thuế suất GTGT(VAT rate):
+10%
+Tiền thuế GTGT(VAT amount):
+250.806.453
+Tổng tiền thanh toán(Total amount):
+2.758.870.981
+Số tiền viết bằng chữ(Total amount in words):Hai tỷ bảy trăm năm mươi tám triệu tám trăm bảy mươi nghìn chín trăm tám mươi mốt đồng
+chẵn.
+Người mua hàng(Buyer)
+(Ký, ghi rõ họ, tên)
+(Signature, full name)
+Người bán hàng(Seller)
+(Ký, ghi rõ họ, tên)
+(Signature, full name)
+Tra cứu tại Website(Search in website):https://www.meinvoice.vn/tra-cuu- Mã tra cứu hóa đơn(Invoice code):N2TKF_9ZED9
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)(You need to check invoice when issuing, delivering and receiving)
+Phát hành bởi phần mềm MISA meInvoice - Công ty Cổ phần MISA (www.misa.vn) - MST 0101243150
+Signature Valid
+Ký bởi(Signed By):CÔNG TY TNHH
+NANO TECH
+Ký ngày(Signing Date):29/05/2023
+6/6
+tiep theo trang truoc – trang 6/6

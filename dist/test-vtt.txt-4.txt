@@ -1,0 +1,102 @@
+
+
+HÓA ĐƠN BÁN HÀNG
+(BILL OF SALE)
+Bản thể hiện của hóa đơn điện tử
+(Electronic invoice display)
+(Dùng cho tổ chức, cá nhân trong khu phi thuế quan)
+(Invoice is used for export processing zone)
+Ngày
+ (date) 
+27 tháng
+ (month) 
+02 năm
+ (year) 
+2023
+Ký hiệu
+ (Serial):
+2C23TVN
+Số
+ (No.):
+113
+Đơn vị bán hàng
+ (Company): 
+CÔNG TY TNHH JUKWANG PRECISION VIỆT NAM
+Mã số thuế
+ (Tax code): 
+4601194212
+Địa chỉ
+ (Address): 
+Lô CN8-1, Khu Công Nghiệp Điềm Thụy, Xã Điềm Thụy, Huyện Phú Bình, Tỉnh Thái Nguyên, Việt
+Nam
+Điện thoại
+ (Tel): 
+02083931732
+Fax:Website:
+Số tài khoản (Account No.):
+DDA920113879
+(VND)
+Ngân hàng (Bank):
+Ngân hàng Woori Việt Nam - Chi nhánh Hà Nội
+Họ tên người mua hàng
+ (Customer's name):
+Tên đơn vị
+ (Company's name): 
+CÔNG TY TNHH SEOJIN VIỆT NAM
+Mã số thuế
+ (Tax code): 
+2400859625
+Địa chỉ
+ (Address): 
+Lô B1, B2, B3, B6, B7 KCN Song Khê- Nội Hoàng (phía Bắc), Xã Song Khê, TP Bắc Giang, Tỉnh Bắc Giang,
+Việt Nam.
+Số tài khoản
+ (Account No.):
+Ngân hàng
+ (Bank):
+Hình thức thanh toán
+ (Payment method): 
+Chuyển khoản
+Đơn vị tiền tệ
+ (Currency): 
+VND
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+(1)(2)(3)(4)(5)(6) = (4) x (5)
+39
+Điện cực bằng Graphite loại E25-SJD22297~22300END
+PLATE (#9~#12)-LC201-13, Kích thước
+20*20*18.92mm
+Chiếc6132.504795.024
+40
+Điện cực bằng Graphite loại E25-SJD22297~22300END
+PLATE (#9~#12)-LC201-14, Kích thước
+20*20*18.92mm
+Chiếc6149.004894.024
+Cộng tiền hàng hóa, dịch vụ
+ (Total amount):
+330.684.781
+Số tiền viết bằng chữ
+ (Amount in words): 
+Ba trăm ba mươi triệu sáu trăm tám mươi bốn nghìn bảy trăm tám mươi mốt đồng
+Tỷ giá quy đổi
+ (Exchange rate):
+Người mua hàng (Buyer)Người bán hàng (Seller)
+Ký bởi CÔNG TY TNHH
+JUKWANG PRECISION VIỆT NAM
+Ký ngày 27/02/2023
+Đơn vị cung cấp dịch vụ Hóa đơn điện tử: Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel), MST: 0100109106
+Tra cứu hóa đơn điện tử tại Website: https://vinvoice.viettel.vn/utilities/invoice-search . Mã số bí
+mật: 
+OZ0RH9VT3NJ6T5B. Mã của cơ quan thuế: 00805D2AE9AADF48E4B5ACF797F64F93F9
+ tiep theo trang truoc - Trang 5 / 5
