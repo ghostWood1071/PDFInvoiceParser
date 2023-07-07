@@ -80,65 +80,79 @@ export class PdfExtractor {
     }
   }
 
-  protected async extractAmount(amountStr: string) {
-    let amountObj: any = {
+  protected async extractTotal(totalStr: string) {
+    let totalObj: any = {
       unit: "",
-      quanity: 0,
+      quantity: 0,
       unitPrice: 0,
-      amount: 0,
+      total: 0,
     };
 
-    let splitString: string[] = amountStr.split(/(\d+)/);
+    let splitString: string[] = totalStr.split(/(\d+)/);
 
-    amountObj.unit = splitString[0];
+    totalObj.unit = splitString[0];
 
     splitString = splitString.slice(1, splitString.length - 1);
 
-    const countDot = splitString.reduce(
-      (count, x) => (count = x == "." ? count + 1 : count),
-      0
-    );
-
     splitString = splitString.filter((x) => x != ".");
+
     const l = splitString.length;
-    let amount: string = "";
+    let total: string = "";
     let unitPrice: string = "";
     while (splitString.length > 0) {
       let x = splitString.pop();
       if (x != null) {
-        if (x.length == 3) {
-          amount = x + amount;
+        if (splitString[splitString.length - 1] == ",") {
+          unitPrice = splitString.pop() + x.slice(0, 2);
+          totalObj.amount = +(x.slice(2) + total);
+          break;
+        } else if (x.length == 3) {
+          total = x + total;
         } else if (x.length > 3) {
           unitPrice = x.slice(0, 3);
-          amount = x.slice(3) + amount;
-          amountObj.amount = +amount;
+          total = x.slice(3) + total;
+          totalObj.amount = +total;
           break;
         }
       }
     }
+
     while (splitString.length > 0) {
       let x = splitString.pop();
       if (x != null) {
         if (splitString.length >= 1) {
-          if (x.length == 3) {
+          if (splitString[splitString.length - 1] == ",") {
+            totalObj.quantity = parseFloat(
+              (splitString.join("") + x.slice(0, 2)).replace(",", ".")
+            );
+            totalObj.unitPrice = parseFloat(
+              (x.slice(2) + unitPrice).replace(",", ".")
+            );
+
+            return totalObj;
+          } else if (x.length == 3) {
             unitPrice = x + unitPrice;
           } else if (x.length > 3) {
-            let quanity = x.slice(0, 3);
+            let quantity = x.slice(0, 3);
             unitPrice = x.slice(3) + unitPrice;
-            amountObj.unitPrice = +unitPrice;
-            amountObj.quanity = +(splitString.join("") + quanity);
-            return amountObj;
+
+            totalObj.unitPrice = parseFloat(unitPrice.replace(",", "."));
+            totalObj.quantity = parseFloat(
+              (splitString.join("") + quantity).replace(",", ".")
+            );
+            return totalObj;
           }
         } else {
           for (let i = 1; i <= 3; i++) {
             let j = x.length - i;
             if (j >= 1 && j <= 3) {
-              let quanity: number = +x.slice(0, i);
+              let quantity: number = +x.slice(0, i);
               let unitPriceTmp: number = +(x.slice(i) + unitPrice);
-              if (quanity * unitPriceTmp == amountObj.amount) {
-                amountObj.quanity = quanity;
-                amountObj.unitPrice = unitPriceTmp;
-                return amountObj;
+              if (quantity * unitPriceTmp == totalObj.amount) {
+                totalObj.quantity = quantity;
+                totalObj.unitPrice = unitPriceTmp;
+
+                return totalObj;
               }
             }
           }
@@ -146,7 +160,9 @@ export class PdfExtractor {
       }
     }
 
-    return amountObj;
+    totalObj.quantity = totalObj.quantity;
+    totalObj.unitPrice = totalObj.unitPrice;
+    return totalObj;
   }
 
   async saveRaw(fileName: string) {

@@ -18,7 +18,7 @@ export class TableContent {
   product_id = null;
   product_name: string = "";
   unit: string = "";
-  quanity: number = 0;
+  quantity: number = 0;
   unit_price: number = 0;
   total: number = 0;
 }

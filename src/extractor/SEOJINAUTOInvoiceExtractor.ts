@@ -16,142 +16,128 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     let indexLine = 0;
     let l = pageLines.length;
     let dateArr = [];
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == "Ngày") {
-        parts = PagePart.DATE;
-      }
-
-      if (pageLines[indexLine] == "Ký hiệu") {
-        result.date = new Date(dateArr.reverse().join("/"));
-        break;
-      } else if (
-        parts == PagePart.DATE &&
-        pageLines[indexLine].trim().startsWith("(")
-      ) {
-        indexLine++;
-        dateArr.push(pageLines[indexLine].split(" ")[0]);
-      }
-
-      indexLine++;
-    }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == " (Serial):") {
+      if (pageLines[indexLine] == "(Sign):") {
         parts = PagePart.SERIAL;
         indexLine++;
-      }
+        if (parts == PagePart.SERIAL) {
+          result.serial = pageLines[indexLine];
+        }
 
-      if (pageLines[indexLine] == "Số") break;
-      else if (parts == PagePart.SERIAL) {
-        result.serial = result.serial + pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == " (No.):") {
         parts = PagePart.NO;
         indexLine++;
-      }
-
-      if (pageLines[indexLine] == "Đơn vị bán hàng") break;
-      else if (parts == PagePart.NO) {
-        result.no = result.no + pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == " (Company): ") {
-        parts = PagePart.SELLER_COMPANY_NAME;
-        indexLine++;
-      }
-
-      if (pageLines[indexLine] == "Mã số thuế") break;
-      else if (parts == PagePart.SELLER_COMPANY_NAME) {
-        result.seller.companyName += pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == " (Tax code): ") {
-        parts = PagePart.SELLER_TAX_CODE;
-        indexLine++;
-      }
-
-      if (pageLines[indexLine] == "Địa chỉ") break;
-      else if (parts == PagePart.SELLER_TAX_CODE) {
-        result.seller.taxCode += pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == " (Company's name): ") {
-        parts = PagePart.SELLER_COMPANY_NAME;
-        indexLine++;
-      }
-
-      if (pageLines[indexLine] == "Mã số thuế") break;
-      else if (parts == PagePart.SELLER_COMPANY_NAME) {
-        result.buyer.companyName += pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == " (Tax code): ") {
-        parts = PagePart.SELLER_TAX_CODE;
-        indexLine++;
-      }
-
-      if (pageLines[indexLine] == "Địa chỉ") break;
-      else if (parts == PagePart.SELLER_TAX_CODE) {
-        result.buyer.taxCode += pageLines[indexLine];
-      }
-
-      indexLine++;
-    }
-
-    while (indexLine <= l) {
-      if (pageLines[indexLine] == "STT") {
-        parts = PagePart.TABLE;
-        indexLine += 13;
+        if (parts == PagePart.NO) {
+          result.no = pageLines[indexLine];
+        }
         break;
       }
+      indexLine++;
+    }
+
+    while (indexLine <= l) {
+      if (pageLines[indexLine] == "SALES INVOICE") {
+        parts = PagePart.DATE;
+        indexLine++;
+
+        if (parts == PagePart.DATE) {
+          let str: string = pageLines[indexLine];
+          result.date = new Date(
+            `${str.slice(4, 8)}/${str.slice(2, 4)}/${str.slice(0, 2)}`
+          );
+          break;
+        }
+      }
+
+      indexLine++;
+    }
+
+    let sellerCompanyName: string = "";
+
+    while (indexLine <= l) {
+      if (pageLines[indexLine] == "(E-Invoice viewer)") {
+        parts = PagePart.SELLER_COMPANY_NAME;
+        indexLine++;
+      }
+
+      if (pageLines[indexLine].endsWith("Mã số thuế")) {
+        result.seller.companyName = sellerCompanyName.slice(0, -15);
+        break;
+      } else if (parts == PagePart.SELLER_COMPANY_NAME) {
+        sellerCompanyName += pageLines[indexLine];
+      }
+
+      indexLine++;
+    }
+
+    while (indexLine <= l) {
+      if (pageLines[indexLine].endsWith("Mã số thuế")) {
+        parts = PagePart.SELLER_TAX_CODE;
+        result.seller.taxCode = pageLines[indexLine].slice(0, -10);
+        indexLine++;
+        break;
+      }
+
+      indexLine++;
+    }
+
+    while (indexLine <= l) {
+      if (pageLines[indexLine].endsWith("Mã số thuế")) {
+        parts = PagePart.BUYER_TAX_CODE;
+        result.buyer.taxCode = pageLines[indexLine].slice(0, -10);
+        indexLine++;
+        break;
+      }
+
+      indexLine++;
+    }
+
+    let buyerCompanyName: string = "";
+
+    while (indexLine < l) {
+      if (pageLines[indexLine].endsWith("Tên đơn vị")) {
+        parts = PagePart.BUYER_COMPANY_NAME;
+      }
+
+      if (pageLines[indexLine] == "(Company's name):") {
+        result.buyer.companyName = buyerCompanyName.slice(0, -10);
+        indexLine++;
+        break;
+      } else if (parts == PagePart.BUYER_COMPANY_NAME) {
+        buyerCompanyName += pageLines[indexLine];
+      }
+
       indexLine++;
     }
 
     while (indexLine < l) {
-      let no: number = +pageLines[indexLine];
-      if (parts == PagePart.TABLE && !isNaN(no)) {
-        let newTableContent: TableContent = new TableContent();
+      if (pageLines[indexLine] == "ABC123=1x2") {
+        parts = PagePart.TABLE;
         indexLine++;
-        let nextLine = "";
+        break;
+      }
+      indexLine++;
+    }
+
+    while (indexLine < l - 1) {
+      if (parts == PagePart.TABLE) {
+        let newTableContent: TableContent = new TableContent();
+        let str = "";
         while (indexLine < l) {
-          nextLine = pageLines[indexLine + 1];
-          if (
-            !isNaN(+nextLine) ||
-            nextLine.startsWith("Đơn vị cung cấp") ||
-            nextLine == "Cộng tiền hàng hóa, dịch vụ"
-          )
-            break;
-          else {
-            newTableContent.product_name += pageLines[indexLine];
+          if (isNaN(+pageLines[indexLine])) {
+            str += pageLines[indexLine];
             indexLine++;
-          }
+          } else break;
         }
 
-        let extractedAmount = await this.extractAmount(pageLines[indexLine]);
+        let closerIndex = str.lastIndexOf(")");
+        newTableContent.product_name = str.slice(0, closerIndex + 1);
+
+        let totalString = str.slice(closerIndex + 1);
+        let extractedAmount = await this.extractTotal(totalString);
 
         newTableContent.unit = extractedAmount.unit;
-        newTableContent.quanity = extractedAmount.quanity;
+        newTableContent.quantity = extractedAmount.quantity;
         newTableContent.unit_price = extractedAmount.unitPrice;
         newTableContent.total = extractedAmount.amount;
 

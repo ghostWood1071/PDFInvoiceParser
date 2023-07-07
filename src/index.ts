@@ -29,7 +29,9 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 //   console.log(res);
 // });
 
-let extractor = new SEOJINAUTOInvoiceExtractor("./pdf/2C23TAT_00000215.pdf");
+let extractor = new SEOJINAUTOInvoiceExtractor(
+  "./src/pdf/2C23TAT_00000215.pdf"
+);
 
 extractor.getResult().then((res) => {
   console.log(res);
