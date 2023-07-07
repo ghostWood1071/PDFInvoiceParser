@@ -1,6 +1,6 @@
-import PdfParse from 'pdf-parse';
-import * as fs from 'fs';
-import { ViettelInvoiceExtractor } from './ViettelInvoiceEctractor';
+import * as fs from "fs";
+import PdfParse from "pdf-parse";
+import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceEctractor";
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -20,7 +20,7 @@ import { ViettelInvoiceExtractor } from './ViettelInvoiceEctractor';
 
 // main()
 
-let extractor = new ViettelInvoiceExtractor("../src/4601194212-C23TVN113.pdf");
-extractor.getResult().then((res)=>{
-    console.log(res);
+let extractor = new ViettelInvoiceExtractor("./src/4601194212-C23TVN113.pdf");
+extractor.getResult().then((res) => {
+  console.log(res);
 });

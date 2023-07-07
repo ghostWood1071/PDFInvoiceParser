@@ -37,8 +37,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PdfExtractor = void 0;
 const fs = __importStar(require("fs"));
-const pdf_parse_1 = __importDefault(require("pdf-parse"));
 const pdf_lib_1 = require("pdf-lib");
+const pdf_parse_1 = __importDefault(require("pdf-parse"));
 class PdfExtractor {
     constructor(fileName) {
         this.fileName = fileName;
@@ -57,7 +57,7 @@ class PdfExtractor {
                 let textPageArr = data.textPages;
                 let result = [];
                 for (let textPage of textPageArr) {
-                    result.push(textPage.split('\n'));
+                    result.push(textPage.split("\n"));
                 }
                 return result;
             }
@@ -105,13 +105,77 @@ class PdfExtractor {
                 let docInfo = yield this.getDocInfo();
                 this.extracted = {
                     textPages: pageTextArr,
-                    supplier: docInfo
+                    supplier: docInfo,
                 };
                 return this.extracted;
             }
             catch (error) {
                 throw new Error(error.message);
             }
+        });
+    }
+    extractAmount(amountStr) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let amountObj = {
+                unit: "",
+                quanity: 0,
+                unitPrice: 0,
+                amount: 0,
+            };
+            let splitString = amountStr.split(/(\d+)/);
+            amountObj.unit = splitString[0];
+            splitString = splitString.slice(1, splitString.length - 1);
+            const countDot = splitString.reduce((count, x) => (count = x == "." ? count + 1 : count), 0);
+            splitString = splitString.filter((x) => x != ".");
+            const l = splitString.length;
+            let amount = "";
+            let unitPrice = "";
+            while (splitString.length > 0) {
+                let x = splitString.pop();
+                if (x != null) {
+                    if (x.length == 3) {
+                        amount = x + amount;
+                    }
+                    else if (x.length > 3) {
+                        unitPrice = x.slice(0, 3);
+                        amount = x.slice(3) + amount;
+                        amountObj.amount = +amount;
+                        break;
+                    }
+                }
+            }
+            while (splitString.length > 0) {
+                let x = splitString.pop();
+                if (x != null) {
+                    if (splitString.length >= 1) {
+                        if (x.length == 3) {
+                            unitPrice = x + unitPrice;
+                        }
+                        else if (x.length > 3) {
+                            let quanity = x.slice(0, 3);
+                            unitPrice = x.slice(3) + unitPrice;
+                            amountObj.unitPrice = +unitPrice;
+                            amountObj.quanity = +(splitString.join("") + quanity);
+                            return amountObj;
+                        }
+                    }
+                    else {
+                        for (let i = 1; i <= 3; i++) {
+                            let j = x.length - i;
+                            if (j >= 1 && j <= 3) {
+                                let quanity = +x.slice(0, i);
+                                let unitPriceTmp = +(x.slice(i) + unitPrice);
+                                if (quanity * unitPriceTmp == amountObj.amount) {
+                                    amountObj.quanity = quanity;
+                                    amountObj.unitPrice = unitPriceTmp;
+                                    return amountObj;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return amountObj;
         });
     }
     saveRaw(fileName) {
