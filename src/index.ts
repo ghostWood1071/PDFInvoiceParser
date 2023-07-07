@@ -21,7 +21,7 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceEctractor";
 // main()
 
 let extractor = new ViettelInvoiceExtractor(
-  "./src/pdf/4601194212-C23TVN113.pdf"
+  "../src/pdf/4601194212-C23TVN113.pdf"
 );
 
 extractor.getResult().then((res) => {
