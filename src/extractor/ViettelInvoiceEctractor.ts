@@ -109,39 +109,41 @@ export class ViettelInvoiceExtractor
       indexLine++;
     }
 
-    let indexRow: number = 0;
-
     while (indexLine <= l) {
       if (pageLines[indexLine] == "STT") {
         parts = PagePart.TABLE;
         indexLine += 13;
-        indexRow = 1;
         break;
       }
       indexLine++;
     }
 
     while (indexLine <= l) {
-      if (parts == PagePart.TABLE && /^[0-9]$/.test(pageLines[indexLine])) {
-        let no: number = +pageLines[indexLine];
-        if (no == indexRow) {
-          let newTableContent: TableContent = new TableContent();
-          newTableContent.description =
-            pageLines[indexLine + 1] + " " + pageLines[indexLine + 2];
+      let no: number = +pageLines[indexLine];
+      if (parts == PagePart.TABLE && !isNaN(no)) {
+        let newTableContent: TableContent = new TableContent();
+        indexLine++;
+        while (isNaN(+pageLines[indexLine])) {
+          newTableContent.description += pageLines[indexLine];
+          indexLine++;
+          if (
+            indexLine >= l ||
+            pageLines[indexLine].startsWith("Đơn vị cung cấp") ||
+            pageLines[indexLine] == "Cộng tiền hàng hóa, dịch vụ"
+          )
+            break;
+        }
 
-          let extractedAmount = await this.extractAmount(
-            pageLines[indexLine + 3]
-          );
+        let extractedAmount = await this.extractAmount(
+          pageLines[indexLine - 1]
+        );
 
-          newTableContent.unit = extractedAmount.unit;
-          newTableContent.quanity = extractedAmount.quanity;
-          newTableContent.unitPrice = extractedAmount.unitPrice;
-          newTableContent.amount = extractedAmount.amount;
+        newTableContent.unit = extractedAmount.unit;
+        newTableContent.quanity = extractedAmount.quanity;
+        newTableContent.unitPrice = extractedAmount.unitPrice;
+        newTableContent.amount = extractedAmount.amount;
 
-          result.table.push(newTableContent);
-          indexRow++;
-          indexLine += 4;
-        } else break;
+        result.table.push(newTableContent);
       } else break;
     }
 
@@ -150,8 +152,10 @@ export class ViettelInvoiceExtractor
 
   async getResult() {
     let data = await this.docLines;
-    console.log(data ? data[0] : "");
-    let result = data ? this.processLines(data[0]) : null;
+    let result = await data?.map(
+      async (x) => (x = JSON.stringify(await this.processLines(x)))
+    );
+
     return result;
   }
 
