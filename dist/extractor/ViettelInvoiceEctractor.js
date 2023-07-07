@@ -23,20 +23,26 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
             let parts = model_1.PagePart.NONE;
             let indexLine = 0;
             let l = pageLines.length;
+            let dateArr = [];
             while (indexLine <= l) {
                 if (pageLines[indexLine] == "Ngày") {
                     parts = model_1.PagePart.DATE;
                 }
-                if (pageLines[indexLine] == "Ký hiệu")
+                if (pageLines[indexLine] == "Ký hiệu") {
+                    result.date = new Date(dateArr.reverse().join("/"));
                     break;
-                else if (parts == model_1.PagePart.DATE) {
-                    result.date = result.date + pageLines[indexLine];
+                }
+                else if (parts == model_1.PagePart.DATE &&
+                    pageLines[indexLine].trim().startsWith("(")) {
+                    indexLine++;
+                    dateArr.push(pageLines[indexLine].split(" ")[0]);
                 }
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Ký hiệu") {
+                if (pageLines[indexLine] == " (Serial):") {
                     parts = model_1.PagePart.SERIAL;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Số")
                     break;
@@ -46,8 +52,9 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Số") {
+                if (pageLines[indexLine] == " (No.):") {
                     parts = model_1.PagePart.NO;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Đơn vị bán hàng")
                     break;
@@ -57,8 +64,9 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Đơn vị bán hàng") {
+                if (pageLines[indexLine] == " (Company): ") {
                     parts = model_1.PagePart.SELLER_COMPANY_NAME;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Mã số thuế")
                     break;
@@ -68,8 +76,9 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Mã số thuế") {
+                if (pageLines[indexLine] == " (Tax code): ") {
                     parts = model_1.PagePart.SELLER_TAX_CODE;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Địa chỉ")
                     break;
@@ -79,8 +88,9 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Tên đơn vị") {
+                if (pageLines[indexLine] == " (Company's name): ") {
                     parts = model_1.PagePart.SELLER_COMPANY_NAME;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Mã số thuế")
                     break;
@@ -90,8 +100,9 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 indexLine++;
             }
             while (indexLine <= l) {
-                if (pageLines[indexLine] == "Mã số thuế") {
+                if (pageLines[indexLine] == " (Tax code): ") {
                     parts = model_1.PagePart.SELLER_TAX_CODE;
+                    indexLine++;
                 }
                 if (pageLines[indexLine] == "Địa chỉ")
                     break;
@@ -108,25 +119,30 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
                 }
                 indexLine++;
             }
-            while (indexLine <= l) {
+            while (indexLine < l) {
                 let no = +pageLines[indexLine];
                 if (parts == model_1.PagePart.TABLE && !isNaN(no)) {
                     let newTableContent = new model_1.TableContent();
                     indexLine++;
-                    while (isNaN(+pageLines[indexLine])) {
-                        newTableContent.description += pageLines[indexLine];
-                        indexLine++;
-                        if (indexLine >= l ||
-                            pageLines[indexLine].startsWith("Đơn vị cung cấp") ||
-                            pageLines[indexLine] == "Cộng tiền hàng hóa, dịch vụ")
+                    let nextLine = "";
+                    while (indexLine < l) {
+                        nextLine = pageLines[indexLine + 1];
+                        if (!isNaN(+nextLine) ||
+                            nextLine.startsWith("Đơn vị cung cấp") ||
+                            nextLine == "Cộng tiền hàng hóa, dịch vụ")
                             break;
+                        else {
+                            newTableContent.product_name += pageLines[indexLine];
+                            indexLine++;
+                        }
                     }
-                    let extractedAmount = yield this.extractAmount(pageLines[indexLine - 1]);
+                    let extractedAmount = yield this.extractAmount(pageLines[indexLine]);
                     newTableContent.unit = extractedAmount.unit;
                     newTableContent.quanity = extractedAmount.quanity;
-                    newTableContent.unitPrice = extractedAmount.unitPrice;
-                    newTableContent.amount = extractedAmount.amount;
+                    newTableContent.unit_price = extractedAmount.unitPrice;
+                    newTableContent.total = extractedAmount.amount;
                     result.table.push(newTableContent);
+                    indexLine++;
                 }
                 else
                     break;
@@ -137,22 +153,12 @@ class ViettelInvoiceExtractor extends PDFExtractor_1.PdfExtractor {
     getResult() {
         return __awaiter(this, void 0, void 0, function* () {
             let data = yield this.docLines;
-            let result = yield (data === null || data === void 0 ? void 0 : data.map((x) => __awaiter(this, void 0, void 0, function* () { return (x = JSON.stringify(yield this.processLines(x))); })));
-            data === null || data === void 0 ? void 0 : data.forEach((x) => __awaiter(this, void 0, void 0, function* () { return console.log(yield this.processLines(x)); }));
+            // let result = await data?.map(
+            //   async (x) => (x = JSON.stringify(await this.processLines(x)))
+            // );
+            let result = data ? yield this.processLines(data[0]) : null;
             return result;
         });
-    }
-    extractInfo() {
-        throw new Error("Method not implemented.");
-    }
-    extractBuyer() {
-        throw new Error("Method not implemented.");
-    }
-    extractSeller() {
-        throw new Error("Method not implemented.");
-    }
-    extractTable() {
-        throw new Error("Method not implemented.");
     }
 }
 exports.ViettelInvoiceExtractor = ViettelInvoiceExtractor;

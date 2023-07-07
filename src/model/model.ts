@@ -1,5 +1,5 @@
 export class PageContent {
-  date: string = "";
+  date: Date = new Date();
   serial: string = "";
   no: string = "";
   seller: any = {
@@ -10,15 +10,17 @@ export class PageContent {
     companyName: "",
     taxCode: "",
   };
+  exchange_rate = null;
   table: TableContent[] = [];
 }
 
 export class TableContent {
-  description: string = "";
+  product_id = null;
+  product_name: string = "";
   unit: string = "";
   quanity: number = 0;
-  unitPrice: number = 0;
-  amount: number = 0;
+  unit_price: number = 0;
+  total: number = 0;
 }
 
 export enum PagePart {
