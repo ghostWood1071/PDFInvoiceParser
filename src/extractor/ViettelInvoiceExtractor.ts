@@ -93,12 +93,12 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
 
     while (indexLine <= l) {
       if (pageLines[indexLine] == " (Company's name): ") {
-        parts = PagePart.SELLER_COMPANY_NAME;
+        parts = PagePart.BUYER_COMPANY_NAME;
         indexLine++;
       }
 
       if (pageLines[indexLine] == "Mã số thuế") break;
-      else if (parts == PagePart.SELLER_COMPANY_NAME) {
+      else if (parts == PagePart.BUYER_COMPANY_NAME) {
         result.buyer.companyName += pageLines[indexLine];
       }
 
@@ -107,12 +107,12 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
 
     while (indexLine <= l) {
       if (pageLines[indexLine] == " (Tax code): ") {
-        parts = PagePart.SELLER_TAX_CODE;
+        parts = PagePart.BUYER_TAX_CODE;
         indexLine++;
       }
 
       if (pageLines[indexLine] == "Địa chỉ") break;
-      else if (parts == PagePart.SELLER_TAX_CODE) {
+      else if (parts == PagePart.BUYER_TAX_CODE) {
         result.buyer.taxCode += pageLines[indexLine];
       }
 
@@ -148,10 +148,10 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
           }
         }
 
-        let extractedAmount = await this.extractAmount(pageLines[indexLine]);
+        let extractedAmount = await this.extractTotal(pageLines[indexLine]);
 
         newTableContent.unit = extractedAmount.unit;
-        newTableContent.quanity = extractedAmount.quanity;
+        newTableContent.quantity = extractedAmount.quantity;
         newTableContent.unit_price = extractedAmount.unitPrice;
         newTableContent.total = extractedAmount.amount;
 
@@ -165,11 +165,9 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
 
   async getResult() {
     let data = await this.docLines;
-    // let result = await data?.map(
-    //   async (x) => (x = JSON.stringify(await this.processLines(x)))
-    // );
-
-    let result = data ? await this.processLines(data[0]) : null;
+    let result = await data?.map(
+      async (x) => (x = JSON.stringify(await this.processLines(x)))
+    );
 
     return result;
   }
