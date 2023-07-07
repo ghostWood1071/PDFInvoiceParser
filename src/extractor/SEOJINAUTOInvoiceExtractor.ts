@@ -1,7 +1,7 @@
 import { PageContent, PagePart, TableContent } from "../model/model";
 import { PdfExtractor } from "./PDFExtractor";
 
-export class ViettelInvoiceExtractor extends PdfExtractor {
+export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
   private docLines: Promise<any[] | null>;
 
   constructor(fileName: string) {

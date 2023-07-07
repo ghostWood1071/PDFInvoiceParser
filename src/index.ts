@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import PdfParse from "pdf-parse";
-import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceEctractor";
+import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
+import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -20,9 +21,15 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceEctractor";
 
 // main()
 
-let extractor = new ViettelInvoiceExtractor(
-  "./src/pdf/4601194212-C23TVN113.pdf"
-);
+// let extractor = new ViettelInvoiceExtractor(
+//   "./src/pdf/4601194212-C23TVN113.pdf"
+// );
+
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+
+let extractor = new SEOJINAUTOInvoiceExtractor("./pdf/2C23TAT_00000215.pdf");
 
 extractor.getResult().then((res) => {
   console.log(res);

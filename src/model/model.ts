@@ -2,6 +2,7 @@ export class PageContent {
   date: Date = new Date();
   serial: string = "";
   no: string = "";
+  exchange_rate = null;
   seller: any = {
     companyName: "",
     taxCode: "",
@@ -10,7 +11,6 @@ export class PageContent {
     companyName: "",
     taxCode: "",
   };
-  exchange_rate = null;
   table: TableContent[] = [];
 }
 
@@ -28,6 +28,7 @@ export enum PagePart {
   DATE,
   SERIAL,
   NO,
+  EXCHANGE_RATE,
   SELLER_COMPANY_NAME,
   SELLER_TAX_CODE,
   BUYER_COMPANY_NAME,
