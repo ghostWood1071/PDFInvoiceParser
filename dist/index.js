@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const ViettelInvoiceEctractor_1 = require("./ViettelInvoiceEctractor");
+const ViettelInvoiceEctractor_1 = require("./extractor/ViettelInvoiceEctractor");
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -15,7 +15,7 @@ const ViettelInvoiceEctractor_1 = require("./ViettelInvoiceEctractor");
 //     console.log(out3);
 // }
 // main()
-let extractor = new ViettelInvoiceEctractor_1.ViettelInvoiceExtractor("./src/4601194212-C23TVN113.pdf");
+let extractor = new ViettelInvoiceEctractor_1.ViettelInvoiceExtractor("../src/pdf/4601194212-C23TVN113.pdf");
 extractor.getResult().then((res) => {
     console.log(res);
 });
