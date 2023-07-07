@@ -1,10 +1,7 @@
 import { PageContent, PagePart, TableContent } from "../model/model";
-import { IExtractable, PdfExtractor } from "./PDFExtractor";
+import { PdfExtractor } from "./PDFExtractor";
 
-export class ViettelInvoiceExtractor
-  extends PdfExtractor
-  implements IExtractable
-{
+export class ViettelInvoiceExtractor extends PdfExtractor {
   private docLines: Promise<any[] | null>;
 
   constructor(fileName: string) {
@@ -18,22 +15,30 @@ export class ViettelInvoiceExtractor
 
     let indexLine = 0;
     let l = pageLines.length;
+    let dateArr = [];
     while (indexLine <= l) {
       if (pageLines[indexLine] == "Ngày") {
         parts = PagePart.DATE;
       }
 
-      if (pageLines[indexLine] == "Ký hiệu") break;
-      else if (parts == PagePart.DATE) {
-        result.date = result.date + pageLines[indexLine];
+      if (pageLines[indexLine] == "Ký hiệu") {
+        result.date = new Date(dateArr.reverse().join("/"));
+        break;
+      } else if (
+        parts == PagePart.DATE &&
+        pageLines[indexLine].trim().startsWith("(")
+      ) {
+        indexLine++;
+        dateArr.push(pageLines[indexLine].split(" ")[0]);
       }
 
       indexLine++;
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Ký hiệu") {
+      if (pageLines[indexLine] == " (Serial):") {
         parts = PagePart.SERIAL;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Số") break;
@@ -45,8 +50,9 @@ export class ViettelInvoiceExtractor
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Số") {
+      if (pageLines[indexLine] == " (No.):") {
         parts = PagePart.NO;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Đơn vị bán hàng") break;
@@ -58,8 +64,9 @@ export class ViettelInvoiceExtractor
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Đơn vị bán hàng") {
+      if (pageLines[indexLine] == " (Company): ") {
         parts = PagePart.SELLER_COMPANY_NAME;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Mã số thuế") break;
@@ -71,8 +78,9 @@ export class ViettelInvoiceExtractor
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Mã số thuế") {
+      if (pageLines[indexLine] == " (Tax code): ") {
         parts = PagePart.SELLER_TAX_CODE;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Địa chỉ") break;
@@ -84,8 +92,9 @@ export class ViettelInvoiceExtractor
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Tên đơn vị") {
+      if (pageLines[indexLine] == " (Company's name): ") {
         parts = PagePart.SELLER_COMPANY_NAME;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Mã số thuế") break;
@@ -97,8 +106,9 @@ export class ViettelInvoiceExtractor
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "Mã số thuế") {
+      if (pageLines[indexLine] == " (Tax code): ") {
         parts = PagePart.SELLER_TAX_CODE;
+        indexLine++;
       }
 
       if (pageLines[indexLine] == "Địa chỉ") break;
@@ -109,39 +119,44 @@ export class ViettelInvoiceExtractor
       indexLine++;
     }
 
-    let indexRow: number = 0;
-
     while (indexLine <= l) {
       if (pageLines[indexLine] == "STT") {
         parts = PagePart.TABLE;
         indexLine += 13;
-        indexRow = 1;
         break;
       }
       indexLine++;
     }
 
-    while (indexLine <= l) {
-      if (parts == PagePart.TABLE && /^[0-9]$/.test(pageLines[indexLine])) {
-        let no: number = +pageLines[indexLine];
-        if (no == indexRow) {
-          let newTableContent: TableContent = new TableContent();
-          newTableContent.description =
-            pageLines[indexLine + 1] + " " + pageLines[indexLine + 2];
+    while (indexLine < l) {
+      let no: number = +pageLines[indexLine];
+      if (parts == PagePart.TABLE && !isNaN(no)) {
+        let newTableContent: TableContent = new TableContent();
+        indexLine++;
+        let nextLine = "";
+        while (indexLine < l) {
+          nextLine = pageLines[indexLine + 1];
+          if (
+            !isNaN(+nextLine) ||
+            nextLine.startsWith("Đơn vị cung cấp") ||
+            nextLine == "Cộng tiền hàng hóa, dịch vụ"
+          )
+            break;
+          else {
+            newTableContent.product_name += pageLines[indexLine];
+            indexLine++;
+          }
+        }
 
-          let extractedAmount = await this.extractAmount(
-            pageLines[indexLine + 3]
-          );
+        let extractedAmount = await this.extractAmount(pageLines[indexLine]);
 
-          newTableContent.unit = extractedAmount.unit;
-          newTableContent.quanity = extractedAmount.quanity;
-          newTableContent.unitPrice = extractedAmount.unitPrice;
-          newTableContent.amount = extractedAmount.amount;
+        newTableContent.unit = extractedAmount.unit;
+        newTableContent.quanity = extractedAmount.quanity;
+        newTableContent.unit_price = extractedAmount.unitPrice;
+        newTableContent.total = extractedAmount.amount;
 
-          result.table.push(newTableContent);
-          indexRow++;
-          indexLine += 4;
-        } else break;
+        result.table.push(newTableContent);
+        indexLine++;
       } else break;
     }
 
@@ -150,21 +165,12 @@ export class ViettelInvoiceExtractor
 
   async getResult() {
     let data = await this.docLines;
-    console.log(data ? data[0] : "");
-    let result = data ? this.processLines(data[0]) : null;
-    return result;
-  }
+    // let result = await data?.map(
+    //   async (x) => (x = JSON.stringify(await this.processLines(x)))
+    // );
 
-  extractInfo() {
-    throw new Error("Method not implemented.");
-  }
-  extractBuyer() {
-    throw new Error("Method not implemented.");
-  }
-  extractSeller() {
-    throw new Error("Method not implemented.");
-  }
-  extractTable() {
-    throw new Error("Method not implemented.");
+    let result = data ? await this.processLines(data[0]) : null;
+
+    return result;
   }
 }

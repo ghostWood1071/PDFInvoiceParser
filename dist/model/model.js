@@ -3,7 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PagePart = exports.TableContent = exports.PageContent = void 0;
 class PageContent {
     constructor() {
+<<<<<<< HEAD
         this.date = "";
+=======
+        this.date = new Date();
+>>>>>>> 72d31cd2288c00ec41180fbd15f4965fb0c777ed
         this.serial = "";
         this.no = "";
         this.seller = {
@@ -14,17 +18,30 @@ class PageContent {
             companyName: "",
             taxCode: "",
         };
+<<<<<<< HEAD
+=======
+        this.exchange_rate = null;
+>>>>>>> 72d31cd2288c00ec41180fbd15f4965fb0c777ed
         this.table = [];
     }
 }
 exports.PageContent = PageContent;
 class TableContent {
     constructor() {
+<<<<<<< HEAD
         this.description = "";
         this.unit = "";
         this.quanity = 0;
         this.unitPrice = 0;
         this.amount = 0;
+=======
+        this.product_id = null;
+        this.product_name = "";
+        this.unit = "";
+        this.quanity = 0;
+        this.unit_price = 0;
+        this.total = 0;
+>>>>>>> 72d31cd2288c00ec41180fbd15f4965fb0c777ed
     }
 }
 exports.TableContent = TableContent;

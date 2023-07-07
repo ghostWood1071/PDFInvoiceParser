@@ -15,7 +15,11 @@ const ViettelInvoiceEctractor_1 = require("./extractor/ViettelInvoiceEctractor")
 //     console.log(out3);
 // }
 // main()
+<<<<<<< HEAD
 let extractor = new ViettelInvoiceEctractor_1.ViettelInvoiceExtractor("../src/pdf/4601194212-C23TVN113.pdf");
+=======
+let extractor = new ViettelInvoiceEctractor_1.ViettelInvoiceExtractor("./src/pdf/4601194212-C23TVN113.pdf");
+>>>>>>> 72d31cd2288c00ec41180fbd15f4965fb0c777ed
 extractor.getResult().then((res) => {
     console.log(res);
 });
