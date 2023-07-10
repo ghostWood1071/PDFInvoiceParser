@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import PdfParse from "pdf-parse";
+import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
@@ -280,7 +281,7 @@ extractor.getResult().then((res) => {
 
 // ********** LOGISALL **********
 
-// let extractor = new PdfExtractor(
+// let extractor = new LOGISALInvoiceExtractor(
 //   "./src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
 // );
 
@@ -297,6 +298,14 @@ extractor.getResult().then((res) => {
 
 //   fs.writeFileSync("./infoJson/LOGISALL.json", JSON.stringify(json));
 // });
+
+// extractor.saveRawText("logisall");
+
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+
+// extractor.saveRawText("logisall");
 
 // ********** M-invoice **********
 

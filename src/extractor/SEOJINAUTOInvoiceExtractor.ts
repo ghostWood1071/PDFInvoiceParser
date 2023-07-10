@@ -136,7 +136,7 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
         str = str.replace(/#/g, "");
         for (let unit of this.unitArr) {
-          if (str.includes(unit)) {
+          if (str.endsWith(unit)) {
             newTableContent.product_name = str.slice(0, -unit.length);
             newTableContent.unit = unit;
             break;
