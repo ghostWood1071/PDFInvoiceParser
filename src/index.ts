@@ -5,6 +5,7 @@ import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
+import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -49,11 +50,11 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 // });
 
 // ********** SEOJIN AUTO **********
-let extractor = new SEOJINAUTOInvoiceExtractor(
-  "./src/pdf/2C23TAT_00000215.pdf"
+let extractor = new meInvoiceExtractor(
+  "./src/pdf/meinvoice.pdf"
 );
 
-// extractor.saveRawText("seojinauto");
+// extractor.saveRawText("meInvoice");
 
 extractor.getResult().then((res) => {
   console.log(res);
