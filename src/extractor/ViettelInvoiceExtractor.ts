@@ -161,11 +161,11 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
 
   async getResult() {
     let data = await this.docLines;
-    // let result = await data?.map(
-    //   async (x) => (x = JSON.stringify(await this.processLines(x)))
-    // );
+    let result = await data?.map(
+      async (x) => (x = JSON.stringify(await this.processLines(x)))
+    );
 
-    let result = data ? await this.processLines(data[0]) : null;
+    // let result = data ? await this.processLines(data[0]) : null;
     return result;
   }
 }
