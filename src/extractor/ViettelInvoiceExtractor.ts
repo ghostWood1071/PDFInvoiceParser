@@ -133,30 +133,26 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
       if (parts == PagePart.TABLE && !isNaN(no)) {
         let newTableContent: TableContent = new TableContent();
         indexLine++;
-        let nextLine = "";
+        let totalRegex = /.*#.*#.*#.*/;
+
         while (indexLine < l) {
-          nextLine = pageLines[indexLine + 1];
-          if (
-            !isNaN(+nextLine) ||
-            nextLine.startsWith("Đơn vị cung cấp") ||
-            nextLine == "Cộng tiền hàng hóa, dịch vụ"
-          )
+          if (totalRegex.test(pageLines[indexLine])) {
+            let [unit, quantity, unitPrice, total] =
+              pageLines[indexLine].split("#");
+
+            newTableContent.unit = unit;
+            newTableContent.quantity = +quantity.replace(/\./g, "");
+            newTableContent.unit_price = +unitPrice.replace(/\./g, "");
+            newTableContent.total = +total.replace(/\./g, "");
+
+            result.table.push(newTableContent);
+            indexLine++;
             break;
-          else {
+          } else {
             newTableContent.product_name += pageLines[indexLine];
             indexLine++;
           }
         }
-
-        let extractedTotal = await this.extractTotal(pageLines[indexLine]);
-
-        newTableContent.unit = extractedTotal.unit;
-        newTableContent.quantity = extractedTotal.quantity;
-        newTableContent.unit_price = extractedTotal.unitPrice;
-        newTableContent.total = extractedTotal.total;
-
-        result.table.push(newTableContent);
-        indexLine++;
       } else break;
     }
 
