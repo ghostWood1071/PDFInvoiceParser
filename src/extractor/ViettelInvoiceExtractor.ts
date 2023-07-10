@@ -148,12 +148,12 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
           }
         }
 
-        let extractedAmount = await this.extractTotal(pageLines[indexLine]);
+        let extractedTotal = await this.extractTotal(pageLines[indexLine]);
 
-        newTableContent.unit = extractedAmount.unit;
-        newTableContent.quantity = extractedAmount.quantity;
-        newTableContent.unit_price = extractedAmount.unitPrice;
-        newTableContent.total = extractedAmount.amount;
+        newTableContent.unit = extractedTotal.unit;
+        newTableContent.quantity = extractedTotal.quantity;
+        newTableContent.unit_price = extractedTotal.unitPrice;
+        newTableContent.total = extractedTotal.total;
 
         result.table.push(newTableContent);
         indexLine++;
@@ -165,10 +165,11 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
 
   async getResult() {
     let data = await this.docLines;
-    let result = await data?.map(
-      async (x) => (x = JSON.stringify(await this.processLines(x)))
-    );
+    // let result = await data?.map(
+    //   async (x) => (x = JSON.stringify(await this.processLines(x)))
+    // );
 
+    let result = data ? await this.processLines(data[0]) : null;
     return result;
   }
 }

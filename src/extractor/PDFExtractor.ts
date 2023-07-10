@@ -104,14 +104,14 @@ export class PdfExtractor {
       if (x != null) {
         if (splitString[splitString.length - 1] == ",") {
           unitPrice = splitString.pop() + x.slice(0, 2);
-          totalObj.amount = +(x.slice(2) + total);
+          totalObj.total = +(x.slice(2) + total);
           break;
         } else if (x.length == 3) {
           total = x + total;
         } else if (x.length > 3) {
           unitPrice = x.slice(0, 3);
           total = x.slice(3) + total;
-          totalObj.amount = +total;
+          totalObj.total = +total;
           break;
         }
       }
@@ -148,7 +148,7 @@ export class PdfExtractor {
             if (j >= 1 && j <= 3) {
               let quantity: number = +x.slice(0, i);
               let unitPriceTmp: number = +(x.slice(i) + unitPrice);
-              if (quantity * unitPriceTmp == totalObj.amount) {
+              if (quantity * unitPriceTmp == totalObj.total) {
                 totalObj.quantity = quantity;
                 totalObj.unitPrice = unitPriceTmp;
 
@@ -160,9 +160,7 @@ export class PdfExtractor {
       }
     }
 
-    totalObj.quantity = totalObj.quantity;
-    totalObj.unitPrice = totalObj.unitPrice;
-    return totalObj;
+    return null;
   }
 
   async saveRaw(fileName: string) {

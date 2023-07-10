@@ -134,12 +134,12 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
         newTableContent.product_name = str.slice(0, closerIndex + 1);
 
         let totalString = str.slice(closerIndex + 1);
-        let extractedAmount = await this.extractTotal(totalString);
+        let extractedTotal = await this.extractTotal(totalString);
 
-        newTableContent.unit = extractedAmount.unit;
-        newTableContent.quantity = extractedAmount.quantity;
-        newTableContent.unit_price = extractedAmount.unitPrice;
-        newTableContent.total = extractedAmount.amount;
+        newTableContent.unit = extractedTotal.unit;
+        newTableContent.quantity = extractedTotal.quantity;
+        newTableContent.unit_price = extractedTotal.unitPrice;
+        newTableContent.total = extractedTotal.total;
 
         result.table.push(newTableContent);
         indexLine++;
@@ -151,11 +151,9 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
   async getResult() {
     let data = await this.docLines;
-    // let result = await data?.map(
-    //   async (x) => (x = JSON.stringify(await this.processLines(x)))
-    // );
-
-    let result = data ? await this.processLines(data[0]) : null;
+    let result = await data?.map(
+      async (x) => (x = JSON.stringify(await this.processLines(x)))
+    );
 
     return result;
   }

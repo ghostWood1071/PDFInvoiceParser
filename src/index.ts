@@ -32,7 +32,8 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 let extractor = new SEOJINAUTOInvoiceExtractor(
   "./src/pdf/2C23TAT_00000215.pdf"
 );
+extractor.saveRawText("seojinauto");
 
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
