@@ -9,8 +9,6 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
-  protected unitArr: string[] = ["kg", "EA", "cái", "chiếc"];
-
   // protected renderPage(pageData: any): string {
   //   //check documents https://mozilla.github.io/pdf.js/
   //   let render_options = {
