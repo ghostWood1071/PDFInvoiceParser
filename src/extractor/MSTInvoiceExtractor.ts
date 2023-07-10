@@ -41,24 +41,6 @@ export class MSTInvoiceExtractor extends PdfExtractor{
     }
 
     private processPage(pageLines: string[]){
-        let pageResult:PageContent = new PageContent();
-        if (pageLines.length==0)
-            return pageResult;
-        pageResult.date = this.getDate(pageLines[2]);
-        pageResult.serial = this.getBehind(pageLines[5], ":");
-        pageResult.no = this.getBehind(pageLines[6], ":").replace("#", "");
-        //get seller
-        let sellerNameResult = this.getUntil(pageLines, 7, "Mã số thuế:")
-        pageResult.seller.companyName = this.getBehind(sellerNameResult.strResult, ":");
-        let sellerTaxResult = this.getUntil(pageLines, sellerNameResult.nextPos, "Địa chỉ:")
-        pageResult.seller.taxCode = this.getBehind(sellerTaxResult.strResult, ":");
-        let nextPos = this.getUntil(pageLines, sellerTaxResult.nextPos, "Họ tên người mua hàng:").nextPos + 1;
-        let buyerNameResult = this.getUntil(pageLines, nextPos, "Địa chỉ:");
-        pageResult.buyer.companyName = this.getBehind(buyerNameResult.strResult, ":");
-        nextPos = this.getUntil(pageLines, buyerNameResult.nextPos, "Số tài khoản:").nextPos+1;
-        let buyerTaxResult = this.getUntil(pageLines, nextPos, "SttTên hàng hóa");
-        pageResult.buyer.taxCode = buyerTaxResult.strResult.split(":")[2].trim();
-        nextPos = buyerTaxResult.nextPos + 2;
         let tmpLine: string = "";
         let rowRegex = /^[0-9]+[A-Z]+|^\d+$/
         let endTableRegex = /Mã tra cứu hóa đơn:/
@@ -66,6 +48,30 @@ export class MSTInvoiceExtractor extends PdfExtractor{
         let rateRegex = /#[\d.]+[A-Z]/;
         let rateVATstartRegex = /Thuế suất/;
         let rateVATRegex = /:[\d.]\%/; 
+        let pageResult:PageContent = new PageContent();
+        if (pageLines.length==0)
+            return pageResult;
+        let nextPos = this.getUntil(pageLines, 0, "Ngày").nextPos;
+        let tmpL = this.getUntil(pageLines,nextPos, "Mã cơ quan thuế cấp");
+        pageResult.date = this.getDate(tmpL.strResult);
+        nextPos = this.getUntil(pageLines,nextPos,"Ký hiệu").nextPos;
+        tmpL = this.getUntil(pageLines,nextPos,"Số")
+        pageResult.serial = this.getBehind(tmpL.strResult, ":");
+        tmpL = this.getUntil(pageLines, tmpL.nextPos, "Đơn vị bán hàng");
+        pageResult.no = this.getBehind(tmpL.strResult, ":").replace("#", "");
+        //get seller
+        let sellerNameResult = this.getUntil(pageLines, tmpL.nextPos, "Mã số thuế:")
+        pageResult.seller.companyName = this.getBehind(sellerNameResult.strResult, ":");
+        let sellerTaxResult = this.getUntil(pageLines, sellerNameResult.nextPos, "Địa chỉ:")
+        pageResult.seller.taxCode = this.getBehind(sellerTaxResult.strResult, ":");
+        nextPos = this.getUntil(pageLines, sellerTaxResult.nextPos, "Họ tên người mua hàng:").nextPos + 1;
+        let buyerNameResult = this.getUntil(pageLines, nextPos, "Địa chỉ:");
+        pageResult.buyer.companyName = this.getBehind(buyerNameResult.strResult, ":");
+        nextPos = this.getUntil(pageLines, buyerNameResult.nextPos, "Số tài khoản:").nextPos+1;
+        let buyerTaxResult = this.getUntil(pageLines, nextPos, "SttTên hàng hóa");
+        pageResult.buyer.taxCode = buyerTaxResult.strResult.split(":")[2].trim();
+        nextPos = buyerTaxResult.nextPos + 2;
+        
         for(let linePos = nextPos; linePos<pageLines.length; linePos++){
             if (exchangeRegex.test(pageLines[linePos])){
                 let numstr = this.execRegex(pageLines[linePos], rateRegex).replace("#","");
@@ -101,7 +107,7 @@ export class MSTInvoiceExtractor extends PdfExtractor{
                 for(let pageNum = 1; pageNum<pageLines.length; pageNum++){
                     let tmpPage:PageContent = this.processPage(pageLines[pageNum]);
                     result.exchange_rate = tmpPage.exchange_rate?tmpPage.exchange_rate:result.exchange_rate;
-                    result.vat_rate = tmpPage.vat_rate!=0||tmpPage.vat_rate!=null?tmpPage.vat_rate:result.vat_rate;
+                    result.vat_rate = tmpPage.vat_rate!=0&&tmpPage.vat_rate!=null?tmpPage.vat_rate:result.vat_rate;
                     result.table = result.table.concat(tmpPage.table);
                 }
                 return result;

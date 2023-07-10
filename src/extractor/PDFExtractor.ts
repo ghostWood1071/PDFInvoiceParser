@@ -18,10 +18,10 @@ export class PdfExtractor {
     this.fileName = fileName;
   }
 
-  protected async getDocInfo() {
+   async getDocInfo() {
     let fileBuff = await fs.readFileSync(this.fileName);
     let parser = await PdfParse(fileBuff);
-    return JSON.stringify(parser.metadata);
+    return JSON.stringify(parser.info);
   }
 
   protected getUntil(pageLines:string[], posPart: number, ending: string){

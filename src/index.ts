@@ -40,8 +40,25 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 //   console.log(res);
 // });
 
-let extractor = new VNPInvoiceExtractor("./src/pdf/vnpt.pdf");
-// extractor.saveRawText("vnpt");
-extractor.getResult().then((res) => {
+// let extractor = new VNPInvoiceExtractor("./src/pdf/vnpt.pdf");
+// // extractor.saveRawText("vnpt");
+// extractor.getResult().then((res) => {
+//   console.log(res.exchange_rate);
+//   console.log(res.vat_rate);
+//   console.log(res.table.length);
+// });
+
+let extractor = new PdfExtractor(
+  "./src/pdf/1C23TGT-281.pdf"
+);
+
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+extractor.getDocInfo().then((res)=>{
+  console.log(res);
+})
+
+extractor.saveRawText("fast").then((res) => {
   console.log(res);
 });
