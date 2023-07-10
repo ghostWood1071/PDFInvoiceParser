@@ -2,7 +2,8 @@ export class PageContent {
   date: Date = new Date();
   serial: string = "";
   no: string = "";
-  exchange_rate = null;
+  vat_rate: any = null;
+  exchange_rate:any = null;
   seller: any = {
     companyName: "",
     taxCode: "",

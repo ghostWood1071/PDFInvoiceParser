@@ -1,7 +1,10 @@
 import * as fs from "fs";
 import PdfParse from "pdf-parse";
+import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
+import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
+import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -29,10 +32,16 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 //   console.log(res);
 // });
 
-let extractor = new SEOJINAUTOInvoiceExtractor(
-  "./src/pdf/2C23TAT_00000215.pdf"
-);
+// let extractor = new MSTInvoiceExtractor(
+//   "./src/pdf/1C23TGT-281.pdf"
+// );
 
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+
+let extractor = new VNPInvoiceExtractor("./src/pdf/vnpt.pdf")
+// extractor.saveRawText("vnpt");
+extractor.getResult().then((res)=>{
+    console.log(res);
+})
