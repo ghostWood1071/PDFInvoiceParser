@@ -24,6 +24,58 @@ export class PdfExtractor {
     return JSON.stringify(parser.metadata);
   }
 
+  protected getUntil(pageLines:string[], posPart: number, ending: string){
+    let result = "";
+    let pos = posPart;
+    for(let i=posPart; i<pageLines.length; i++){
+        if(pageLines[i] == ending || pageLines[i].startsWith(ending)){
+            pos = i;
+            break;
+        }
+        else
+            result = result + pageLines[i]+ " "
+    }
+    // result = this.getBehind(result.trim(), ":")
+    return {strResult: result, nextPos: pos};
+  }
+
+  protected getBehind(input:string, split: string){
+    return input.split(split)[1].trim();
+  }
+  
+  protected renderPage(pageData:any): string {
+      //check documents https://mozilla.github.io/pdf.js/
+      let render_options = {
+          //replaces all occurrences of whitespace with standard spaces (0x20). The default value is `false`.
+          normalizeWhitespace: false,
+          //do not attempt to combine same line TextItem's. The default value is `false`.
+          disableCombineTextItems: false
+      }
+
+      let renderText = (textContent:any) => {
+        //fs.writeFileSync('lol.json', JSON.stringify(textContent));
+        let regex = /^[\d,.]+$/
+        let lastY, text = '';
+        for (let item of textContent.items) {
+            if (lastY == item.transform[5] || !lastY){
+                if(regex.test(item.str))
+                  text += "#"+item.str;
+                else 
+                  text +=  item.str;
+            }  
+            else{
+                text += '\n' + item.str;
+            }    
+            lastY = item.transform[5];
+        }
+        return text;
+      }
+  
+      return pageData.getTextContent(render_options).then(renderText);
+  }
+
+  
+
   protected async getDocLines() {
     try {
       let data = this.extracted ? this.extracted : await this.extractPDF();
@@ -55,10 +107,11 @@ export class PdfExtractor {
 
   protected async getTextInPages(document: PDFDocument) {
     let pageText: string[] = [];
+   
     for (let pageNum = 0; pageNum < document.getPageCount(); pageNum++) {
       let pageBuff = await this.getPageBuffer(document, pageNum);
       if (!pageBuff) continue;
-      let parser = await PdfParse(pageBuff);
+      let parser = await PdfParse(pageBuff, {pagerender: await this.renderPage});
       pageText.push(parser.text);
     }
     return pageText;
