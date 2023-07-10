@@ -1,0 +1,57 @@
+
+
+Đơn vị nhận, truyền và cung cấp giải pháp hóa đơn điện tử: Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), Điện thoại: 1800.1260#
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+BẢN THỂ HIỆN CỦA HÓA ĐƠN ĐIỆN TỬ
+(ELECTRONIC INVOICE DISPLAY)
+Ngày #(date)# #26# #tháng# #(month)# #06# #năm# #(year)# #2023#
+Mã của cơ quan thuế: 007936514CFF56457C93766A1E20C7A3EA#
+Tiep theo trang truoc - Trang 2 /3#
+Ký hiệu (Series)#: #1C23TDS#
+Số (Invoice No.)#: #00000568#
+Đơn vị bán hàng #(Seller)#:#CÔNG TY TNHH DOOSUN VIỆT NAM#
+Mã số thuế #(Tax code)#:#4#6#0#1#1#2#8#8#9#0#
+Địa chỉ #(Address)#:#Cụm công nghiệp Nguyên Gon, Phường Cải Đan, Thành phố Sông Công,Tỉnh Thái Nguyên, Việt Nam#
+Điện thoại #(Tel)#:#02083662577#
+Số tài khoản #(AC No.)#:#(USD) 39810370000155 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên#
+(VNĐ) 39810000019209 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên
+Họ và tên người mua hàng #(Buyer)#:# #
+Tên đơn vị #(Company's name)#:#CÔNG TY TNHH ELENTEC VIỆT NAM#
+Mã số thuế #(Tax code)#:#2500243660#
+Địa chỉ #(Address)#:#Lô 44F, 44J Khu công nghiệp Quang Minh, thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội#
+Hình thức thanh toán #(Payment method)#:#CK#Số tài khoản# #(AC No.)#:# #
+Ngân hàng #(Bank)#:# #
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+12#3#4#5#6=4x5#
+21Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-01#Chiếc#16.000#2.061#32.976.000#
+22Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-02#Chiếc#25.510#2.061#52.576.110#
+23Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-03#Chiếc#24.155#2.061#49.783.455#
+24Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-04#Chiếc#30.300#2.061#62.448.300#
+25Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-05#Chiếc#20.200#2.061#41.632.200#
+26Tài liệu hướng dẫn Model SOLID 2.0 PLUS - 3103-08515-00#Chiếc#131.400#137#18.001.800#
+27Tài liệu hướng dẫn Model SOLID 2.0 PLUS - 3103-08514-00#Chiếc#130.850#3.641#476.424.850#
+28Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08510-00#Chiếc#2.750#1.466#4.031.500#
+29Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08510-01#Chiếc#2.750#1.466#4.031.500#
+30Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08510-02#Chiếc#2.750#1.466#4.031.500#
+31Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08510-03#Chiếc#2.750#1.466#4.031.500#
+32Tài liệu hướng dẫn Model SOLID 2.0 PLUS - 3103-08513-00#Chiếc#12.850#2.271#29.182.350#
+33Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08511-00#Chiếc#2.030#1.443#2.929.290#
+34Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08511-01#Chiếc#2.030#1.443#2.929.290#
+35Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08511-02#Chiếc#2.030#1.443#2.929.290#
+36Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08511-03#Chiếc#2.030#1.443#2.929.290#
+37Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08512-00#Chiếc#2.030#1.168#2.371.040#
+38Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08512-01#Chiếc#2.030#1.168#2.371.040#
+39Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08512-02#Chiếc#2.030#1.168#2.371.040#
+40Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08512-03#Chiếc#2.030#1.168#2.371.040#

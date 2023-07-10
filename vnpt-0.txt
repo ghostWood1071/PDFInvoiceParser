@@ -1,0 +1,57 @@
+
+
+Đơn vị nhận, truyền và cung cấp giải pháp hóa đơn điện tử: Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), Điện thoại: 1800.1260#
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+BẢN THỂ HIỆN CỦA HÓA ĐƠN ĐIỆN TỬ
+(ELECTRONIC INVOICE DISPLAY)
+Ngày #(date)# #26# #tháng# #(month)# #06# #năm# #(year)# #2023#
+Mã của cơ quan thuế: 007936514CFF56457C93766A1E20C7A3EA#
+Trang 1/ 3
+Ký hiệu (Series)#: #1C23TDS#
+Số (Invoice No.)#: #00000568#
+Đơn vị bán hàng #(Seller)#:#CÔNG TY TNHH DOOSUN VIỆT NAM#
+Mã số thuế #(Tax code)#:#4#6#0#1#1#2#8#8#9#0#
+Địa chỉ #(Address)#:#Cụm công nghiệp Nguyên Gon, Phường Cải Đan, Thành phố Sông Công,Tỉnh Thái Nguyên, Việt Nam#
+Điện thoại #(Tel)#:#02083662577#
+Số tài khoản #(AC No.)#:#(USD) 39810370000155 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên#
+(VNĐ) 39810000019209 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên
+Họ và tên người mua hàng #(Buyer)#:# #
+Tên đơn vị #(Company's name)#:#CÔNG TY TNHH ELENTEC VIỆT NAM#
+Mã số thuế #(Tax code)#:#2500243660#
+Địa chỉ #(Address)#:#Lô 44F, 44J Khu công nghiệp Quang Minh, thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội#
+Hình thức thanh toán #(Payment method)#:#CK#Số tài khoản# #(AC No.)#:# #
+Ngân hàng #(Bank)#:# #
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+12#3#4#5#6=4x5#
+1Hộp carton bằng giấy không sóng Model SOLID 2.0 - 3103-07730-01#Chiếc#135.609#25.808#3.499.797.072#
+2Hộp carton bằng giấy không sóng Model SOLID 2.0 - 3101-08014-01#Chiếc#129.550#687#89.000.850#
+3Tấm giấy lót Model SOLID 2.0 - 3103-07368-00#Chiếc#128.100#160#20.496.000#
+4Hộp carton bằng giấy không sóng Model SOLID 2.0 - 3103-07370-01#Chiếc#135.450#870#117.841.500#
+5Tấm giấy lót Model SOLID 2.0 - 3103-07371-01#Chiếc#138.000#160#22.080.000#
+6Hộp carton bằng giấy không sóng Model SOLID 2.0 - 3103-07373-00#Chiếc#141.380#939#132.755.820#
+7Tấm giấy lót Model SOLID 2.0 - 3103-07458-00#Chiếc#5.700#665#3.790.500#
+8Tấm giấy lót Model SOLID 2.0 - 3103-07460-00#Chiếc#7.200#252#1.814.400#
+9Tấm giấy lót Model SOLID 2.0 - 3103-07371-02#Chiếc#90#321#28.890#
+10Hộp carton bằng giấy không sóng Model P1EZ - 3103-08197-00#Chiếc#8.000#16.607#132.856.000#
+11Hộp carton bằng giấy không sóng Model P1EZ - 3103-08191-00#Chiếc#8.000#2.102#16.816.000#
+12Tấm giấy lót Model P1EZ - 3103-08192-00#Chiếc#8.000#174#1.392.000#
+13Hộp carton bằng giấy không sóng Model P1EZ - 3103-08456-00#Chiếc#2.150#1.800#3.870.000#
+14Hộp carton bằng giấy không sóng Model P1EZ - 3103-08456-01#Chiếc#1.400#1.800#2.520.000#
+15Hộp carton bằng giấy không sóng Model P1EZ - 3103-08456-02#Chiếc#1.400#1.800#2.520.000#
+16Hộp carton bằng giấy không sóng Model P1EZ - 3103-08456-03#Chiếc#1.400#1.800#2.520.000#
+17Hộp carton bằng giấy không sóng Model P1EZ - 3103-08456-04#Chiếc#120#1.800#216.000#
+18Tài liệu hướng dẫn Model P1EZ - 3103-08195-05#Chiếc#8.000#137#1.096.000#
+19Tài liệu hướng dẫn Model P1EZ - 3103-08358-05#Chiếc#8.000#5.741#45.928.000#
+20Hộp carton bằng giấy không sóng Model SOLID 2.0 PLUS - 3103-08509-00#Chiếc#20.200#2.061#41.632.200#

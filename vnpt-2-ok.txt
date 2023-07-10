@@ -1,0 +1,90 @@
+
+
+Đơn vị nhận, truyền và cung cấp giải pháp hóa đơn điện tử: Tập đoàn Bưu chính Viễn thông Việt Nam (VNPT), Điện thoại: 1800.1260
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+BẢN THỂ HIỆN CỦA HÓA ĐƠN ĐIỆN TỬ
+(ELECTRONIC INVOICE DISPLAY)
+Ngày (date) #26 tháng (month) #06 năm (year) #2023
+Mã của cơ quan thuế: 007936514CFF56457C93766A1E20C7A3EA
+Tiep theo trang truoc - Trang 3 /3
+Ký hiệu (Series): 1C23TDS
+Số (Invoice No.): #00000568
+NGƯỜI MUA HÀNG (Buyer)
+(Ký, ghi rõ họ tên)
+(Sign, full name)
+CƠ QUAN THUẾ
+(Ký, đóng dấu, ghi rõ họ tên)
+(Sign, stamp, full name)
+Signature Valid
+Ký bởi: CN=TỔNG CỤC THUẾ,O=BỘ
+TÀI CHÍNH,L=Hà Nội,C=VN
+Ký ngày: 26/06/2023 14:58:19
+NGƯỜI BÁN HÀNG (Seller)
+(Ký, đóng dấu, ghi rõ họ tên)
+(Sign, stamp, full name)
+Signature Valid
+Ký bởi: CÔNG TY TNHH DOOSUN VIỆT
+NAM
+Ký ngày: 26/06/2023 14:58:18
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)
+Tra cư
+́
+u ho
+́
+a đơn ta
+̣
+i website: https://4601128890-tt78.vnpt-invoice.com.vn . Mã tra cứu: 184801001C23TDS568498674
+Đơn vị bán hàng (Seller):CÔNG TY TNHH DOOSUN VIỆT NAM
+Mã số thuế (Tax code):#4#6#0#1#1#2#8#8#9#0
+Địa chỉ (Address):Cụm công nghiệp Nguyên Gon, Phường Cải Đan, Thành phố Sông Công,Tỉnh Thái Nguyên, Việt Nam
+Điện thoại (Tel):#02083662577
+Số tài khoản (AC No.):(USD) 39810370000155 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên
+(VNĐ) 39810000019209 Tại ngân hàng BIDV - Chi nhánh Nam Thái Nguyên
+Họ và tên người mua hàng (Buyer): 
+Tên đơn vị (Company's name):CÔNG TY TNHH ELENTEC VIỆT NAM
+Mã số thuế (Tax code):#2500243660
+Địa chỉ (Address):Lô 44F, 44J Khu công nghiệp Quang Minh, thị trấn Chi Đông, Huyện Mê Linh, Thành phố Hà Nội
+Hình thức thanh toán (Payment method):CKSố tài khoản (AC No.): 
+Ngân hàng (Bank): 
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+1#2#3#4#56=4x5
+41Hộp carton bằng giấy không sóng Model P1EZ - 3103-08410-02Chiếc#90#1.008#90.720
+42Hộp carton bằng giấy không sóng Model P1EZ - 3103-08411-02Chiếc#90#939#84.510
+43Tài liệu hướng dẫn Model P1EZ - 3103-08415-02Chiếc#90#1.672#150.480
+44Tài liệu hướng dẫn Model P1EZ - 3103-08414-02Chiếc#90#1.763#158.670
+45Hộp carton bằng giấy sóng Model SOLID 2.0 - 3103-07744-00Chiếc#300#1.466#439.800
+46Hộp carton bằng giấy sóng Model SOLID 2.0 - 3103-07743-00Chiếc#629#6.138#3.860.802
+47Hộp carton bằng giấy sóng Model SOLID 2.0 - 3103-07742-00Chiếc#7.307#10.076#73.625.332
+48Tấm bìa carton bằng giấy sóng Model SOLID 2.0 - 3103-07378-00Chiếc#7.050#1.420#10.011.000
+49Vách đan carton bằng giấy sóng Model P1EZ - 3103-07772-00Chiếc#2.000#504#1.008.000
+50Vách đan carton bằng giấy sóng Model P1EZ - 3103-07773-00Chiếc#3.000#412#1.236.000
+51Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07776-00Chiếc#350#252#88.200
+52Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07780-00Chiếc#200#527#105.400
+53Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07781-00Chiếc#200#321#64.200
+54Hộp carton bằng giấy sóng Model P1EZ - 3103-08200-00Chiếc#200#13.999#2.799.800
+55Tấm bìa carton bằng giấy sóng Model P1EZ - 3103-08201-00Chiếc#250#769#192.250
+56Vách đan carton bằng giấy sóng Model P1EZ - 3103-08202-00Chiếc#250#1.562#390.500
+57Hộp carton bằng giấy sóng Model P1EZ - 3103-08233-00Chiếc#60#20.890#1.253.400
+58Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07534-01Chiếc#6#1.283#7.698
+59Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07534-02Chiếc#6#848#5.088
+60Vách đan carton bằng giấy sóng Model SOLID 2.0 - 3103-07534-03Chiếc#6#642#3.852
+Cộng tiền hàng (Total amount):#5.034.899.319
+Thuế suất GTGT (VAT rate): 10%Tiền thuế GTGT (VAT amount):#503.489.932
+Tỷ giá (Exchange rate):
+Tổng cộng tiền thanh toán (Total
+payment):
+5.538.389.251
+Số tiền viết bằng chữ (In words):
+Năm tỷ, năm trăm ba mươi tám triệu, ba trăm tám mươi chín nghìn, hai trăm năm mươi mốt đồng
