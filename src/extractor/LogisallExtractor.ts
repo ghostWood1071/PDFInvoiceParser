@@ -39,12 +39,8 @@ export class LOGISALInvoiceExtractor extends PdfExtractor {
     return { product_name, unit };
   }
 
-  private async processLines(pageLines: string[]) {
-    // let rowRegex = /[0-9]+[A-Z]+|^\d+$/;
-    // let exchangeRegex = /Tỷ giá:/g;
-    // let rateVATstartRegex = /Thuế suất/;
+  private processPage(pageLines: string[]) {
     let result = new PageContent();
-    //   if (pageLines.length <= 3) return result;
 
     let lineTmp = this.getUntil(pageLines, 0, "(Invoice code):");
     let nextPos = lineTmp.nextPos;
@@ -126,11 +122,28 @@ export class LOGISALInvoiceExtractor extends PdfExtractor {
   }
 
   async getResult() {
-    let data = await this.docLines;
-    let result = await data?.map(
-      async (x) => (x = JSON.stringify(await this.processLines(x)))
-    );
-
-    return result;
+    let pageLines = await this.docLines;
+    if (pageLines) {
+      if (pageLines.length >= 1) {
+        let data = this.processPage(pageLines[0]);
+        return data;
+      } else {
+        let result: PageContent = this.processPage(pageLines[0]);
+        for (let pageNum = 1; pageNum < pageLines.length; pageNum++) {
+          let tmpPage: PageContent = this.processPage(pageLines[pageNum]);
+          result.exchange_rate = tmpPage.exchange_rate
+            ? tmpPage.exchange_rate
+            : result.exchange_rate;
+          result.vat_rate =
+            tmpPage.vat_rate != 0 || tmpPage.vat_rate != null
+              ? tmpPage.vat_rate
+              : result.vat_rate;
+          result.table = result.table.concat(tmpPage.table);
+        }
+        return result;
+      }
+    } else {
+      throw new Error("Không thể đọc file PDF");
+    }
   }
 }

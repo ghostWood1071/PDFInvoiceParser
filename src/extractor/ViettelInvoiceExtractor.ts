@@ -9,7 +9,7 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
-  private async processLines(pageLines: string[]) {
+  private processPage(pageLines: string[]) {
     let result: PageContent = new PageContent();
     let parts: PagePart = PagePart.NONE;
 
@@ -160,12 +160,28 @@ export class ViettelInvoiceExtractor extends PdfExtractor {
   }
 
   async getResult() {
-    let data = await this.docLines;
-    let result = await data?.map(
-      async (x) => (x = JSON.stringify(await this.processLines(x)))
-    );
-
-    // let result = data ? await this.processLines(data[1]) : null;
-    return result;
+    let pageLines = await this.docLines;
+    if (pageLines) {
+      if (pageLines.length >= 1) {
+        let data = this.processPage(pageLines[0]);
+        return data;
+      } else {
+        let result: PageContent = this.processPage(pageLines[0]);
+        for (let pageNum = 1; pageNum < pageLines.length; pageNum++) {
+          let tmpPage: PageContent = this.processPage(pageLines[pageNum]);
+          result.exchange_rate = tmpPage.exchange_rate
+            ? tmpPage.exchange_rate
+            : result.exchange_rate;
+          result.vat_rate =
+            tmpPage.vat_rate != 0 || tmpPage.vat_rate != null
+              ? tmpPage.vat_rate
+              : result.vat_rate;
+          result.table = result.table.concat(tmpPage.table);
+        }
+        return result;
+      }
+    } else {
+      throw new Error("Không thể đọc file PDF");
+    }
   }
 }
