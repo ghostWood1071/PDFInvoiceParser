@@ -1,9 +1,12 @@
 import * as fs from "fs";
 import PdfParse from "pdf-parse";
+import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
+import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
+import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
@@ -51,17 +54,17 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // });
 
 // ********** SEOJIN AUTO **********
-let extractor = new SEOJINAUTOInvoiceExtractor(
-  "./src/pdf/2C23TAT_00000215.pdf"
-);
+// let extractor = new SEOJINAUTOInvoiceExtractor(
+//   "./src/pdf/2C23TAT_00000215.pdf"
+// );
 // extractor.getDocInfo().then((res)=>{
 //   console.log(res);
 // })
 // extractor.saveRawText("vnpt");
 
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
 
 // extractor.getDocInfo().then((res) => {
 //   let obj = JSON.parse(res);
@@ -121,9 +124,9 @@ extractor.getResult().then((res) => {
 
 // ********** SOFTDREAMS **********
 
-// let extractor = new PdfExtractor(
-//   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
-// );
+let extractor = new SoftDreamsInvoiceExtractor(
+  "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
+);
 
 // extractor.getDocInfo().then((res) => {
 //   let obj = JSON.parse(res);
@@ -137,6 +140,12 @@ extractor.getResult().then((res) => {
 //   };
 //   fs.writeFileSync("./infoJson/softdreams.json", JSON.stringify(json));
 // });
+
+// extractor.saveRawText("softdream");
+
+extractor.getResult().then((res) => {
+  console.log(res);
+});
 
 // ********** BL 1155302 **********
 
@@ -194,7 +203,9 @@ extractor.getResult().then((res) => {
 
 // ********** NAGASE **********
 
-// let extractor = new PdfExtractor("./src/pdf/6/NAGASE_3482_27.03.2023.pdf");
+// let extractor = new PdfExtractor(
+//   "./src/pdf/6/NAGASE_3482_27.03.2023.pdf"
+// );
 
 // extractor.getDocInfo().then((res) => {
 //   let obj = JSON.parse(res);
@@ -209,10 +220,13 @@ extractor.getResult().then((res) => {
 
 //   fs.writeFileSync("./infoJson/nagase.json", JSON.stringify(json));
 // });
+// extractor.saveRawText("EInvoice");
 
 // ********** 3A **********
 
-// let extractor = new PdfExtractor("./src/pdf/7/DAI LOI_00000437_30.05.2023.pdf");
+// let extractor = new ThreeAInvoiceExtractor(
+//   "./src/pdf/7/DAI LOI_00000437_30.05.2023.pdf"
+// );
 
 // extractor.getDocInfo().then((res) => {
 //   let obj = JSON.parse(res);
@@ -226,6 +240,12 @@ extractor.getResult().then((res) => {
 //   };
 
 //   fs.writeFileSync("./infoJson/3a.json", JSON.stringify(json));
+// });
+//
+// extractor.saveRawText("3a");
+
+// extractor.getResult().then((res) => {
+//   console.log(res);
 // });
 
 // ********** ??? **********
@@ -264,7 +284,7 @@ extractor.getResult().then((res) => {
 
 // ********** EFY **********
 
-// let extractor = new PdfExtractor(
+// let extractor = new EFYInvoiceExtractor(
 //   "./src/pdf/9/ihoadon.vn_2300755090_851_31052023 JW T5-02.pdf"
 // );
 
@@ -281,6 +301,12 @@ extractor.getResult().then((res) => {
 
 //   fs.writeFileSync("./infoJson/EFY.json", JSON.stringify(json));
 // });
+
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+
+// extractor.saveRawText("efy");
 
 // ********** LOGISALL **********
 

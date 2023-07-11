@@ -1,0 +1,54 @@
+
+
+#Điện thoại#(Tel):#0222.3952.313
+Số tài khoản#(A/C):
+CÔNG TY TNHH JWORLD VINA
+Mã số thuế#(Tax code):#2 3 0 0 7 5 5 0 9 0
+Địa chỉ#(Address):#Lô số 085/086A1, Số 11, Đường 10, Khu công nghiệp, Đô thị và Dịch vụ
+VSIP Bắc Ninh, Xã Đại Đồng, Huyện Tiên Du, Tỉnh Bắc Ninh, Việt Nam
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+(Bản thể hiện của hóa đơn điện tử)
+(E-Invoice viewer)
+Mã CQT:#0029D1902FCA4F42A487E5F97A6D3CDB00
+Ngày# #(Date)# #31# tháng# #(month)# #05# #năm# #(year)# #2023
+Ký hiệu# #(Serial No):
+1C23TVN
+Số# #(No):
+851
+Mã số thuế#(Tax code):#2500243660
+Số tài khoản#(A/C):
+Hình thức thanh #toán#(Pay.method):#TM/CK#Đơn vị tiền tệ#(Currency):#VND
+Họ tên người mua hàng#(Buyer):
+Tên đơn vị#(Co.name):#CÔNG TY TNHH ELENTEC VIỆT NAM
+Địa chỉ#(Address):#Lô 44F, 44J Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh,
+Thành phố Hà Nội, Việt Nam
+STT
+(No)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+717.781.081#Cộng tiền #hàng #(Total before VAT):
+Thuế suất GTGT #(VAT rate): #10 %#71.778.108#Tiền thuế GTGT #(VAT amount):
+789.559.189#Tổng tiền thanh toán# #(Total amount):
+Số tiền viết bằng chữ#(Total amount in words):#Bảy trăm tám mươi chín triệu năm trăm năm mươi chín nghìn một trăm tám
+mươi chín đồng chẵn.
+Người mua hàng#(Buyer)
+(Ký, ghi rõ họ, tên)
+(Signature & full name)
+Người bán hàng#(Seller)
+(Ký, ghi rõ họ, tên)
+(Signature & full name)
+Signature Valid - EFYCA
+Ký bởi: #CÔNG TY TNHH JWORLD VINA
+Ký ngày: #31/05/2023
+tiep theo trang truoc trang 2/2
+Tra cứu Hóa đơn điện tử tại: #http://tracuu.ihoadon.vn#Mã tra cứu: #G4OROFLOM823
+(Tổ chức truyền nhận và cung cấp giải pháp HĐĐT: Công ty CP công nghệ tin học EFY Việt Nam, MST: 0102519041, #www.efy.com.vn#, ĐT: 19006142)
