@@ -3,10 +3,12 @@ import PdfParse from "pdf-parse";
 import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
-import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
+// import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
+import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
+import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 // async function test(fileName:string){
 //     let buff = await fs.readFileSync(fileName);
 //     let data = await PdfParse(buff);
@@ -51,17 +53,17 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // });
 
 // ********** SEOJIN AUTO **********
-let extractor = new SEOJINAUTOInvoiceExtractor(
-  "./src/pdf/2C23TAT_00000215.pdf"
+let extractor = new MInvoice2Extractor(
+  "./src/pdf/HONK_88_30.09.2022.pdf"
 );
-// extractor.getDocInfo().then((res)=>{
-//   console.log(res);
-// })
+extractor.getResult().then((res)=>{
+  console.log(res);
+})
 // extractor.saveRawText("vnpt");
 
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+// extractor.saveRawText("minvoice").then((res: any)=> {
+//   // console.log(res);
+// });
 
 // extractor.getDocInfo().then((res) => {
 //   let obj = JSON.parse(res);
