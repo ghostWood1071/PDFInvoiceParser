@@ -34,9 +34,6 @@ export class VNPInvoiceExtractor extends PdfExtractor {
         text = "";
       for (let item of textContent.items) {
         if (lastY == item.transform[5] || !lastY) {
-          //   if(regex.test(item.str))
-          //     text += "#"+item.str;
-          //   else
           text += item.str + "#";
         } else {
           text += "\n" + item.str;
