@@ -107,9 +107,8 @@ export class VNPInvoiceExtractor extends PdfExtractor {
     result.buyer.taxCode = this.getBehind(lineTmp.strResult, ":")
       .replace("#", "")
       .replace(new RegExp("#", "g"), "");
-    nextPos =
-      this.getUntil(pageLines, lineTmp.nextPos, "1#2#3#4#56=4x5").nextPos + 1;
-
+    lineTmp = this.getUntil(pageLines, lineTmp.nextPos, "12#3#4#5#6=4x5#");
+    nextPos = lineTmp.nextPos+1;
     for (let linePos = nextPos; linePos < pageLines.length; linePos++) {
       if (exchangeRegex.test(pageLines[linePos])) {
         let tmp_rate = pageLines[linePos].split("#")[2];

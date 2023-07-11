@@ -51,11 +51,13 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // });
 
 // ********** SEOJIN AUTO **********
-let extractor = new meInvoiceExtractor(
-  "./src/pdf/meinvoice.pdf"
+let extractor = new SEOJINAUTOInvoiceExtractor(
+  "./src/pdf/2C23TAT_00000215.pdf"
 );
-
-// extractor.saveRawText("meInvoice");
+// extractor.getDocInfo().then((res)=>{
+//   console.log(res);
+// })
+// extractor.saveRawText("vnpt");
 
 extractor.getResult().then((res) => {
   console.log(res);
