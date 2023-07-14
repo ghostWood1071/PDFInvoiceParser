@@ -1,6 +1,7 @@
 
 
 CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)#
+#CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)
 2400801174
 Lô E, Khu Công Nghiệp Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh
 Bắc Giang, Việt Nam
@@ -23,6 +24,21 @@ Trang 1/1
 ::#
 Ký hiệu(Symbol)#:#2C23TLX#
 Số(Invoice No)#:#5#
+0731000688988#VIETCOMBANK- BAC GIANG BRANCH
+0731-370-686288#VIETCOMBANK- BAC GIANG BRANCH
+CÔNG TY TNHH LUXSHARE-ICT (VÂN TRUNG)
+2400870957
+Lô CNSG-01, CNSG-03, CNSG-05, CNSG-08, HCDV2, KCN Vân Trung, Xã Vân Trung, Huyện Việt Yên,
+Tỉnh Bắc Giang, Việt Nam
+Chuyển khoản
+:
+:
+:
+:#:
+:#:
+:#:
+Ký hiệu#(Symbol)#:#2C23TLX
+Số#(Invoice No)#:#134
 :
 :
 :
@@ -69,3 +85,76 @@ Mã nhận hóa đơn: #0BAA46306E#tra cứu tại#: #luxshareictvietnam.einvoic
 Signature Valid 
 Ký bởi: CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)
 Ký ngày: 07/01/2023#
+HÓA ĐƠN BÁN HÀNG #(INVOICE)
+(Dành cho tổ chức, cá nhân trong khu phi thuế quan)
+Ngày#(Date)#03#tháng#(month)#03#năm#(year)#2023
+(HÓA ĐƠN CHUYỂN ĐỔI TỪ HÓA ĐƠN ĐIỆN TỬ)
+(TRANSFORM INVOICE FROM E-INVOICE)
+Mã của CQT: # 0035BB0510826240A6B7723C6EEBC85366
+STT
+(No.)
+Mã hàng hóa,
+dịch vụ
+(Item no)
+Tên hàng hóa, dịch vụ
+(Description)
+ĐVT
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+1#2#3#4#5#6#7 = 5 x 6
+Xuất bán thanh lý vật tư
+1
+Nguồn adapter của bộ sạc dùng cho macbook
+A1882, điện áp: đầu vào: 100-
+240V~0.75A(0,75A)50-60Hz(USB PD);đầu ra:
+20.0V*1.5A or 15.0V*2.0A or 9.0V*3.0A or
+5.0V*3.0A
+PC#2#1.7400#3.48
+2
+Dây cáp sạc dùng để sạc cho đồng hồ thông
+minh (đã gắn đầu kết nối, vỏ bọc bằng nhựa),
+model A2256, công suất: 5W/ 220V, kích
+thước 1000 + - 10mm
+PC#20#0.4300#8.60
+3
+Dây cáp đã gắn đầu kết nối, công
+suất:60W/20V, kt: 2000mm
+PC#12#0.2800#3.36
+4
+Củ điện sạc pin cho máy tính laptop macbook,
+model A1555, 125V, 2.5A
+PC#15#0.1000#1.50
+5
+Bộ chuyển đổi nguồn điện Liteon,45W P/N
+069-8035
+PC#10#2.9800#29.80
+Tỷ giá #(Exchange rate)#: #23.525 VND/USD
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Trang 1/2
+(Xuất bởi phần mềm EInvoice, Công ty TNHH Phát triển công nghệ Thái Sơn 
+- MST: 0101300842 - www.einvoice.vn)
+Tên đơn vị bán hàng#(Seller)
+Mã số thuế#(Tax code)
+Địa chỉ#(Address)
+Điện thoại#(Tel)#Fax
+Số tài khoản VNĐ#(VNĐ Account)#Tại
+Số tài khoản USD#(USD Account)#Tại
+Tên đơn vị mua hàng#(Buyer)
+Mã số thuế#(Tax code)
+Địa chỉ#(Address)
+Điện thoại#(Tel)
+Số tài khoản#(Account)
+Hình thức thanh toán#(Payment method)
