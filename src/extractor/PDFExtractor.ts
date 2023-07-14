@@ -2,6 +2,115 @@ import * as fs from "fs";
 import { PDFDocument, PDFPage } from "pdf-lib";
 import PdfParse from "pdf-parse";
 
+const pdfSupplier = [
+  {
+    "File_name": "A-TECK_49_29.09.2022_TEM.pdf",
+    "Creater": null,
+    "Producer": "iTextSharp™ 5.4.5 ©2000-2013 1T3XT BVBA (AGPL-version) (AGPL-version)",
+    "Fournisseur": "SOFTDREAMS",
+    "MST": "0105987432"
+  },
+  {
+    "File_name": "BL 1155302.pdf",
+    "Creater": "PScript5.dll Version 5.2.2",
+    "Producer": "Acrobat Distiller 21.0 (Windows)",
+    "Fournisseur": "",
+    "MST": ""
+  },
+  {
+    "File_name": "HONK_88_30.09.2022.pdf",
+    "Creater": null,
+    "Producer": "Developer Express Inc. DXperience (tm) v16.1.2",
+    "Fournisseur": "M-Invoice",
+    "MST": "0106026495-001"
+  },
+  {
+    "File_name": "CHEONG LIM_00000017.pdf",
+    "Creater": null,
+    "Producer": "HiQPdf 11.1",
+    "Fournisseur": "MeInvoice-1",
+    "MST": "0101243150"
+  },
+  {    //seojin
+      "Creator": "Stimulsoft Reports 2016.3.0 from 7 December 2016",
+      "Producer": "Stimulsoft Reports",
+      "Title": "Hóa đơn",
+      "CreationDate": "D:20230131202027+07'00'",
+      "ModDate": "D:20230131202027+07'00'",
+      "Fournisseur": "MeInvoice-2"
+  },
+  {
+      "File_name": "LOGISALL_00000064_30.05.2023.pdf",
+      "Title": "Report",
+      "Creater": "Stimulsoft Reports 2016.3.0 from 7 December 2016",
+      "Producer": "Stimulsoft Reports",
+      "Fournisseur": "MeInvoice-3",
+      "MST": "0101243150"
+  },
+  {
+    "File_name": "NAGASE_3482_27.03.2023.pdf",
+    "Creater": null,
+    "Producer": "HiQPdf 9.12",
+    "Fournisseur": "EInvoice",
+    "MST": "0101300842"
+  },
+  {
+    "File_name": "DAI LOI_00000437_30.05.2023.pdf",
+    "Creater": null,
+    "Producer": "Developer Express Inc. DXperience (tm) v15.2.9",
+    "Fournisseur": "3A",
+    "MST": "0108516079"
+  },
+  {
+    "File_name": "INV T3.pdf",
+    "Creater": "Form ZEX_SMART_CI_STANDARD EN",
+    "Producer": "SAP NetWeaver 754 ",
+    "Fournisseur": "",
+    "MST": ""
+  },
+  {
+    "File_name": "INV.pdf",
+    "Creater": "Microsoft® Excel® 2016",
+    "Producer": "Microsoft® Excel® 2016",
+    "Fournisseur": "",
+    "MST": ""
+  },
+  {
+    "File_name": "ihoadon.vn_2300755090_851_31052023 JW T5-02.pdf",
+    "Creater": null,
+    "Producer": "EVO HTML to PDF Converter 8.0",
+    "Fournisseur": "EFY",
+    "MST": "0102519041"
+  },
+  {
+    "File_name": "MAGTRON__28_27.05.2023.pdf",
+    "Creater": null,
+    "Producer": "Developer Express Inc. DXperience (tm) v16.1.2",
+    "Fournisseur": "M-Invoice",
+    "MST": "0106026495"
+  },
+  {
+    "File_name": "1_001_C23TDS_568_18480 DOOSUN.pdf",
+    "Creater": "wkhtmltopdf 0.12.1.1",
+    "Producer": "Qt 4.8.6",
+    "Fournisseur": "VNPT",
+    "MST": null
+  },
+  {
+    "File_name": "4601194212-C23TVN113.pdf",
+    "Creater": "Apache FOP Version 2.2",
+    "Producer": "Apache FOP Version 2.2",
+    "Fournisseur": "VIETTEL",
+    "MST": "0100109106"
+  }, 
+  {
+      "Creator": "Microsoft Reporting Services 14.0.0.0",
+      "Producer": "Microsoft Reporting Services PDF Rendering Extension 14.0.0.0",
+      "CreationDate": "D:20230215171219+07'00'",
+      "ModDate": "D:20230215195049+07'00'",
+      "Fournisseur": "FAST"
+  }
+];
 export interface IExtractable {
   extractInfo(): any;
   extractBuyer(): any;
@@ -19,10 +128,45 @@ export class PdfExtractor {
     this.fileName = fileName;
   }
 
+  private getSupplierRegex(suppliers:any){
+    let supplierNames:string[] = [];
+    for (let supplier of suppliers){
+      supplierNames.push(supplier.Fournisseur); 
+    }
+    let regexString = supplierNames.join("|");
+    return new RegExp(regexString, "g");
+  }
+
+  
+  protected async getSupplier(lines:string[], suppliers: any){
+    let supplierRegex = this.getSupplierRegex(suppliers);
+    let regex = /cung cấp giải pháp|Phần mềm được cung cấp bởi|bởi phần mềm|từ Phần mềm|Hóa Đơn Điện Tử/g;
+    for(let line in lines){
+      if(regex.test(line)){
+        if(supplierRegex.test(line))
+          return supplierRegex.exec(line)?.[0];
+      }
+    }
+  }
+
   async getDocInfo() {
     let fileBuff = await fs.readFileSync(this.fileName);
     let parser = await PdfParse(fileBuff);
-    return JSON.stringify(parser.info);
+    let pdfInfo = parser.info;
+    if(pdfInfo)
+      return pdfInfo;
+    let docLines = await this.getDocLines();
+    if(docLines){
+      let supplier = await this.getSupplier(docLines[0], pdfSupplier);
+      return supplier
+    } 
+    return null;
+  }
+
+  async getMetadata() {
+    let fileBuff = await fs.readFileSync(this.fileName);
+    let parser = await PdfParse(fileBuff);
+    return parser.metadata;
   }
 
   protected getUntil(pageLines: string[], posPart: number, ending: string) {
@@ -60,6 +204,7 @@ export class PdfExtractor {
         if (lastY == item.transform[5] || !lastY) {
           if (regex.test(item.str)) text += "#" + item.str;
           else text += item.str;
+          // text += "\n" + item.str;
         } else {
           text += "\n" + item.str;
         }

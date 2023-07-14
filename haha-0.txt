@@ -1,0 +1,60 @@
+
+
+CÔNG TY TNHH CÔNG NGHỆ ECOLIV#
+Mã số thuế(Tax code)#:##2##3##0##1##1##2##5##4##5##4#
+Địa chỉ(Address)#:#Số126 Nguyễn Đăng Đạo, Phường Đại Phúc, Thành phố Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam#
+Điện thoại(Tel)#:#
+Số tài khoản(Bank account)#:#
+Họ tên người mua hàng(Buyer)#:#
+Tên đơn vị(Company's name)#:#CÔNG TY TNHH LUXSHARE - ICT (VÂN TRUNG)#
+Mã số thuế(Tax code)#:##2##4##0##0##8##7##0##9##5##7#
+Địa chỉ(Address)#:#Lô CNSG-01, CNSG-03, CNSG-05, CNSG-08, HCDV2, khu công nghiệp Vân Trung, xã Vân#
+Trung, huyện Việt Yên, tỉnh Bắc Giang, Việt Nam
+Hình thức thanh toán(Payment method)#:#TM/CK#Số tài khoản#(Bank account)#:#
+Đồng tiền thanh toán(Payment Currency)#:#VND#
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày(Date)##01#tháng#(month)##02#năm#(year)##2023#
+Mã CQT(Code)#:#0017C5E620AFE0490A9CA95D110E557B98#
+Ký hiệu(Serial)#:#1C23TEC#
+Số(No.)#:#
+00000090
+STT
+(No)
+Tên hàng hóa, dịch vụ
+(Name of goods and services)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit price)
+Thành tiền
+(Amount)
+1
+Camera quan sát model DS-2CD2325FV3-IS, nhãn
+hiệu Hikivision. Điện áp 12V, sản xuất năm 2022, mới
+100%
+SET#7,00##2.200.000,00##15.400.000#
+2
+Hạt mạng RJ45 Cat6 FL-RJC6U-13STE, dòng điện
+dưới 16A, nhãn hiệu Fastlink
+PCS#40,00##3.500,00##140.000#
+3
+Dây mạng Cat 6 FL-61BUI-08 không có đầu nối,
+không dùng cho viễn thông, điện áp 48V, cách điện
+nhiều lớp bằng plastic
+BOX#3,00##2.635.000,00##7.905.000#
+4
+Thiết bị chuyển mạch DS-3E2326P-H. Sản xuất năm
+2022 điện áp 100-240V, Nhãn hiệu Hikvision, mới
+100%.
+SET#1,00##13.500.000,00##13.500.000#
+5Ống nhựa luồn dây PVC D25 2.92m/cây#Mét##252,00##18.000,00##4.536.000#
+6Ống ruột gà D25 màu trắng#Mét##50,00##16.000,00##800.000#
+(Theo PO đặt hàng số 4700242660)
+Cộng tiền hàng(Total amount excl. VAT)#:##42.281.000#
+Thuế suất GTGT(VAT rate)#:#0%#Tiền thuế GTGT#(VAT amount)#:##0#
+Tổng tiền thanh toán(Total amount)#:##42.281.000#
+Số tiền viết bằng chữ(Total amount in words)#:#Bốn mươi hai triệu hai trăm tám mươi mốt nghìn đồng chẵn.#
+1/2

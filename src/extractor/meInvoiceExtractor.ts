@@ -9,24 +9,22 @@ export class meInvoiceExtractor extends PdfExtractor {
     }
 
     protected override renderPage(pageData:any): string {
-        //check documents https://mozilla.github.io/pdf.js/
         let render_options = {
-            //replaces all occurrences of whitespace with standard spaces (0x20). The default value is `false`.
             normalizeWhitespace: false,
-            //do not attempt to combine same line TextItem's. The default value is `false`.
             disableCombineTextItems: false
         }
-  
         let renderText = (textContent:any) => {
-          //fs.writeFileSync('lol.json', JSON.stringify(textContent));
           let regex = /^[\d,.]+$/
           let lastY, text = '';
           for (let item of textContent.items) {
               if (lastY == item.transform[5] || !lastY){
-                //   if(regex.test(item.str))
-                //     text += "#"+item.str;
-                //   else 
-                    text +=  item.str+"#";
+                    if (regex.test(item.str)){
+                        text += "#"+item.str+"#";
+                    }
+                    else if(item.str.endsWith(" "))
+                        text+=item.str;
+                    else
+                        text +=  item.str+"#";
               }  
               else{
                   text += '\n' + item.str;
@@ -35,7 +33,6 @@ export class meInvoiceExtractor extends PdfExtractor {
           }
           return text;
         }
-    
         return pageData.getTextContent(render_options).then(renderText);
     }
 
@@ -44,66 +41,80 @@ export class meInvoiceExtractor extends PdfExtractor {
         return new Date(`${raw[4]}-${raw[1]}-${raw[7]}`);
     }
 
+    private simplifyRow(rawArr:string[]){
+        while(rawArr.length>5){
+            let tmp = rawArr.splice(0, 2).join(" ");
+            rawArr.unshift(tmp);
+        }
+    }
 
     private processTableRow(rowStr: string){
+        // console.log(rowStr);
         let result = new TableContent();
-        let numStartRegex = /^[0-9]+/g;
+        let numStartRegex = /^[0-9]+|^[0-9]+\#/g;
         rowStr = rowStr.replace(numStartRegex, "");
+        if(rowStr.endsWith("#"))
+            rowStr = rowStr.substring(0, rowStr.length-2);
+        rowStr = rowStr.replace(/\#{2,}/g, "#");
+        console.log([rowStr]);
         let raw = rowStr.split("#")
+        this.simplifyRow(raw);
         result.product_name = raw[0];
         result.unit = raw[1];
-        result.quantity = parseFloat(raw[2].replace(".","").replace(",","."))
-        result.unit_price = parseFloat(raw[3].replace(".","").replace(",","."))
-        result.total = parseFloat(raw[4].replace(".","").replace(",","."))
-        // let spltSignPos = rowStr.lastIndexOf(")");
-        // result.product_name = rowStr.substring(0, spltSignPos+1);
-        // rowStr = rowStr.substring(spltSignPos+1, rowStr.length);
-        // let UnitAndPrice = rowStr.split("#");
-        // result.unit = UnitAndPrice[0];
-        // result.quantity = this.parseNumber(UnitAndPrice[1], false);
-        // result.unit_price = this.parseNumber(UnitAndPrice[2], false);
-        // result.total = this.parseNumber(UnitAndPrice[3], false);
+        result.quantity = parseFloat(raw[2].replace(/\./g,"").replace(/\,/,"."))
+        result.unit_price = parseFloat(raw[3].replace(/\./g,"").replace(/\,/,"."))
+        result.total = parseFloat(raw[4].replace(/\./g,"").replace(/\,/,"."))
         return result;
     }
 
     private processPage(pageLines: string[]){
-        let rowRegex = /[0-9]+[A-Z]+|^\d+$/
-        let enTableRegex = /Cộng tiền hàng/;
+        let rowRegex = /^\d+[A-ZÁÀẠÃẢẮẰẲẶẴẤẦẬẨẪĐÓÒỎỌÕÔỐỒỔỘỖƠỚỜỞỢỠĂƯỨỪỬỰỮÚÙỦỤŨÂÊẾỀỂỆỄÉÈẺẸẼÝỲỶỴỸÍÌỈỊĨ]|^\d+$/
+        let enTableRegex = /Cộng tiền hàng|Hình thức thanh toán|Người mua hàng|Số:#|\d+\/\d+|\(Theo PO đặt hàng số/;
         let result = new PageContent();
         let nextPos = this.getUntil(pageLines, 0, "CÔNG TY").nextPos;
         let tmpLine = this.getUntil(pageLines,nextPos, "Mã số thuế");
-        result.seller.companyName = tmpLine.strResult;
+        result.seller.companyName = tmpLine.strResult.replace(/\#/g, "").trim();
         tmpLine = this.getUntil(pageLines, tmpLine.nextPos, "Địa chỉ");
-        result.seller.taxCode = this.getBehind(tmpLine.strResult.replace(new RegExp("#", "g"), ""), ":");
-        nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Tên đơn vị").nextPos;
-        tmpLine = this.getUntil(pageLines, nextPos, "Mã số thuế")
-        result.buyer.companyName = this.getBehind(tmpLine.strResult, ":");
-        tmpLine = this.getUntil(pageLines,tmpLine.nextPos,"Địa chỉ");
-        result.buyer.taxCode = this.getBehind(tmpLine.strResult.replace(new RegExp("#", "g"), ""), ":"); 
-        nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Ngày").nextPos;
-        tmpLine = this.getUntil(pageLines, nextPos, "Mã CQT");
-        result.date = this.getDate(tmpLine.strResult);
-        nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Ký hiệu").nextPos;
-        tmpLine = this.getUntil(pageLines,nextPos, "Số(No.)")
-        result.serial = tmpLine.strResult.split(":")[1].replace(new RegExp("#", "g"), "").trim();
-        tmpLine = this.getUntil(pageLines, tmpLine.nextPos, "STT");
-        result.no = tmpLine.strResult.split(":")[1].replace(new RegExp("#", "g"), "").trim();
+        if(tmpLine.strResult.includes("Mã số thuế")){
+            result.seller.taxCode = this.getBehind(tmpLine.strResult.replace(new RegExp("#", "g"), ""), ":");
+            nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Tên đơn vị").nextPos;
+            tmpLine = this.getUntil(pageLines, nextPos, "Mã số thuế")
+            result.buyer.companyName = this.getBehind(tmpLine.strResult, ":").replace(/\#/g, "");;
+            tmpLine = this.getUntil(pageLines,tmpLine.nextPos,"Địa chỉ");
+            result.buyer.taxCode = this.getBehind(tmpLine.strResult.replace(new RegExp("#", "g"), ""), ":"); 
+            nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Ngày").nextPos;
+            tmpLine = this.getUntil(pageLines, nextPos, "Mã CQT");
+            result.date = this.getDate(tmpLine.strResult);
+            nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Ký hiệu").nextPos;
+            tmpLine = this.getUntil(pageLines,nextPos, "Số")
+            result.serial = tmpLine.strResult.split(":")[1].replace(new RegExp("#", "g"), "").trim();
+            tmpLine = this.getUntil(pageLines, tmpLine.nextPos, "STT");
+            result.no = tmpLine.strResult.split(":")[1].replace(new RegExp("#", "g"), "").trim();
+        }
         nextPos = this.getUntil(pageLines,tmpLine.nextPos, "(Amount)").nextPos+1;
+        if(enTableRegex.test(pageLines[nextPos-1]))
+            return result;
         let line = "";
         for(let linePos = nextPos; linePos<pageLines.length; linePos++){
-            if (enTableRegex.test(pageLines[linePos])){
-                nextPos = linePos;
-                break;
-            }
-            if (rowRegex.test(pageLines[linePos])) {
-                if(line != "") {
-                    result.table.push(this.processTableRow(line));
-                    line = "";
+            // console.log(pageLines[linePos]);
+            if(!pageLines[linePos].includes("STT#Tên hàng hóa")){
+                if (enTableRegex.test(pageLines[linePos])){
+                    nextPos = linePos;
+                    break;
                 }
-            } 
-            line = line + pageLines[linePos];
+                if (rowRegex.test(pageLines[linePos])) {
+                    if(line != "") {
+                        // console.log(line);
+                        result.table.push(this.processTableRow(line));
+                        // console.log([line]);
+                        line = "";
+                    }
+                }
+                line = line + pageLines[linePos] + (pageLines[linePos]==""?"":"#");
+            }
         }
-        result.table.push(this.processTableRow(line));
+        if(rowRegex.test(line))
+            result.table.push(this.processTableRow(line));
         // tmpLine = this.getUntil(pageLines, nextPos, "")
         return result;
     }
@@ -111,7 +122,7 @@ export class meInvoiceExtractor extends PdfExtractor {
     async getResult() {
         let pageLines = await this.docLines;
         if (pageLines){
-            if(pageLines.length >= 1){
+            if(pageLines.length == 1){
                 let data = this.processPage(pageLines[0]);
                 return data;
             } else {
