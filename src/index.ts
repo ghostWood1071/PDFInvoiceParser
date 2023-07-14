@@ -29,3 +29,18 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // extractor.getResult().then((res) => {
 //   console.log(res);
 // });
+// extractor.getResult().then((res)=>{
+//     // fs.writeFileSync("lol.json", JSON.stringify(res));
+//     console.log(res);
+// })
+// extractor.getDocInfo().then((res)=>{
+//     console.log(res);
+// });
+
+// extractor.getMetadata().then((res)=>{
+//     console.log(res);
+// });
+
+// extractor.saveRawText("uil").then((res)=>{
+//     console.log(res);
+// });

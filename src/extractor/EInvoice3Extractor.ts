@@ -47,123 +47,65 @@ export class EInvoice3Extractor extends PdfExtractor {
     return pageData.getTextContent(render_options).then(renderText);
   }
 
+  private processTableRow(rowStr: string){
+    let result = new TableContent();
+    let numStartRegex = /^[0-9]+\#/g;
+    rowStr = rowStr.replace(numStartRegex, "");
+    if(rowStr.endsWith("#"))
+      rowStr = rowStr.substring(0, rowStr.length-1);
+    let raw = rowStr.split("#");
+    result.product_name = raw[0];
+    result.unit = raw[1];
+    result.total = parseFloat(raw[2].replace(/\./, "").replace(/\,/,".")); 
+    result.unit_price = parseFloat(raw[3].replace(/\./, "").replace(/\,/,".")); 
+    result.quantity = parseFloat(raw[4].replace(/\./, "").replace(/\,/,".")); 
+    return result;
+  }
+
   private processPage(pageLines: string[]) {
+    let enTableRegex = /Trang|tiep theo|Số tiền viết bằng chữ/g;
+    let rowRegex = /^\d+\#[A-ZÁÀẠÃẢẮẰẲẶẴẤẦẬẨẪĐÓÒỎỌÕÔỐỒỔỘỖƠỚỜỞỢỠĂƯỨỪỬỰỮÚÙỦỤŨÂÊẾỀỂỆỄÉÈẺẸẼÝỲỶỴỸÍÌỈỊĨ]|^\d+$/
     let result = new PageContent();
+    let tmpLine = this.getUntil(pageLines, 0, "#Điện thoại");
+    let nextPos = tmpLine.nextPos + 1; 
+    tmpLine = this.getUntil(pageLines,nextPos,"Địa chỉ");
+    result.seller.companyName = tmpLine.strResult.trim();
+    nextPos = this.getUntil(pageLines,nextPos, "Mã số thuế").nextPos;
+    tmpLine = this.getUntil(pageLines,nextPos,"Số tài khoản");
+    result.seller.taxCode = this.getBehind(tmpLine.strResult, ":").trim().replace(/\#/g,"").trim();
+    nextPos = this.getUntil(pageLines,tmpLine.nextPos,"Ngày#").nextPos;
+    tmpLine = this.getUntil(pageLines,nextPos,"Ký hiệu");
+    result.date = this.processDate(tmpLine.strResult);
+    tmpLine = this.getUntil(pageLines,tmpLine.nextPos, "Số");
+    result.serial = this.getBehind(tmpLine.strResult, ":").replace(/\#/g, "");
+    tmpLine = this.getUntil(pageLines,tmpLine.nextPos, "Mã của CQT");
+    result.no = this.getBehind(tmpLine.strResult, ":").replace(/\#/g, "");
+    nextPos = this.getUntil(pageLines, tmpLine.nextPos, "Tên đơn vị").nextPos;
+    tmpLine = this.getUntil(pageLines, nextPos, "Địa chỉ");
+    result.buyer.companyName = this.getBehind(tmpLine.strResult,":").replace(/\#/g, "");
+    nextPos = this.getUntil(pageLines, nextPos, "Mã số thuế").nextPos;
+    tmpLine = this.getUntil(pageLines, nextPos, "Số tài khoản");
+    result.buyer.taxCode = this.getBehind(tmpLine.strResult,":").replace(/\#/g, "").trim();
+    nextPos = this.getUntil(pageLines, tmpLine.nextPos, "(Amount)").nextPos+1;
+    let line = "";
+    for(let linePos = nextPos; linePos<pageLines.length; linePos++){
+        if (enTableRegex.test(pageLines[linePos])){
+            console.log(pageLines[linePos]);
+            nextPos = linePos;
+            break;
+        }
 
-    let lineTmp = this.getUntil(pageLines, 0, "#Điện thoại #(Tel)#:");
-    let nextPos = lineTmp.nextPos;
+        if (rowRegex.test(pageLines[linePos])) {
+            if(line != "") {
+                result.table.push(this.processTableRow(line));
+                line = "";
+            }
+        } 
+        line = line + pageLines[linePos] + "#";
+    }
+    result.table.push(this.processTableRow(line));
+    tmpLine = this.getUntil(pageLines, nextPos, "")
 
-    lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ #(Address)#:");
-
-    result.seller.companyName = lineTmp.strResult.replace(/\#/g, "").trim();
-
-    nextPos = this.getUntil(
-      pageLines,
-      ++lineTmp.nextPos,
-      "Mã số thuế #(Tax code)#:"
-    ).nextPos;
-
-    lineTmp = this.getUntil(pageLines, nextPos, "Số tài khoản #(Account No)#:");
-
-    result.seller.taxCode = this.getBehind(
-      lineTmp.strResult.replace(/\#/g, ""),
-      ":"
-    ).trim();
-
-    // nextPos++;
-
-    // let bankAccount = /[\d-]+#.+/;
-    // while (!bankAccount.test(pageLines[nextPos])) {
-    //   nextPos++;
-    // }
-
-    // nextPos++;
-
-    // while (bankAccount.test(pageLines[nextPos])) {
-    //   nextPos++;
-    // }
-
-    // result.buyer.companyName = pageLines[nextPos].replace(/\#/g, "").trim();
-    // result.buyer.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
-
-    // nextPos = this.getUntil(pageLines, ++nextPos, "Ký hiệu#(Symbol)").nextPos;
-
-    // lineTmp = this.getUntil(pageLines, nextPos, "Số#(Invoice No)");
-    // nextPos = lineTmp.nextPos;
-
-    // result.serial = this.getBehind(
-    //   lineTmp.strResult.replace(/\#/g, "").trim(),
-    //   ":"
-    // );
-
-    // lineTmp = this.getUntil(pageLines, nextPos, ":");
-    // nextPos = lineTmp.nextPos;
-
-    // result.no = this.getBehind(
-    //   lineTmp.strResult.trim().replace(/\#/g, ""),
-    //   ":"
-    // );
-
-    // nextPos = this.getUntil(pageLines, ++nextPos, "Ngày#(Date)").nextPos;
-
-    // result.date = this.processDate(pageLines[nextPos].trim());
-
-    // nextPos = this.getUntil(
-    //   pageLines,
-    //   ++nextPos,
-    //   "1#2#3#4#5#6#7 = 5 x 6"
-    // ).nextPos;
-    // nextPos++;
-
-    // let totalRegex = /.+\#[\d\,\.]+\#[\d\,\.]+\#[\d\,\.]+$/;
-
-    // while (
-    //   nextPos < pageLines.length &&
-    //   pageLines[nextPos] !=
-    //     "Người thực hiện chuyển đổi#(Converter)#Người mua hàng#(Buyer)#Người bán hàng#(Seller)"
-    // ) {
-    //   while (isNaN(+pageLines[nextPos][0])) {
-    //     if (pageLines[nextPos].startsWith("Tỷ giá #(Exchange rate)#:")) {
-    //       result.exchange_rate = +this.getBehind(
-    //         pageLines[nextPos].replace(/\#/g, "").trim(),
-    //         ":"
-    //       )
-    //         .split(" ")[0]
-    //         .replace(/\./g, "")
-    //         .replace(/\,/g, ".");
-    //       return result;
-    //     } else {
-    //       nextPos++;
-    //       continue;
-    //     }
-    //   }
-
-    //   let newTableContent = new TableContent();
-
-    //   if (pageLines[nextPos].includes("#")) {
-    //     newTableContent.product_id = this.getBehind(pageLines[nextPos], "#");
-    //   }
-    //   nextPos++;
-
-    //   let productNametmp = "";
-
-    //   while (!totalRegex.test(pageLines[nextPos])) {
-    //     productNametmp += pageLines[nextPos] + " ";
-    //     nextPos++;
-    //   }
-    //   newTableContent.product_name = productNametmp.trim();
-
-    //   let arrTmp = pageLines[nextPos].split("#");
-
-    //   newTableContent.unit = arrTmp[0];
-    //   newTableContent.quantity = +arrTmp[1].replace(/\,/g, "");
-    //   newTableContent.unit_price = +arrTmp[2].replace(/\,/g, "");
-    //   newTableContent.total = +arrTmp[3].replace(/\,/g, "");
-
-    //   result.table.push(newTableContent);
-
-    //   nextPos++;
-    // }
     return result;
   }
 
