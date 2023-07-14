@@ -33,5 +33,13 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 //   console.log(res);
 // });
 
-let extractor = new MInvoiceExtractor("./src/pdf/1C23TSS-599 SHINSUNG.pdf")
-extractor.saveRawText("shinshung");
+// let extractor = new SoftDreamsInvoiceExtractor(
+//   "src/pdf/HOADON_0313828874-001_1C23TVN_85.pdf"
+// );
+
+// extractor.saveRawText("softdream1");
+// extractor.saveRawText("softdream2");
+// extractor.saveRawText("softdream3");
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
