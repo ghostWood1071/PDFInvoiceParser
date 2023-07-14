@@ -15,32 +15,13 @@ import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtract
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
+import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
+let extractor = new WinTechExtractor("src/pdf/DONGSIN_54_30.03.2023.pdf");
 
-// extractor.saveRawText("seojinauto");
-// extractor.saveRawText("seojinauto2");
-// extractor.saveRawText("meinvoice2");
-
-// extractor.getResult().then((res) => {
-//   console.log(res);
-// });
-// extractor.getResult().then((res)=>{
-//     // fs.writeFileSync("lol.json", JSON.stringify(res));
-//     console.log(res);
-// })
-// extractor.getDocInfo().then((res)=>{
-//     console.log(res);
-// });
-
-// extractor.getMetadata().then((res)=>{
-//     console.log(res);
-// });
-
-// extractor.saveRawText("uil").then((res)=>{
-//     console.log(res);
-// });
+// extractor.saveRawText("WinTech");
+extractor.getResult().then((res) => {
+  console.log(res);
+});
