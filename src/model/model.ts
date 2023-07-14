@@ -3,7 +3,7 @@ export class PageContent {
   serial: string = "";
   no: string = "";
   vat_rate: any = null;
-  exchange_rate:any = null;
+  exchange_rate: any = null;
   seller: any = {
     companyName: "",
     taxCode: "",
@@ -16,7 +16,7 @@ export class PageContent {
 }
 
 export class TableContent {
-  product_id = null;
+  product_id: string = "";
   product_name: string = "";
   unit: string = "";
   quantity: number = 0;

@@ -1,5 +1,4 @@
-import { table } from "console";
-import { PageContent, PagePart, TableContent } from "../model/model";
+import { PageContent, TableContent } from "../model/model";
 import { PdfExtractor } from "./PDFExtractor";
 
 export class EFYInvoiceExtractor extends PdfExtractor {

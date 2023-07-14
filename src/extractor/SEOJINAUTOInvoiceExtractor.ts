@@ -9,6 +9,18 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
+  private processDate(dataStr: string): Date {
+    return new Date(
+      dataStr
+        .trim()
+        .replace(/\#/g, "")
+        .split(/\D+/g)
+        .filter((x) => x != "")
+        .reverse()
+        .join("-")
+    );
+  }
+
   private processPage(pageLines: string[]) {
     let result: PageContent = new PageContent();
     let parts: PagePart = PagePart.NONE;
@@ -35,15 +47,15 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     }
 
     while (indexLine <= l) {
-      if (pageLines[indexLine] == "SALES INVOICE") {
+      if (
+        pageLines[indexLine] == "SALES INVOICE" ||
+        pageLines[indexLine] == "(VAT Invoice) "
+      ) {
         parts = PagePart.DATE;
         indexLine++;
 
         if (parts == PagePart.DATE) {
-          let str: string = pageLines[indexLine];
-          result.date = new Date(
-            `${str.slice(6, 10)}/${str.slice(4, 6)}/${str.slice(0, 2)}`
-          );
+          result.date = this.processDate(pageLines[indexLine]);
           break;
         }
       }

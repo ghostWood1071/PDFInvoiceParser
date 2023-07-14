@@ -1,0 +1,123 @@
+
+
+Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+ 1/2
+Mã tra cứu hóa đơn
+Tra cứu tại Websitehttps://www#.meinvoice#.vn/tra-cuu/
+(Search on Website):
+(Invoice code):
+W#8TMI#92DXK#9
+Mã CQT (Code):00663697996B714425BD2A1107F0AAA3F2
+HÓA ĐƠN BÁN HÀNG
+(Bản thể hiện của hóa đơn điện tử)
+(Sign):
+2C#23TAT
+00000215
+(No):
+Ký hiệu
+Số
+SALES INVOICE
+31#01#2023tháng
+(Date)
+nămNgày
+(month)(year)
+(E-Invoice viewer)
+CÔNG TY TNHH SEOJIN AUTOĐơn vị bán hàng
+2300956022Mã số thuế
+Địa chỉ
+Lô J#5, Khu công nghiệp Đại Đồng - Hoàn Sơn, Phường Tân Hồng, Thành phố Từ
+Sơn, Tỉnh Bắc Ninh, Việt Nam
+(Supplier):
+(Tax code):
+(Address):
+0222#.#3734#.#842Điện thoại
+035#.#100#.#111#.7823 (VND) tại Ngân hàng TMCP Ngoại thương Việt Nam -
+Chi nhánh Bắc Ninh
+Số tài khoản
+(Bank account):
+(Tel):
+Họ tên người mua hàng
+(Buyer):
+2400859625Mã số thuế
+Địa chỉ
+ Lô B#1, B#2, B#3, B#6, B#7, Khu công nghiệp Song Khê - Nội Hoàng (Phía Bắc), Xã Song
+Khê, Thành phố Bắc Giang, Tỉnh Bắc Giang, Việt Nam
+CÔNG TY TNHH SEOJIN VIỆT NAMTên đơn vị
+(Company's name):
+(Tax code):
+(Address):
+TM/CKSố tài khoản
+(Bank account):(Payment method):
+Hình thức thanh toán
+STTTên hàng hóa, dịch vụ
+Đơn vị
+tính
+Số lượngĐơn giáThành tiền
+(No)(Name of goods and services)
+(Unit)
+(Quantity)(Unit price)(Amount)
+ABC#1#2#3=#1x#2
+Nhôm hợp kim định hình AL#6013A
+(#3#.#5*#105*#1085)
+kg
+1#.#744#,#50#105#.#200#,#00#183#.#521#.#400
+1
+Nhôm hợp kim định hình AL#7003H
+(#100*#2#.#5*#1235)
+kg
+6#.#411#,#50#121#.#080#,#00#776#.#304#.#420 
+2
+Nhôm hợp kim định hình AL#6013A
+(#3#.#3*#113*#1085)
+kg
+1#.#772#,#57#99#.#600#,#00#176#.#547#.#972
+3
+Nhôm hợp kim định hình #6013A ( #3#.#0*#105*#920)EA
+1#.#644#,#00#84#.#142#,#00#138#.#329#.#448
+4
+Nhôm hợp kim định hình #6013A ( #3#.#0*#105*#960)EA
+2#.#209#,#00#87#.#797#,#00#193#.#943#.#573
+5
+Nhôm hợp kim định hình #6013A ( #3#.#5*#105*#1100)EA
+36#,#00#117#.#290#,#00#4#.#222#.#440
+6
+Nhôm hợp kim định hình #6013A (#110*#3#.#2*#1100)EA
+1#.#844#,#00#112#.#431#,#00#207#.#322#.#764
+7
+Nhôm hợp kim định hình #6013A ( #3#.#2*#100*#790)EA
+4#.#000#,#00#73#.#482#,#00#293#.#928#.#000
+8
+Nhôm hợp kim định hình #6013A (#3#.#2*#100*#1096)EA
+523#,#00#101#.#750#,#00#53#.#215#.#250
+9
+Nhôm hợp kim định hình #6013A (#2#.#5*#100*#1020)EA
+147#,#00#74#.#004#,#00#10#.#878#.#588
+10
+Nhôm hợp kim định hình #7003H-#30R
+(#2#.#5*#100*#1250)
+EA
+540#,#00#111#.#989#,#00#60#.#474#.#060
+11
+Nhôm hợp kim định hình #7003H-#30R
+(#105*#2#.#5*#1000)
+EA
+4#.#000#,#00#94#.#181#,#00#376#.#724#.#000
+12
+Nhôm hợp kim định hình #6013A (#110*#3#.#8*#1100)EA
+210#,#00#133#.#397#,#00#28#.#013#.#370
+13
+Nhôm hợp kim định hình #6013A (#3#.#3*#113*#135)EA
+22#.#826#,#00#16#.#096#,#00#367#.#407#.#296
+14
+Nhôm hợp kim định hình AL#6013A (#100*#3#.#5*#130)EA
+1#.#400#,#00#12#.#898#,#00#18#.#057#.#200
+15
+Nhôm hợp kim định hình AL#6013A (#90*#3*#115)EA
+4#.#200#,#00#8#.#852#,#00#37#.#178#.#400
+16
+Nhôm hợp kim định hình AL#6013A (#3#.#2*#120*#110)EA
+7#.#700#,#00#12#.#011#,#00#92#.#484#.#700
+17
+Nhôm hợp kim định hình AL#6013A (#105*#4*#135)EA
+250#,#00#16#.#052#,#00#4#.#013#.#000
+18
