@@ -19,8 +19,16 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new EInvoice2Extractor("src/pdf/luxshare/2C23TLX134.pdf");
+// let extractor = new SoftDreamsInvoiceExtractor(
+//   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
+// );
 
+let extractor = new SoftDreamsInvoiceExtractor(
+  "src/pdf/ASIABOLT_385_28.03.2023.pdf"
+);
+
+// extractor.saveRawText("softdream1");
+// extractor.saveRawText("softdream2");
 extractor.getResult().then((res) => {
   console.log(res);
 });

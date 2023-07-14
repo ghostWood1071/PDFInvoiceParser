@@ -48,11 +48,10 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
     return pageData.getTextContent(render_options).then(renderText);
   }
 
-  private processPage(pageLines: string[]) {
-    let result = new PageContent();
-
+  private processPageATek(pageLines: string[]): PageContent {
     let lineTmp = this.getUntil(pageLines, 0, "(VAT INVOICE)");
     let nextPos = lineTmp.nextPos;
+    let result = new PageContent();
 
     lineTmp = this.getUntil(pageLines, ++nextPos, "Ký hiệu #(Serial)#:");
     nextPos = lineTmp.nextPos;
@@ -144,8 +143,70 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
         ":"
       );
     }
-
     return result;
+  }
+
+  private processPageBolt(pageLines: string[]): PageContent {
+    let result = new PageContent();
+
+    let nextPos = this.getUntil(pageLines, 0, "#").nextPos;
+    let lineTmp = this.getUntil(pageLines, nextPos, "STK");
+
+    result.buyer.companyName = lineTmp.strResult.replace(/\#/g, "").trim();
+
+    nextPos = this.getUntil(pageLines, ++nextPos, "Mã số thuế").nextPos;
+    result.seller.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
+    result.seller.companyName = pageLines[++nextPos].replace(/\#/g, "").trim();
+
+    nextPos = this.getUntil(pageLines, ++nextPos, "Ký hiệu").nextPos;
+    result.serial = pageLines[nextPos - 2].replace(/\#/g, "").trim();
+    result.no = pageLines[nextPos - 1].replace(/\#/g, "").trim();
+
+    nextPos = this.getUntil(pageLines, ++nextPos, "(At):").nextPos;
+    result.date = this.processDate(pageLines[++nextPos]);
+
+    nextPos = this.getUntil(pageLines, ++nextPos, "(Tax code):").nextPos;
+    lineTmp = this.getUntil(pageLines, ++nextPos, "Mã số thuế");
+    nextPos = lineTmp.nextPos;
+    result.buyer.taxCode = lineTmp.strResult.trim();
+
+    let totalRegex = /^\d+[\.\d\,]+\#\d+[\.\d\,]+\#\d+[\.\d\,]+$/;
+
+    for (let i = ++nextPos; i < pageLines.length; i++) {
+      if (totalRegex.test(pageLines[i])) {
+        let newTableContent: TableContent = new TableContent();
+
+        let totalArr = pageLines[i].split("#");
+        newTableContent.total = +totalArr[0]
+          .replace(/\./g, "")
+          .replace(",", ".");
+        newTableContent.unit_price = +totalArr[1]
+          .replace(/\./g, "")
+          .replace(",", ".");
+        newTableContent.quantity = +totalArr[2]
+          .replace(/\./g, "")
+          .replace(",", ".");
+
+        let productArr = pageLines[++i].split("#");
+        productArr.pop();
+
+        newTableContent.unit = productArr.shift()!;
+        newTableContent.product_name = productArr.join("");
+
+        result.table.push(newTableContent);
+      } else break;
+    }
+    return result;
+  }
+
+  private processPage(pageLines: string[]) {
+    let nextPos = this.getUntil(pageLines, 0, "#").nextPos;
+
+    if (pageLines[nextPos].replace(/\#/g, "").trim() == "") {
+      return this.processPageATek(pageLines);
+    } else {
+      return this.processPageBolt(pageLines);
+    }
   }
 
   async getResult() {
