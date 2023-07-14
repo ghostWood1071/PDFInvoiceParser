@@ -23,12 +23,15 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 //   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
 // );
 
-let extractor = new SoftDreamsInvoiceExtractor(
-  "src/pdf/ASIABOLT_385_28.03.2023.pdf"
-);
+// let extractor = new SoftDreamsInvoiceExtractor(
+//   "src/pdf/ASIABOLT_385_28.03.2023.pdf"
+// );
 
-// extractor.saveRawText("softdream1");
-// extractor.saveRawText("softdream2");
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+// // extractor.saveRawText("softdream1");
+// // extractor.saveRawText("softdream2");
+// extractor.getResult().then((res) => {
+//   console.log(res);
+// });
+
+let extractor = new MInvoiceExtractor("./src/pdf/1C23TSS-599 SHINSUNG.pdf")
+extractor.saveRawText("shinshung");
