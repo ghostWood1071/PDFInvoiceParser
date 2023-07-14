@@ -29,9 +29,9 @@ export class LOGISALInvoiceExtractor extends PdfExtractor {
       unit: string = "";
     str = str.replace(/\#/g, "");
     for (let u of this.unitArr) {
-      if (str.endsWith(u)) {
+      if (str.toLowerCase().endsWith(u)) {
         product_name = str.slice(0, -u.length);
-        unit = u;
+        unit = str.slice(-u.length);
         break;
       }
     }

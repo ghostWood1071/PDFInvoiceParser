@@ -20,37 +20,88 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     );
   }
 
+  protected override getUntil(
+    pageLines: string[],
+    posPart: number,
+    ending: string
+  ) {
+    let result = "";
+    let pos = posPart;
+    for (let i = posPart; i < pageLines.length; i++) {
+      if (pageLines[i] == ending || pageLines[i].includes(ending)) {
+        pos = i;
+        break;
+      } else result = result + pageLines[i] + " ";
+    }
+    return { strResult: result, nextPos: pos };
+  }
+
   private processPage(pageLines: string[]) {
     let result: PageContent = new PageContent();
-    let parts: PagePart = PagePart.NONE;
 
-    // let indexLine = 0;
-    // let l = pageLines.length;
-
-    let lineTmp = this.getUntil(pageLines, 0, "(Sign):");
+    let lineTmp = this.getUntil(pageLines, 0, "(Invoice code):");
     let nextPos = lineTmp.nextPos;
 
-    result.serial = pageLines[++nextPos].replace(/#/g, "");
-    result.no = pageLines[++nextPos].replace(/#/g, "");
+    if (!pageLines[nextPos + 3].includes("Mã số thuế")) {
+      lineTmp = this.getUntil(pageLines, nextPos, "(Sign):");
+      nextPos = lineTmp.nextPos;
 
-    nextPos = this.getUntil(pageLines, nextPos, "(Date)").nextPos;
+      result.serial = pageLines[++nextPos].replace(/#/g, "");
+      result.no = pageLines[++nextPos].replace(/#/g, "");
 
-    result.date = this.processDate(pageLines[nextPos - 1]);
+      nextPos = this.getUntil(pageLines, nextPos, "(Date)").nextPos;
 
-    nextPos = this.getUntil(pageLines, nextPos, "Địa chỉ").nextPos;
-    result.seller.companyName = pageLines[nextPos - 2]
-      .replace("Đơn vị bán hàng", "")
-      .trim();
+      result.date = this.processDate(pageLines[nextPos - 1]);
 
-    result.seller.taxCode = pageLines[nextPos - 1]
-      .replace("Mã số thuế", "")
-      .trim();
+      nextPos = this.getUntil(pageLines, nextPos, "Địa chỉ").nextPos;
+      result.seller.companyName = pageLines[nextPos - 2]
+        .replace("Đơn vị bán hàng", "")
+        .trim();
 
-    nextPos = this.getUntil(pageLines, nextPos, "(Buyer):").nextPos;
+      result.seller.taxCode = pageLines[nextPos - 1]
+        .replace("Mã số thuế", "")
+        .trim();
 
-    lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ");
+      nextPos = this.getUntil(pageLines, nextPos, "(Buyer):").nextPos;
 
-    result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "").trim();
+      lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ");
+
+      result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "").trim();
+    } else {
+      nextPos += 2;
+      result.seller.companyName = this.getUntil(
+        pageLines,
+        nextPos,
+        "Mã số thuế"
+      ).strResult.trim();
+
+      result.seller.taxCode = this.getUntil(pageLines, ++nextPos, "Địa chỉ")
+        .strResult.replace("Mã số thuế", "")
+        .trim();
+
+      lineTmp = this.getUntil(pageLines, nextPos, "(Sign):");
+
+      nextPos = lineTmp.nextPos;
+
+      result.serial = pageLines[++nextPos].replace(/\#/g, "");
+      lineTmp = this.getUntil(pageLines, ++nextPos, "(No):");
+      result.no = lineTmp.strResult;
+      nextPos = lineTmp.nextPos;
+
+      lineTmp = this.getUntil(pageLines, nextPos, "(VAT Invoice)");
+      nextPos = lineTmp.nextPos;
+
+      lineTmp = this.getUntil(pageLines, ++nextPos, "(Date)");
+      result.date = this.processDate(lineTmp.strResult);
+
+      nextPos = this.getUntil(pageLines, nextPos, "(Buyer):").nextPos;
+
+      lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ");
+      result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "");
+
+      nextPos = this.getUntil(pageLines, nextPos, "Tên đơn vị").nextPos;
+      result.buyer.companyName = pageLines[nextPos].replace("Tên đơn vị", "");
+    }
 
     while (
       nextPos < pageLines.length &&

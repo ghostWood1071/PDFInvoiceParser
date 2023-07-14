@@ -1,0 +1,96 @@
+
+
+Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+Mã tra cứu hóa đơn
+Tra cứu tại Websitehttps://www#.meinvoice#.vn/tra-cuu/
+(Search on Website): 
+(Invoice code):
+N#2TKF_#3X#80_
+CÔNG TY TNHH LOGISALL VIỆT NAM
+0107369689Mã số thuế
+Địa chỉ
+P1212 Keangnam Hanoi Landmark Tower, E6 KĐTM Cầu Giấy#,
+Phường Mễ Trì, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam
+(Tax code)
+(Address)
+02432262950Điện thoại
+(Tel)
+077400191920002Số tài khoản
+(A/c No)
+:
+:
+:
+:
+NGÂN HÀNG CÔNG NGHIỆP HÀN QUỐC (IBK) - CN HÀ NỘI
+Mã CQT (Code):0091E20C44C54141DC8CFFB9ADDDA26B68
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(Sign):
+1C#23TLA
+00000064
+(No):
+Ký hiệu
+Số
+(VAT Invoice)
+30tháng#05#2023
+(Date)
+năm
+(E-Invoice viewer)
+Ngày
+(month)(year)
+Họ tên người mua hàng
+(Buyer):
+2500243660Mã số thuế
+Địa chỉ
+Lô #44F, #44J, Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh#,
+Thành phố Hà Nội
+CÔNG TY TNHH ELENTEC VIỆT NAMTên đơn vị
+ (Company's name):
+(Tax code):
+(Address):
+TM/CKSố tài khoản
+(Bank account):(Payment method):
+Hình thức thanh toán
+STTTên hàng hóa, dịch vụ
+Đơn vị
+tính
+Số lượngĐơn giáThành tiền
+(No)(Name of goods and services)
+(Unit)
+(Quantity)(Unit price)(Amount)
+ABC#1#2#3=#1x#2
+Pallet gỗ KT: #1200x#800x#145mmcái
+125#700#.#000#87#.#500#.#000
+1
+Pallet gỗ KT: #1100x#850x#120mmcái
+510#118#.#000#60#.#180#.#000
+2
+Tấm gỗ KT: #1130x#760x#9mmcái
+134#80#.#000#10#.#720#.#000
+3
+158#.#400#.#000
+Cộng tiền hàng:
+(Total before VAT):
+174#.#240#.#000
+Tổng tiền thanh toán
+(Total amount):
+Thuế suất GTGT
+(VAT rate):
+10 %#15#.#840#.#000
+Tiền thuế GTGT
+(VAT amount):
+Số tiền viết bằng chữ
+Một trăm bảy mươi bốn triệu hai trăm bốn mươi nghìn đồng chẵn#.
+(Total amount in words):
+(Signature, full name)(Signature, full name)
+Người mua hàng
+(Ký, ghi rõ họ, tên)
+Người bán hàng
+(Ký, ghi rõ họ, tên)
+Ký bởi:
+Ký ngày:
+CÔNG TY TNHH LOGISALL VIỆT
+NAM
+30/05/2023
+(Buyer)(Seller)
+(Cần kiểm tra, đối chiếu trước khi lập, giao, nhận hóa đơn)

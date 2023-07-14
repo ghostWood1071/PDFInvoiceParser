@@ -15,6 +15,7 @@ import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtract
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
+import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
