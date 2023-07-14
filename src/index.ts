@@ -19,9 +19,15 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new WinTechExtractor("src/pdf/DONGSIN_54_30.03.2023.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
+let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
 
-// extractor.saveRawText("WinTech");
+// let extractor = new SEOJINAUTOInvoiceExtractor(
+//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
+// );
+
+// extractor.saveRawText("meinvoice2");
 extractor.getResult().then((res) => {
   console.log(res);
 });
