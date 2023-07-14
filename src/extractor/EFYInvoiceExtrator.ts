@@ -112,7 +112,6 @@ export class EFYInvoiceExtractor extends PdfExtractor {
 
     while (nextPos < pageLines.length) {
       if (rowRegex.test(pageLines[nextPos])) {
-        console.log(pageLines[nextPos]);
         let newTableContent = new TableContent();
         let arrStr = pageLines[nextPos].split("#");
 

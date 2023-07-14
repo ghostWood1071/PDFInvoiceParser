@@ -1,10 +1,29 @@
 
 
+CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)#
 #CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)
 2400801174
 Lô E, Khu Công Nghiệp Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh
 Bắc Giang, Việt Nam
 0204 626 9988
+0731000688988VIETCOMBANK- BAC GIANG BRANCH#
+0731-370-686288VIETCOMBANK- BAC GIANG BRANCH#
+Công ty TNHH Khoa học Kỹ Thuật Goertek Vina
+2301081197
+Lô N-1, Khu công nghiệp Quế Võ (khu mở rộng), Phường Nam Sơn, Thành phố Bắc Ninh, Tỉnh Bắc Ninh,#
+Việt Nam
+Chuyển khoản
+82,188.00
+Tám mươi hai nghìn một trăm tám mươi tám Đô la Mỹ
+Trang 1/1
+:
+:
+:
+::#
+::#
+::#
+Ký hiệu(Symbol)#:#2C23TLX#
+Số(Invoice No)#:#5#
 0731000688988#VIETCOMBANK- BAC GIANG BRANCH
 0731-370-686288#VIETCOMBANK- BAC GIANG BRANCH
 CÔNG TY TNHH LUXSHARE-ICT (VÂN TRUNG)
@@ -26,6 +45,46 @@ Số#(Invoice No)#:#134
 :
 :
 :
+:
+:
+HÓA ĐƠN BÁN HÀNG (INVOICE)# (Dành cho tổ chức, cá nhân trong khu phi thuế quan)
+Ngày(Date)#07#tháng#(month)#01#năm#(year)#2023# (HÓA ĐƠN CHUYỂN ĐỔI TỪ HÓA ĐƠN ĐIỆN TỬ) (TRANSFORM INVOICE FROM E-INVOICE)
+Mã của CQT:  00E6FF5EE050E44FF7BA1C4D63634809A4#
+STT (No.)
+Mã hàng hóa,
+dịch vụ (Item no)
+Tên hàng hóa, dịch vụ (Description)
+ĐVT (Unit)
+Số lượng (Quantity)
+Đơn giá (Unit price)
+Thành tiền (Amount)
+12#3#4#5#6#7 = 5 x 6#
+1L1SU2055-CS-H#
+Dây sạc điện thoại có vỏ bọc bằng nhựa, điện
+áp 5V, đường kính dây 2.9mm, có đầu nối điện L1SU2055-CS-H ( 314000304065 )
+PCS36,000#2.2830#82,188.00#
+Tỷ giá (Exchange rate)#: #23.300 VND/USD#
+Người thực hiện chuyển đổi(Converter)#Người mua hàng#(Buyer)#Người bán hàng#(Seller)# (Ký, ghi rõ họ tên)(Ký, ghi rõ họ tên)#(Ký, đóng dấu, ghi rõ họ tên)# (Xuất bởi phần mềm EInvoice, Công ty TNHH Phát triển công nghệ Thái Sơn  - MST: 0101300842 - www.einvoice.vn)
+Tên đơn vị bán hàng(Seller)#
+Mã số thuế(Tax code)#
+Địa chỉ(Address)#
+Điện thoại(Tel)#Fax#
+Số tài khoản VNĐ(VNĐ Account)#Tại#
+Số tài khoản USD(USD Account)#Tại#
+Tên đơn vị mua hàng(Buyer)#
+Mã số thuế(Tax code)#
+Địa chỉ(Address)#
+Điện thoại(Tel)#
+Số tài khoản(Account)#
+Hình thức thanh toán(Payment method)#
+Cộng tiền bán hàng hóa, dịch vụ(Invoice Balancc)#
+Số tiền viết bằng chữ(By words)#
+Quản trị
+Ngày chuyển đổi (Conversion date)#: #    /    /20#
+Mã nhận hóa đơn: #0BAA46306E#tra cứu tại#: #luxshareictvietnam.einvoice.com.vn# (Cần kiểm tra, đối chiếu khi lập, giao nhận hóa đơn#)#
+Signature Valid 
+Ký bởi: CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)
+Ký ngày: 07/01/2023#
 HÓA ĐƠN BÁN HÀNG #(INVOICE)
 (Dành cho tổ chức, cá nhân trong khu phi thuế quan)
 Ngày#(Date)#03#tháng#(month)#03#năm#(year)#2023
