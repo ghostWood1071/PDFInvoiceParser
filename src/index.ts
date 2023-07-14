@@ -16,9 +16,10 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
+let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
 
+// extractor.saveRawText("seojinauto");
 // extractor.saveRawText("meinvoice2");
 
 extractor.getResult().then((res) => {

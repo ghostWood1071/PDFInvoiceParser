@@ -151,7 +151,7 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
   async getResult() {
     let pageLines = await this.docLines;
     if (pageLines) {
-      if (pageLines.length >= 1) {
+      if (pageLines.length == 1) {
         let data = this.processPage(pageLines[0]);
         return data;
       } else {

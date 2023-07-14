@@ -13,7 +13,7 @@ export interface IExtractable {
 export class PdfExtractor {
   private fileName: string;
   private extracted: any;
-  protected unitArr: string[] = ["kg", "EA", "cái", "chiếc"];
+  protected unitArr: string[] = ["kg", "ea", "cái", "chiếc"];
 
   constructor(fileName: string) {
     this.fileName = fileName;
