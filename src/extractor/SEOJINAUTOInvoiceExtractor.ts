@@ -52,11 +52,12 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
     result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "").trim();
 
-    nextPos = this.getUntil(
-      pageLines,
-      lineTmp.nextPos,
-      " (Company's name):"
-    ).nextPos;
+    while (
+      nextPos < pageLines.length &&
+      !pageLines[nextPos].trim().includes("(Company's name):")
+    ) {
+      nextPos++;
+    }
 
     result.buyer.companyName = pageLines[nextPos - 1].replace("Tên đơn vị", "");
 
@@ -121,11 +122,14 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
       nextPos += 2;
     }
 
-    if (nextPos < pageLines.length) {
-      nextPos = this.getUntil(pageLines, nextPos, "Tỷ giá").nextPos;
-      result.exchange_rate = +pageLines[nextPos + 2]
-        .replace(/\#/g, "")
-        .replace(",", ".");
+    while (nextPos < pageLines.length) {
+      if (pageLines[nextPos] == "Tỷ giá") {
+        result.exchange_rate = +pageLines[nextPos + 2]
+          .replace(/\#/g, "")
+          .replace(",", ".");
+        break;
+      }
+      nextPos++;
     }
 
     return result;

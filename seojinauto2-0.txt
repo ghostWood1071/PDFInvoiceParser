@@ -1,19 +1,17 @@
 
 
 Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
- 2/2
 Mã tra cứu hóa đơn
 Tra cứu tại Websitehttps://www#.meinvoice#.vn/tra-cuu/
 (Search on Website):
 (Invoice code):
-W#8TMI#92DXK#9
-Tiep theo trang truoc - trang 2/2
-Mã CQT (Code):00663697996B714425BD2A1107F0AAA3F2
+L#6TKIKW#8DAQ
+Mã CQT (Code):008AAF34D8FD2D4840BB5DDDE2B5A4DA0B
 HÓA ĐƠN BÁN HÀNG
 (Bản thể hiện của hóa đơn điện tử)
 (Sign):
 2C#23TAT
-00000215
+00000214
 (No):
 Ký hiệu
 Số
@@ -31,6 +29,14 @@ Sơn, Tỉnh Bắc Ninh, Việt Nam
 (Supplier):
 (Tax code):
 (Address):
+0222#.#3734#.#842Điện thoại
+035#.#100#.#111#.7823 (VND) tại Ngân hàng TMCP Ngoại thương Việt Nam -
+Chi nhánh Bắc Ninh
+Số tài khoản
+(Bank account):
+(Tel):
+Họ tên người mua hàng
+(Buyer):
 2400859625Mã số thuế
 Địa chỉ
  Lô B#1, B#2, B#3, B#6, B#7, Khu công nghiệp Song Khê - Nội Hoàng (Phía Bắc), Xã Song
@@ -39,6 +45,9 @@ CÔNG TY TNHH SEOJIN VIỆT NAMTên đơn vị
 (Company's name):
 (Tax code):
 (Address):
+TM/CKSố tài khoản
+(Bank account):(Payment method):
+Hình thức thanh toán
 STTTên hàng hóa, dịch vụ
 Đơn vị
 tính
@@ -47,46 +56,24 @@ Số lượngĐơn giáThành tiền
 (Unit)
 (Quantity)(Unit price)(Amount)
 ABC#1#2#3=#1x#2
-Nhôm hợp kim định hình #7003H-#30R
-(SJ#124) (#100*#2#.#5*#1250)
-EA
-13#.#651#,#00#112#.#118#,#00#1#.#530#.#522#.#818
-19
-Nhôm hợp kim định hình #7003H-#30R
-(#100*#2#.#5*#600)
-EA
-24#,#00#55#.#036#,#00#1#.#320#.#864
-20
-Nhôm hợp kim định hình 6013 T6 (#105*#3*#1095)kg
-1#.#900#,#00#106#.#633#,#00#202#.#602#.#700
-21
-Nhôm hợp kim định hình A#7003H-#30R T#6
-(#100*#2#.#5*#1250)
-EA
-6#.#485#,#00#112#.#118#,#00#727#.#085#.#230
-22
-Nhôm hợp kim định hình A6013 T6 (#100*#3*#1250)EA
-550#,#00#108#.#783#,#00#59#.#830#.#650
-23
-Nhôm hợp kim định hình A6013 T6 (#79*#8#.#1*#966)EA
-3#.#100#,#00#179#.#524#,#00#556#.#524#.#400
-24
-Nhôm hợp kim định hình A6013 T#6
-(#134*#2#.#9*#1315)
-EA
-20#,#00#154#.#056#,#00#3#.#081#.#120
-25
-Nhôm hợp kim định hình A6013 T#6
-(#134*#3#.#0*#1315)
-EA
-30#,#00#159#.#368#,#00#4#.#781#.#040
-26
-6#.#108#.#314#.#703
-(Total amount): 
+Nhôm hợp kim dạng cây tròn Billet #12' #6061kg
+11#.#816#,#00#72#.#384#,#00#855#.#289#.#344
+1
+Nhôm hợp kim dạng cây tròn Billet #12' #60603kg
+29#.#320#,#00#72#.#384#,#00#2#.#122#.#298#.#880
+2
+Nhôm hợp kim dạng cây tròn Billet #12' #6063MS#2kg
+201#.#089#,#00#72#.#384#,#00#14#.#555#.#626#.#176
+3
+Nhôm hợp kim dạng cây tròn Billet #12' #7060kg
+47#.#497#,#00#72#.#384#,#00#3#.#438#.#022#.#848
+4
+20#.#971#.#237#.#248
+(Total amount):
 Cộng tiền bán hàng hóa, dịch vụ
 Số tiền viết bằng chữ
-Sáu tỷ một trăm linh tám triệu ba trăm mười bốn nghìn bảy trăm
-linh ba đồng chẵn#.
+Hai mươi tỷ chín trăm bảy mươi mốt triệu hai trăm ba mươi bảy
+nghìn hai trăm bốn mươi tám đồng chẵn#.
 (Total amount in words):
 (Ký, ghi rõ họ, tên)(Ký, ghi rõ họ, tên)
 Ký bởi:

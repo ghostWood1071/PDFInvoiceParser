@@ -59,7 +59,7 @@ Số lượngĐơn giáThành tiền
 (Unit)
 (Quantity)(Unit price)(Amount)
 ABC#1#2#3=#1x#2
-7#.#050#.#133#.#340 
+7#.#050#.#133#.#340
 Cộng tiền hàng:
 (Total before VAT):
 7#.#755#.#146#.#674
