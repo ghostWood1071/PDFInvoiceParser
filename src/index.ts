@@ -20,7 +20,7 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
 // let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
 // let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
+let extractor = new EInvoice2Extractor("./src/pdf/vatec.pdf");
 
 // extractor.saveRawText("seojinauto");
 // extractor.saveRawText("seojinauto2");
@@ -29,10 +29,10 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 // extractor.getResult().then((res) => {
 //   console.log(res);
 // });
-// extractor.getResult().then((res)=>{
-//     // fs.writeFileSync("lol.json", JSON.stringify(res));
-//     console.log(res);
-// })
+extractor.getResult().then((res)=>{
+    // fs.writeFileSync("lol.json", JSON.stringify(res));
+    console.log(res);
+})
 // extractor.getDocInfo().then((res)=>{
 //     console.log(res);
 // });
@@ -41,6 +41,6 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 //     console.log(res);
 // });
 
-// extractor.saveRawText("uil").then((res)=>{
+// extractor.saveRawText("luxshare").then((res)=>{
 //     console.log(res);
 // });

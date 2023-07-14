@@ -111,6 +111,35 @@ const pdfSupplier = [
       "Fournisseur": "FAST"
   }
 ];
+
+const seller = [
+  "CÔNG TY CỔ PHẦN BÁN LẺ KỸ THUẬT SỐ FPT",
+  "CÔNG TY CỔ PHẦN UIL VIỆT NAM",
+  "CÔNG TY TNHH ASIA BOLT VINA",
+  "CÔNG TY TNHH CHEONG LIM CHEMICAL",
+  "CÔNG TY TNHH CÔNG NGHỆ ECOLIV",
+  "CÔNG TY TNHH DONGSIN VINA HÀ NỘI",
+  "CÔNG TY TNHH DOO SUNG TECH VIETNAM",
+  "CÔNG TY TNHH DOOSUN VIỆT NAM",
+  "CÔNG TY TNHH HOSIDEN VIỆT NAM (BẮC GIANG)",
+  "CÔNG TY TNHH JUKWANG PRECISION VIỆT NAM",
+  "CÔNG TY TNHH JV VINA - CHI NHÁNH BẮC GIANG",
+  "CÔNG TY TNHH JWORLD VINA",
+  "CÔNG TY TNHH KHVATEC HANOI",
+  "CÔNG TY TNHH KỸ THUẬT IN LƯỚI THÌN OAI",
+  "CÔNG TY TNHH LOGISALL VIỆT NAM",
+  "CÔNG TY TNHH LUXSHARE-ICT (VIỆT NAM)",
+  "CÔNG TY TNHH MAGTRON VINA",
+  "CÔNG TY TNHH NAGASE VIỆT NAM",
+  "CÔNG TY TNHH NANO TECH",
+  "CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ HONK VIỆT NAM",
+  "CÔNG TY TNHH SẢN XUẤT BAO BÌ VÀ DỊCH VỤ ĐẠI LỢI",
+  "CÔNG TY TNHH SEOJIN AUTO",
+  "CÔNG TY TNHH SHIN SUNG VINA",
+  "CÔNG TY TNHH TEXON VIETNAM",
+  "CÔNG TY TNHH VẬT LIỆU ĐIỆN TỬ A-TEK VIỆT NAM",
+  "CÔNG TY TNHH WONJIN VINA",
+];
 export interface IExtractable {
   extractInfo(): any;
   extractBuyer(): any;
@@ -162,6 +191,16 @@ export class PdfExtractor {
     } 
     return null;
   }
+
+  // async getSeller(){
+  //   let docLines = await this.getDocLines();
+  //   if(docLines){
+  //     for(let line of docLines){
+  //       if(line.includes(""))
+  //     }
+  //   } 
+  //   return null;
+  // }
 
   async getMetadata() {
     let fileBuff = await fs.readFileSync(this.fileName);
