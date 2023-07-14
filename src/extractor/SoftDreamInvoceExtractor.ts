@@ -72,12 +72,17 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
 
     result.no = this.getBehind(lineTmp.strResult.replace(/\#/g, ""), ":");
 
-    nextPos = this.getUntil(pageLines, ++nextPos, "Email:").nextPos;
+    nextPos = this.getUntil(
+      pageLines,
+      ++nextPos,
+      "Địa chỉ #(Address)#:"
+    ).nextPos;
+    nextPos++;
+    result.seller.companyName = pageLines[++nextPos].replace(/\#/g, "").trim();
+    result.seller.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
 
-    result.seller.companyName = pageLines[++nextPos];
-    result.seller.taxCode = pageLines[++nextPos];
-
-    let rowRegex = /^\D+\#[\d\. ]+\#[\d\. ]+\#[\d\. ]+/;
+    let totalRegex = /^\D+\#[\d\. ]+\#[\d\. ]+\#[\d\. ]+/;
+    let rowRegex = /^\d+\#.+\#\D+\#[\d\. ]+\#[\d\. ]+\#[\d\. ]+$/;
 
     nextPos = this.getUntil(
       pageLines,
@@ -86,37 +91,69 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
     ).nextPos;
     nextPos++;
 
+    while (
+      nextPos < pageLines.length &&
+      !pageLines[nextPos].startsWith("Cộng tiền hàng #(Sub total)#")
+    ) {
+      if (!isNaN(+pageLines[nextPos])) {
+        nextPos++;
+        let newTableContent: TableContent = new TableContent();
+        let productNameTmp = "";
+
+        while (!totalRegex.test(pageLines[nextPos])) {
+          productNameTmp += pageLines[nextPos] + " ";
+          nextPos++;
+        }
+
+        newTableContent.product_name = productNameTmp.trim();
+
+        let strTmp = "";
+
+        while (
+          isNaN(+pageLines[nextPos]) &&
+          !pageLines[nextPos].startsWith("Cộng tiền hàng #(Sub total)#")
+        ) {
+          strTmp += pageLines[nextPos];
+          nextPos++;
+        }
+
+        let arr = strTmp.split("#");
+
+        newTableContent.unit = arr[0];
+        newTableContent.quantity = +arr[1].replace(/\./g, "");
+        newTableContent.unit_price = +arr[2].replace(/\./g, "");
+        newTableContent.total = +arr[3].replace(/\./g, "");
+
+        result.table.push(newTableContent);
+      } else if (rowRegex.test(pageLines[nextPos])) {
+        let newTableContent = new TableContent();
+
+        let arrTmp = pageLines[nextPos].split("#");
+        newTableContent.total = +arrTmp
+          .pop()!
+          .replace(/\./g, "")
+          .replace(",", ".")
+          .trim();
+        newTableContent.unit_price = +arrTmp
+          .pop()!
+          .replace(/\./g, "")
+          .replace(",", ".")
+          .trim();
+        newTableContent.quantity = +arrTmp
+          .pop()!
+          .replace(/\./g, "")
+          .replace(",", ".")
+          .trim();
+        newTableContent.unit = arrTmp.pop()!.trim();
+        arrTmp.shift();
+        newTableContent.product_name = arrTmp.join("").trim();
+
+        result.table.push(newTableContent);
+        nextPos++;
+      }
+    }
+
     while (!isNaN(+pageLines[nextPos])) {
-      nextPos++;
-      let newTableContent: TableContent = new TableContent();
-      let productNameTmp = "";
-
-      while (!rowRegex.test(pageLines[nextPos])) {
-        productNameTmp += pageLines[nextPos] + " ";
-        nextPos++;
-      }
-
-      newTableContent.product_name = productNameTmp.trim();
-
-      let strTmp = "";
-
-      while (
-        isNaN(+pageLines[nextPos]) &&
-        !pageLines[nextPos].startsWith("Cộng tiền hàng #(Sub total)#")
-      ) {
-        strTmp += pageLines[nextPos];
-        nextPos++;
-      }
-
-      let arr = strTmp.split("#");
-
-      newTableContent.unit = arr[0];
-      newTableContent.quantity = +arr[1].replace(/\./g, "");
-      newTableContent.unit_price = +arr[2].replace(/\./g, "");
-      newTableContent.total = +arr[3].replace(/\./g, "");
-
-      result.table.push(newTableContent);
-
       if (nextPos >= pageLines.length) break;
     }
 

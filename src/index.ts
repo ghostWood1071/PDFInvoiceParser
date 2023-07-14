@@ -27,8 +27,13 @@ let extractor = new SoftDreamsInvoiceExtractor(
   "src/pdf/ASIABOLT_385_28.03.2023.pdf"
 );
 
+// let extractor = new SoftDreamsInvoiceExtractor(
+//   "src/pdf/HOADON_0313828874-001_1C23TVN_85.pdf"
+// );
+
 // extractor.saveRawText("softdream1");
 // extractor.saveRawText("softdream2");
+// extractor.saveRawText("softdream3");
 extractor.getResult().then((res) => {
   console.log(res);
 });
