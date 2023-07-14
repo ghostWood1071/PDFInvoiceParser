@@ -16,7 +16,6 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 import { EInvoiceExtractor } from "./extractor/EInvoiceExtractor";
-import test from "node:test";
 
 // vnpt - done
 // a-tek - done
@@ -30,7 +29,7 @@ import test from "node:test";
 //./src/pdf/4/HONK_88_30.09.2022.pdf
 //./src/pdf/11/MAGTRON__28_27.05.2023.pdf
 //./src/pdf/meInvoice1.pdf
-let extractor = new EInvoiceExtractor("./src/pdf/luxshare.pdf");
+let extractor = new EInvoice3Extractor("./src/pdf/uil.pdf");
 // extractor.saveRawText("haha").then((res)=>{
 //     console.log(res);
 // });
@@ -42,10 +41,10 @@ extractor.getDocInfo().then((res)=>{
     console.log(res);
 });
 
-extractor.getMetadata().then((res)=>{
-    console.log(res);
-});
-
-// extractor.saveRawText("luxshare").then((res)=>{
+// extractor.getMetadata().then((res)=>{
 //     console.log(res);
-// })
+// });
+
+// extractor.saveRawText("uil").then((res)=>{
+//     console.log(res);
+// });
