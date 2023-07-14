@@ -19,29 +19,8 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-let extractor = new EInvoice2Extractor("./src/pdf/vatec.pdf");
+let extractor = new EInvoice2Extractor("src/pdf/luxshare/2C23TLX134.pdf");
 
-// extractor.saveRawText("seojinauto");
-// extractor.saveRawText("seojinauto2");
-// extractor.saveRawText("meinvoice2");
-
-// extractor.getResult().then((res) => {
-//   console.log(res);
-// });
-extractor.getResult().then((res)=>{
-    // fs.writeFileSync("lol.json", JSON.stringify(res));
-    console.log(res);
-})
-// extractor.getDocInfo().then((res)=>{
-//     console.log(res);
-// });
-
-// extractor.getMetadata().then((res)=>{
-//     console.log(res);
-// });
-
-// extractor.saveRawText("luxshare").then((res)=>{
-//     console.log(res);
-// });
+extractor.getResult().then((res) => {
+  console.log(res);
+});
