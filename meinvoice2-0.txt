@@ -16,7 +16,7 @@ Bản thể hiện của hóa đơn điện tử
 (No):
 Ký hiệu
 Số
-(VAT Invoice) 
+(VAT Invoice)
 31tháng#03#2023
 (Date)
 năm
