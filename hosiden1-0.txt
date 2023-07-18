@@ -1,0 +1,81 @@
+
+
+#Ngày 15 tháng 02 năm 2023
+Mã cơ quan thuế cấp: #005#ACEDFA#8#A#66247#FD#8#C#0232#AD#974#F#7#D#34
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Ký hiệu#:#1C23TGT
+Số#:#281
+Đơn vị bán hàng#:#CÔNG TY TNHH HOSIDEN VIỆT NAM (BẮC GIANG)
+Mã số thuế#:
+2400409721#
+Địa chỉ#:#Một phần lô C (C1), KCN Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam
+Số tài khoản#:#700-001-487.855 (USD) - Shinhan Bank Việt Nam - CN Bắc Ninh
+Điện thoại#:#(084-0240)3 868940#Fax: #(84- 0240)3 868954
+Họ tên người mua hàng#:
+Tên đơn vị#:#Công ty TNHH Samsung Electronics Việt Nam
+Địa chỉ#:
+KCN Yên Phong I, Yên Trung, Yên Phong, Bắc Ninh
+Số tài khoản#:
+Hình thức thanh toán: #Chuyển khoản#Mã số thuế : 2300325764
+Stt#Tên hàng hóa, dịch vụ#Đvt#Số lượng#Đơn giá#Thành tiền
+1##2#3#4#5#6=4x5
+1##Mạ#ch in #mề#m #đã lắ#p #rá#p #d#ng cho #điệ#n #thoạ#i di #độ#ng VFJ0730-
+0107000 (GH59-14825A)#
+chiếc#200,00#0,1944#38,88
+2##Mạ#ch in #mề#m #đã lắ#p #rá#p #d#ng cho #điệ#n #thoạ#i di #độ#ng VMG0965-
+0107010 (GH59-14881A)#
+chiếc#5,00#7,0996#35,50
+3##Mạch in mềm đã lắp ráp dng cho #điệ#n #thoạ#i VMN0976-0109001 
+(GH59-15118A)
+chiếc#17,00#1,0518#17,88
+4##Mạch in mềm đã lắp ráp dng cho #điệ#n #thoạ#i (VFA0908-0109000) 
+(GH59-15180A)
+chiếc#96,00#0,2305#22,13
+5##Mạch in mềm đã lắp ráp dng cho #điệ#n #thoạ#i di #độ#ng VCG0981-
+0109000 (GH59-15208A)#
+chiếc#10,00#0,9982#9,98
+6##Mạch in mềm đã lắp ráp dng cho #điệ#n #thoạ#i di #độ#ng VFA0217-
+0109000 (GH59-15280A)#
+chiếc#178,00#0,1948#34,67
+7##Mạch in mềm đã lắp ráp dng cho điện thoại VMG0781-0120003 
+(GH59-15385A)
+chiếc#17.019,00#1,2107#20.604,91
+8##Mạch in mềm đã lắp ráp dng cho điện thoại VMG0781-0120003 
+(GH59-15385A)
+chiếc#5.626,00#1,2291#6.914,92
+9##Mạch in mềm đã lắp ráp dng cho điện thoại VMG0781-0120001 
+(GH59-15387A)
+chiếc#6,00#0,6159#3,70
+10#
+Mạch in mềm VMR0890-0121000 (GH59-15496A)
+chiếc#67.063,00#0,2993#20.071,94
+11##Mạch in mềm đã lắp ráp dng cho điện thoại VFG0990-0121000 
+(GH59-15497A)
+chiếc#9.589,00#0,419#4.017,79
+12##Mạch in mềm đã lắp ráp dng cho điện thoại VFG0990-0121000 
+(GH59-15497A)
+chiếc#6.611,00#0,4329#2.861,90
+13##Mạch in mềm đã lắp ráp dng cho điện thoại di động VMA0536-
+0121000 (GH59-15556A)#
+chiếc#5.166,00#3,5891#18.541,29
+14#
+Mạch in mềm VMR0905-0121000 (GH59-15577A)
+chiếc#273.300,00#0,2707#73.982,32
+15#
+Mạch in mềm VMR0925-0121000 (GH59-15581A)
+chiếc#55.350,00#0,3853#21.326,36
+16##Mạch in mềm đã lắp ráp dng cho điện thoại VMF0936-0122001 
+(GH59-15582A)
+chiếc#20.483,00#1,1518#23.592,31
+17#
+Mạch in mềm VMS0911-0122001 (GH59-15618A)
+chiếc#245.458,00#0,5644#138.536,50
+18#
+Mạch in mềm VMS0911-0122002 (GH59-15620A)
+chiếc#153.295,00#1,3263#203.315,17
+19#
+Mạch in mềm VMS0918-0122011 (GH59-15624A)
+chiếc#95.406,00#0,4895#46.701,24
+Mã tra cứu hóa đơn#:# #ZV CBD 30E 73X
+ #Trang# 1/4
+Đơn vị cung cấp giải pháp hóa đơn điện tử: Công ty Cổ phần Phần mềm Quản lý Doanh nghiệp, MST: 0100727825 (www.fast.com.vn)

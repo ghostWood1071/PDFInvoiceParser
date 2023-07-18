@@ -18,6 +18,7 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
+import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 
 // let extractor = new SoftDreamsInvoiceExtractor(
 //   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
@@ -33,13 +34,17 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 //   console.log(res);
 // });
 
-// let extractor = new SoftDreamsInvoiceExtractor(
-//   "src/pdf/HOADON_0313828874-001_1C23TVN_85.pdf"
-// );
+let extractor = new FastInvoiceExtractor(
+  "./src/pdf/hosiden1.pdf" 
+);
 
 // extractor.saveRawText("softdream1");
 // extractor.saveRawText("softdream2");
-// extractor.saveRawText("softdream3");
-// extractor.getResult().then((res) => {
-//   console.log(res);
-// });
+//./src/pdf/11/MAGTRON__28_27.05.2023.pdf
+//./src/pdf/shinsung.pdf
+// extractor.saveRawText("hosiden2");
+extractor.getResult().then((res) => {
+  console.log(res);
+});
+
+// extractor.saveRawText("hosiden2");

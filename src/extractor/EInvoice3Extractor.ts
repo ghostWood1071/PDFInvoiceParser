@@ -47,13 +47,22 @@ export class EInvoice3Extractor extends PdfExtractor {
     return pageData.getTextContent(render_options).then(renderText);
   }
 
+  private optimizeRow(row:string[]){
+    while(row.length > 5){
+      let replace = row.splice(0, 2);
+      row.unshift(replace.join(" "))
+    }
+  }
+
   private processTableRow(rowStr: string){
+    // rowStr = rowStr.replace(/-\#/g, "-").replace(/:\#/g, ":");
     let result = new TableContent();
     let numStartRegex = /^[0-9]+\#/g;
     rowStr = rowStr.replace(numStartRegex, "");
     if(rowStr.endsWith("#"))
       rowStr = rowStr.substring(0, rowStr.length-1);
     let raw = rowStr.split("#");
+    this.optimizeRow(raw);
     result.product_name = raw[0];
     result.unit = raw[1];
     result.total = parseFloat(raw[2].replace(/\./, "").replace(/\,/,".")); 

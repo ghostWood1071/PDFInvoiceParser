@@ -192,16 +192,6 @@ export class PdfExtractor {
     return null;
   }
 
-  // async getSeller(){
-  //   let docLines = await this.getDocLines();
-  //   if(docLines){
-  //     for(let line of docLines){
-  //       if(line.includes(""))
-  //     }
-  //   } 
-  //   return null;
-  // }
-
   async getMetadata() {
     let fileBuff = await fs.readFileSync(this.fileName);
     let parser = await PdfParse(fileBuff);
@@ -226,16 +216,12 @@ export class PdfExtractor {
   }
 
   protected renderPage(pageData: any): string {
-    //check documents https://mozilla.github.io/pdf.js/
     let render_options = {
-      //replaces all occurrences of whitespace with standard spaces (0x20). The default value is `false`.
       normalizeWhitespace: false,
-      //do not attempt to combine same line TextItem's. The default value is `false`.
       disableCombineTextItems: false,
     };
 
     let renderText = (textContent: any) => {
-      //fs.writeFileSync('lol.json', JSON.stringify(textContent));
       let regex = /^[\d,.]+$/;
       let lastY,
         text = "";
@@ -286,7 +272,6 @@ export class PdfExtractor {
 
   protected async getTextInPages(document: PDFDocument) {
     let pageText: string[] = [];
-
     for (let pageNum = 0; pageNum < document.getPageCount(); pageNum++) {
       let pageBuff = await this.getPageBuffer(document, pageNum);
       if (!pageBuff) continue;
