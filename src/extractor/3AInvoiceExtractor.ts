@@ -115,7 +115,7 @@ export class ThreeAInvoiceExtractor extends PdfExtractor {
 
     let rowRegex = /^\d+(\,\d+)*\#+\d+(\,\d+)*\#+\d+(\,\d+)*/;
 
-    while (!rowRegex.test(pageLines[nextPos]) || nextPos > pageLines.length) {
+    while (!rowRegex.test(pageLines[nextPos]) && nextPos < pageLines.length) {
       nextPos++;
     }
 
@@ -141,7 +141,7 @@ export class ThreeAInvoiceExtractor extends PdfExtractor {
   async getResult() {
     let pageLines = await this.docLines;
     if (pageLines) {
-      if (pageLines.length >= 1) {
+      if (pageLines.length == 1) {
         let data = this.processPage(pageLines[0]);
         return data;
       } else {

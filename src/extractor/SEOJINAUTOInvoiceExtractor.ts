@@ -36,37 +36,68 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
     return { strResult: result, nextPos: pos };
   }
 
+  protected override renderPage(pageData: any): string {
+    //check documents https://mozilla.github.io/pdf.js/
+    let render_options = {
+      //replaces all occurrences of whitespace with standard spaces (0x20). The default value is `false`.
+      normalizeWhitespace: false,
+      //do not attempt to combine same line TextItem's. The default value is `false`.
+      disableCombineTextItems: false,
+    };
+
+    let renderText = (textContent: any) => {
+      let lastY,
+        text = "";
+      for (let item of textContent.items) {
+        if (lastY == item.transform[5] || !lastY) {
+          text += "#" + item.str;
+        } else {
+          text += "\n" + item.str;
+        }
+        lastY = item.transform[5];
+      }
+      return text;
+    };
+
+    return pageData.getTextContent(render_options).then(renderText);
+  }
+
   private processPage(pageLines: string[]) {
     let result: PageContent = new PageContent();
 
-    let lineTmp = this.getUntil(pageLines, 0, "(Invoice code):");
+    let lineTmp = this.getUntil(pageLines, 0, "(#Invoice code#):");
     let nextPos = lineTmp.nextPos;
 
     if (!pageLines[nextPos + 3].includes("Mã số thuế")) {
-      lineTmp = this.getUntil(pageLines, nextPos, "(Sign):");
+      lineTmp = this.getUntil(pageLines, nextPos, "(#Sign#):");
       nextPos = lineTmp.nextPos;
 
       result.serial = pageLines[++nextPos].replace(/#/g, "");
       result.no = pageLines[++nextPos].replace(/#/g, "");
 
-      nextPos = this.getUntil(pageLines, nextPos, "(Date)").nextPos;
+      nextPos = this.getUntil(pageLines, nextPos, "(#Date#)").nextPos;
 
       result.date = this.processDate(pageLines[nextPos - 1]);
 
       nextPos = this.getUntil(pageLines, nextPos, "Địa chỉ").nextPos;
       result.seller.companyName = pageLines[nextPos - 2]
+        .replace(/#/g, "")
         .replace("Đơn vị bán hàng", "")
         .trim();
 
       result.seller.taxCode = pageLines[nextPos - 1]
+        .replace(/#/g, "")
         .replace("Mã số thuế", "")
         .trim();
 
-      nextPos = this.getUntil(pageLines, nextPos, "(Buyer):").nextPos;
+      nextPos = this.getUntil(pageLines, nextPos, "(#Buyer#):").nextPos;
 
       lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ");
 
-      result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "").trim();
+      result.buyer.taxCode = lineTmp.strResult
+        .replace(/#/g, "")
+        .replace("Mã số thuế", "")
+        .trim();
     } else {
       nextPos += 2;
       result.seller.companyName = this.getUntil(
@@ -76,43 +107,53 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
       ).strResult.trim();
 
       result.seller.taxCode = this.getUntil(pageLines, ++nextPos, "Địa chỉ")
-        .strResult.replace("Mã số thuế", "")
+        .strResult.replace(/#/g, "")
+        .replace("Mã số thuế", "")
         .trim();
 
-      lineTmp = this.getUntil(pageLines, nextPos, "(Sign):");
+      lineTmp = this.getUntil(pageLines, nextPos, "(#Sign#):");
 
       nextPos = lineTmp.nextPos;
 
       result.serial = pageLines[++nextPos].replace(/\#/g, "");
-      lineTmp = this.getUntil(pageLines, ++nextPos, "(No):");
+      lineTmp = this.getUntil(pageLines, ++nextPos, "(#No#):");
       result.no = lineTmp.strResult;
       nextPos = lineTmp.nextPos;
 
-      lineTmp = this.getUntil(pageLines, nextPos, "(VAT Invoice)");
+      lineTmp = this.getUntil(pageLines, nextPos, "(#VAT Invoice#)");
       nextPos = lineTmp.nextPos;
 
-      lineTmp = this.getUntil(pageLines, ++nextPos, "(Date)");
+      lineTmp = this.getUntil(pageLines, ++nextPos, "(#Date#)");
       result.date = this.processDate(lineTmp.strResult);
 
-      nextPos = this.getUntil(pageLines, nextPos, "(Buyer):").nextPos;
+      nextPos = this.getUntil(pageLines, nextPos, "(#Buyer#):").nextPos;
 
       lineTmp = this.getUntil(pageLines, ++nextPos, "Địa chỉ");
-      result.buyer.taxCode = lineTmp.strResult.replace("Mã số thuế", "");
+      result.buyer.taxCode = lineTmp.strResult
+        .replace(/#/g, "")
+        .replace("Mã số thuế", "")
+        .trim();
 
       nextPos = this.getUntil(pageLines, nextPos, "Tên đơn vị").nextPos;
-      result.buyer.companyName = pageLines[nextPos].replace("Tên đơn vị", "");
+      result.buyer.companyName = pageLines[nextPos]
+        .replace(/#/g, "")
+        .replace("Tên đơn vị", "")
+        .trim();
     }
 
     while (
       nextPos < pageLines.length &&
-      !pageLines[nextPos].trim().includes("(Company's name):")
+      !pageLines[nextPos].trim().includes("(#Company#'#s name#):")
     ) {
       nextPos++;
     }
 
-    result.buyer.companyName = pageLines[nextPos - 1].replace("Tên đơn vị", "");
+    result.buyer.companyName = pageLines[nextPos - 1]
+      .replace(/#/g, "")
+      .replace("Tên đơn vị", "")
+      .trim();
 
-    nextPos = this.getUntil(pageLines, nextPos, "ABC#1#2#3=#1x#2").nextPos;
+    nextPos = this.getUntil(pageLines, nextPos, "A#B#C#1#2#3#=#1#x#2").nextPos;
     nextPos++;
 
     let numStrRegex = /^\d[\#\.\,\d]*\d$/;
@@ -125,20 +166,16 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
       let newTableContent: TableContent = new TableContent();
 
       let str = "";
-
       while (!numStrRegex.test(pageLines[nextPos])) {
-        str += pageLines[nextPos] + " ";
+        str += "#" + pageLines[nextPos] + " ";
         nextPos++;
       }
-
-      str = str.replace(/#/g, "").trim();
-      for (let unit of this.unitArr) {
-        if (str.toLowerCase().endsWith(unit)) {
-          newTableContent.product_name = str.slice(0, -unit.length).trim();
-          newTableContent.unit = str.slice(-unit.length);
-          break;
-        }
-      }
+      let lastIndexOfSharp = str.lastIndexOf("#");
+      newTableContent.product_name = str
+        .slice(0, lastIndexOfSharp)
+        .replace(/#/g, "")
+        .trim();
+      newTableContent.unit = str.slice(lastIndexOfSharp + 1).trim();
 
       var numArr = pageLines[nextPos].split("#");
       var commaIndex = numArr.indexOf(",");

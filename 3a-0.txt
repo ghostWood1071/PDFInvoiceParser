@@ -1,0 +1,96 @@
+
+
+#(VAT INVOICE)
+
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Địa chỉ
+Lô 44F- 44J, Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố
+Hà Nội
+Mã số thuế#2500243660
+Hình thức thanh toán
+CÔNG TY TNHH ELENTEC VIỆT NAM
+Họ tên người mua hàng
+#Số tài khoản
+Chuyển khoản
+Đơn vị
+Số
+00000437
+Ký hiệu
+C23TDL
+1
+Mẫu số
+Địa chỉ
+Lô số 6, Khu công nghiệp Quang Minh II, Xã Kim Hoa, Huyện Mê Linh,
+Thành phố Hà Nội, Việt Nam
+0105246032#Mã số thuế
+CÔNG TY TNHH SẢN XUẤT BAO BÌ VÀ DỊCH VỤ ĐẠI LỢI
+6 = 4 x 5#5#4#3#2#1
+Đơn vị bán hàng
+(Amount)#(Unit Price)#(Quantity)#(Unit)# (Description)#(No.)
+Thành tiền#Đơn giá#Số lượng
+Đơn vị
+tính
+Tên hàng hoá, dịch vụ#STT
+Ngày# 
+(day)
+ #30# #Tháng# 
+(month)
+ #05# #Năm# 
+(year)
+ #2023
+(HÓA ĐƠN CHUYỂN ĐỔI TỪ HÓA ĐƠN ĐIỆN TỬ)
+ (Seller):
+(Form No.):
+ (Serial No.):
+(Invoice No.):
+ (Tax Code):
+(Address):
+ (Buyer):
+(Company name):
+ (Tax Code):
+(Address):
+(Payment method):
+(Account No.):
+#Email:
+(Tel.):
+0243 8186 203#Điện thoại
+Số tài khoản#113000072701   Tại : Ngân hàng TMCP Công thương Việt Nam - CN Quang Minh
+(Account No.):
+Fax:#0243 8186 203
+00223AC745F5D44699B2EE176D457E4CA7#MCCQT:
+396,682,500#11,650#34,050#Cái# Hộp carton 5 lớp KT: 410*340*360 (SM-J810F)#1
+20,319,600#12,390#1,640#Cái#Hộp carton 5 lớp KT: 520*325*345( SM-A750F)#2
+17,169,000#590#29,100#Cái#Tấm carton KT: 315*265mm (PMC)#3
+3,113,300#16,300#191#Cái#Khay KT: 1120*750*100mm#4
+1,750,320#16,830#104#Cái#Khay KT: 1160*760*100mm#5
+336,600#16,830#20#Cái#Khay KT: 1125*778*100mm#6
+7,128,000#8,910#800#Cái#Nẹp góc KT: 50*50*5*1240mm#7
+19,250,000#11,000#1,750#Cái#Nẹp góc KT: 50*50*5*2000mm#8
+#####
+#####
+#####
+(Tax rate):
+Cộng tiền hàng
+Năm trăm mười hai triệu ba trăm hai mươi bốn nghìn hai trăm năm
+mươi hai đồng.
+Số tiền viết bằng chữ
+Thuế suất GTGT#10
+Tổng cộng tiền thanh toán#512,324,252
+%
+Cộng tiền thuế GTGT
+46,574,932
+465,749,320
+Ký, đóng dấu, ghi rõ họ tên#Ký, ghi rõ họ tên
+Người bán hàng#Người mua hàng
+Ký, ghi rõ họ tên
+Người chuyển đổi
+(Sub total):
+(VAT amount):
+(Total payment):
+(Amount in words):
+(Buyer)#(Converter)#(Seller)
+Trang 1/2
+
+Đường dẫn tra cứu: hddt.3asoft.vn#Mã bảo mật: 6ZQGA8MT2-ROIXEQLQ-3YK29V2
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)
+Phần mềm được cung cấp bởi Công ty Cổ phần Giải Pháp Phần mềm 3A Việt Nam. MST: 0108516079 Điện thoại: 0243 791.8098

@@ -1,0 +1,91 @@
+
+
+#Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+Tiep theo trang truoc - trang 2/2
+ 2/2
+Mã tra cứu hóa đơn
+Tra cứu tại Website#https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/
+(#Search on Website#):
+(#Invoice code#):
+0#DT#5#CP#5#V#8#QD
+Mã CQT (Code):#00C0740B3EB6DE49C2BCEF4DB3E8E99563
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(#Sign#):
+1#C#23#TWV
+00000347
+(#No#):
+Ký hiệu
+Số
+(#VAT Invoice#)
+31#tháng#03#2023
+(#Date#)
+năm
+(#E#-#Invoice viewer#)
+Ngày
+(#month#)#(#year#)
+CÔNG TY TNHH WONJIN VINA#Đơn vị bán hàng
+2400764807#Mã số thuế
+Địa chỉ
+Lô CN#-#16#, #Khu công nghiệp Vân Trung#, #Xã Vân Trung#, #Huyện Việt Yên#,
+Tỉnh Bắc Giang#, #Việt Nam
+(#Seller#)
+(#Tax code#)
+(#Address#)
+0359204180#Điện thoại
+(#Tel#)
+700#-#004#-#659915 #(#VNĐ#)#, #700#-#004#-#659#-#880 #(#USD#)#Số tài khoản
+(#A#/#C No#)
+:
+:
+:
+:
+:
+Ngân hàng
+(#Bank#)
+:#Ngân hàng Shinhan #- #CN Bắc Ninh
+2500243660#Mã số thuế
+Địa chỉ
+Lô #44#F#, #44#J#, #Khu công nghiệp Quang Minh#, #Thị trấn Chi Đông#, #Huyện Mê Linh#, #Thành phố
+Hà Nội#, #Việt Nam
+CÔNG TY TNHH ELENTEC VIỆT NAM#Tên đơn vị
+ (#Company#'#s name#):
+(#Tax code#):
+(#Address#):
+STT#Tên hàng hóa#, #dịch vụ
+Đơn vị tính
+Số lượng#Đơn giá#Thành tiền
+(#No#)#(#Name of goods and services#)
+(#Unit#)
+(#Quantity#)#(#Unit price#)#(#Amount#)
+A#B#C#1#2#3#=#1#x#2
+7#.#050#.#133#.#340
+Cộng tiền hàng#:
+(#Total before VAT#):
+7#.#755#.#146#.#674
+Tổng tiền thanh toán
+(#Total amount#):
+Thuế suất GTGT
+(#VAT rate#):
+10 #%#705#.#013#.#334
+Tiền thuế GTGT
+(#VAT amount#):
+Số tiền viết bằng chữ
+Bảy tỷ bảy trăm năm mươi lăm triệu một trăm bốn mươi sáu nghìn sáu trăm bảy
+mươi bốn đồng#.
+(#Total amount in words#):
+(#Exchange rate#):
+Tỷ giá
+VND#/#VND
+1#,#00
+(#Signature#, #full name#)#(#Signature#, #full name#)
+Người mua hàng
+(#Ký#, #ghi rõ họ#, #tên#)
+Người bán hàng
+(#Ký#, #ghi rõ họ#, #tên#)
+Ký bởi#:
+Ký ngày#:
+CÔNG TY TNHH WONJIN VINA
+31/03/2023
+(#Buyer#)#(#Seller#)
+(#Cần kiểm tra#, #đối chiếu trước khi lập#, #giao#, #nhận hóa đơn#)
