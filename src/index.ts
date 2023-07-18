@@ -6,6 +6,7 @@ import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
 import { EInvoiceExtractor } from "./extractor/EInvoiceExtractor";
+import { FPTExtractor } from "./extractor/FPTExtractor";
 import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
@@ -20,31 +21,8 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 
-// let extractor = new SoftDreamsInvoiceExtractor(
-//   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
-// );
+let extractor = new FPTExtractor("src/pdf/phiếu XK 00012313 (1).pdf");
 
-// let extractor = new SoftDreamsInvoiceExtractor(
-//   "src/pdf/ASIABOLT_385_28.03.2023.pdf"
-// );
+extractor.saveRawText("fpt");
 
-// // extractor.saveRawText("softdream1");
-// // extractor.saveRawText("softdream2");
-// extractor.getResult().then((res) => {
-//   console.log(res);
-// });
-
-let extractor = new FastInvoiceExtractor(
-  "./src/pdf/hosiden1.pdf" 
-);
-
-// extractor.saveRawText("softdream1");
-// extractor.saveRawText("softdream2");
-//./src/pdf/11/MAGTRON__28_27.05.2023.pdf
-//./src/pdf/shinsung.pdf
-// extractor.saveRawText("hosiden2");
-extractor.getResult().then((res) => {
-  console.log(res);
-});
-
-// extractor.saveRawText("hosiden2");
+extractor.getResult().then((res) => console.log(res));
