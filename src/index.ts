@@ -20,7 +20,17 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
-// ./src/pdf/luxshare/2C23TLX134.pdf
-let extractor = new FastInvoiceExtractor("./src/pdf/hosiden1.pdf");
-extractor.saveRawText("hosiden");
-// extractor.getResult().then((res) => console.log(res));
+
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
+let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
+
+// let extractor = new SEOJINAUTOInvoiceExtractor(
+//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
+// );
+
+// extractor.saveRawText("seojin2");
+// extractor.saveRawText("logisall");
+// extractor.saveRawText("meinvoice2");
+
+extractor.getResult().then((res) => console.log(res));

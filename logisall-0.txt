@@ -1,0 +1,96 @@
+
+
+#Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+Mã tra cứu hóa đơn
+Tra cứu tại Website#https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/
+(#Search on Website#):
+(#Invoice code#):
+N#2#TKF#_#3#X#80#_
+CÔNG TY TNHH LOGISALL VIỆT NAM
+0107369689#Mã số thuế
+Địa chỉ
+P#1212 #Keangnam Hanoi Landmark Tower#, #E#6 #KĐTM Cầu Giấy#,
+Phường Mễ Trì#, #Quận Nam Từ Liêm#, #Thành phố Hà Nội#, #Việt Nam
+(#Tax code#)
+(#Address#)
+02432262950#Điện thoại
+(#Tel#)
+077400191920002#Số tài khoản
+(#A#/#c No#)
+:
+:
+:
+:
+NGÂN HÀNG CÔNG NGHIỆP HÀN QUỐC #(#IBK#) - #CN HÀ NỘI
+Mã CQT (Code):#0091E20C44C54141DC8CFFB9ADDDA26B68
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(#Sign#):
+1#C#23#TLA
+00000064
+(#No#):
+Ký hiệu
+Số
+(#VAT Invoice#)
+30#tháng#05#2023
+(#Date#)
+năm
+(#E#-#Invoice viewer#)
+Ngày
+(#month#)#(#year#)
+Họ tên người mua hàng
+(#Buyer#):
+2500243660#Mã số thuế
+Địa chỉ
+Lô #44#F#, #44#J#, #Khu công nghiệp Quang Minh#, #Thị trấn Chi Đông#, #Huyện Mê Linh#,
+Thành phố Hà Nội
+CÔNG TY TNHH ELENTEC VIỆT NAM#Tên đơn vị
+ (#Company#'#s name#):
+(#Tax code#):
+(#Address#):
+TM#/#CK#Số tài khoản
+(#Bank account#):#(#Payment method#):
+Hình thức thanh toán
+STT#Tên hàng hóa#, #dịch vụ
+Đơn vị
+tính
+Số lượng#Đơn giá#Thành tiền
+(#No#)#(#Name of goods and services#)
+(#Unit#)
+(#Quantity#)#(#Unit price#)#(#Amount#)
+A#B#C#1#2#3#=#1#x#2
+Pallet gỗ KT#: #1200#x#800#x#145#mm#cái
+125#700#.#000#87#.#500#.#000
+1
+Pallet gỗ KT#: #1100#x#850#x#120#mm#cái
+510#118#.#000#60#.#180#.#000
+2
+Tấm gỗ KT#: #1130#x#760#x#9#mm#cái
+134#80#.#000#10#.#720#.#000
+3
+158#.#400#.#000
+Cộng tiền hàng#:
+(#Total before VAT#):
+174#.#240#.#000
+Tổng tiền thanh toán
+(#Total amount#):
+Thuế suất GTGT
+(#VAT rate#):
+10 #%#15#.#840#.#000
+Tiền thuế GTGT
+(#VAT amount#):
+Số tiền viết bằng chữ
+Một trăm bảy mươi bốn triệu hai trăm bốn mươi nghìn đồng chẵn#.
+(#Total amount in words#):
+(#Signature#, #full name#)#(#Signature#, #full name#)
+Người mua hàng
+(#Ký#, #ghi rõ họ#, #tên#)
+Người bán hàng
+(#Ký#, #ghi rõ họ#, #tên#)
+Ký bởi#:
+Ký ngày#:
+CÔNG TY TNHH LOGISALL VIỆT
+NAM
+30/05/2023
+(#Buyer#)#(#Seller#)
+(#Cần kiểm tra#, #đối chiếu trước khi lập#, #giao#, #nhận hóa đơn#)
