@@ -20,9 +20,7 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
-
-let extractor = new FPTExtractor("src/pdf/phiếu XK 00012313 (1).pdf");
-
-extractor.saveRawText("fpt");
-
-extractor.getResult().then((res) => console.log(res));
+// ./src/pdf/luxshare/2C23TLX134.pdf
+let extractor = new FastInvoiceExtractor("./src/pdf/hosiden1.pdf");
+extractor.saveRawText("hosiden");
+// extractor.getResult().then((res) => console.log(res));
