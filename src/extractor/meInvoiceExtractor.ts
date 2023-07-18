@@ -27,7 +27,10 @@ export class meInvoiceExtractor extends PdfExtractor {
                         text +=  item.str+"#";
               }  
               else{
-                  text += '\n' + item.str;
+                if (regex.test(item.str))
+                    text += "\n#"+item.str+"#";
+                else 
+                    text += '\n' + item.str;
               }    
               lastY = item.transform[5];
           }
@@ -37,7 +40,7 @@ export class meInvoiceExtractor extends PdfExtractor {
     }
 
     private getDate(str:string){
-        let raw = str.split("#");
+        let raw = str.replace(/\#\#/g, "#").split("#");
         return new Date(`${raw[4]}-${raw[1]}-${raw[7]}`);
     }
 
@@ -49,14 +52,13 @@ export class meInvoiceExtractor extends PdfExtractor {
     }
 
     private processTableRow(rowStr: string){
-        // console.log(rowStr);
+        rowStr = rowStr.replace(/\#\#/g, "#");
         let result = new TableContent();
-        let numStartRegex = /^[0-9]+|^[0-9]+\#/g;
+        let numStartRegex = /^\#[0-9.,]+\#/g;
         rowStr = rowStr.replace(numStartRegex, "");
         if(rowStr.endsWith("#"))
             rowStr = rowStr.substring(0, rowStr.length-2);
         rowStr = rowStr.replace(/\#{2,}/g, "#");
-        console.log([rowStr]);
         let raw = rowStr.split("#")
         this.simplifyRow(raw);
         result.product_name = raw[0];
@@ -68,8 +70,8 @@ export class meInvoiceExtractor extends PdfExtractor {
     }
 
     private processPage(pageLines: string[]){
-        let rowRegex = /^\d+[A-ZÁÀẠÃẢẮẰẲẶẴẤẦẬẨẪĐÓÒỎỌÕÔỐỒỔỘỖƠỚỜỞỢỠĂƯỨỪỬỰỮÚÙỦỤŨÂÊẾỀỂỆỄÉÈẺẸẼÝỲỶỴỸÍÌỈỊĨ]|^\d+$/
-        let enTableRegex = /Cộng tiền hàng|Hình thức thanh toán|Người mua hàng|Số:#|\d+\/\d+|\(Theo PO đặt hàng số/;
+        let rowRegex = /^#(0?[1-9]\d*)#/;
+        let enTableRegex = /Cộng tiền|Hình thức thanh toán|Người mua hàng|Số:#|\d+\/\d+|\(Theo PO đặt hàng số/;
         let result = new PageContent();
         let nextPos = this.getUntil(pageLines, 0, "CÔNG TY").nextPos;
         let tmpLine = this.getUntil(pageLines,nextPos, "Mã số thuế");
@@ -96,7 +98,6 @@ export class meInvoiceExtractor extends PdfExtractor {
             return result;
         let line = "";
         for(let linePos = nextPos; linePos<pageLines.length; linePos++){
-            // console.log(pageLines[linePos]);
             if(!pageLines[linePos].includes("STT#Tên hàng hóa")){
                 if (enTableRegex.test(pageLines[linePos])){
                     nextPos = linePos;
@@ -104,18 +105,16 @@ export class meInvoiceExtractor extends PdfExtractor {
                 }
                 if (rowRegex.test(pageLines[linePos])) {
                     if(line != "") {
-                        // console.log(line);
                         result.table.push(this.processTableRow(line));
-                        // console.log([line]);
                         line = "";
                     }
                 }
-                line = line + pageLines[linePos] + (pageLines[linePos]==""?"":"#");
+                    line = line + pageLines[linePos] + (pageLines[linePos]==""?"":"#");
             }
         }
+
         if(rowRegex.test(line))
             result.table.push(this.processTableRow(line));
-        // tmpLine = this.getUntil(pageLines, nextPos, "")
         return result;
     }
 

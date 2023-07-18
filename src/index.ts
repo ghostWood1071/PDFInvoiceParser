@@ -19,6 +19,7 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
+import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 
 // let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
 let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");

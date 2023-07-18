@@ -1,0 +1,67 @@
+
+
+#PHIẾU XUẤT KHO
+KIÊM VẬN CHUYỂN NỘI BỘ#
+Ngày 20 tháng 03 năm 2023#
+Mã cơ quan thuế cấp: ##00#A#6835#D#6#C#90#DF#4#FBF#836#B#5#EAD#42#BF#7#F#7#B
+Tên tổ chức, cá nhân##:# #CÔNG TY TNHH HOSIDEN VIỆT NAM (BẮC GIANG)
+Mã số thuế##:# #2 4 0 0 4 0 9 7 2 1
+Địa chỉ##:# #Một phần lô C (C1), KCN Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam
+Số tài khoản##:# #700-001-487.855 (USD), Shinhan Bank Việt Nam - CN Bắc Ninh
+Điện thoại##:# #(084-0240)3 868940
+Căn cứ lệnh điều động số##:# #INT-HVBG-KH19083Q#Ngày 20 tháng 03 năm 2023
+của## #KOREA HOSIDEN ELECTRONICS CO.,LTD#về việc#:# #Xuất kho
+Họ tên người vận chuyển##:# #HOSIDEN VIETNAM (BACGIANG) 
+CO., LTD#
+Hợp đồng số##:# #INT-HVBG-KH19083Q
+Phương tiện vận chuyển##:# #Xe tải
+Xuất tại kho##:# #HOSIDEN VIETNAM (BACGIANG) CO., LTD
+Tên người nhận hàng##:# #Mrs Hương
+Mã số thuế##:# #2 3 0 0 3 2 3 2 2 0
+Nhập tại kho##:# #CÔNG TY INTOPS VIỆT NAM ( KCN Yên Phong, Xã Long Châu, huyện Yên Phong, tỉnh Bắc Ninh, Việt Nam
+Ký hiệu##:#6C23NGT
+42#
+Số##:
+Stt#
+Tên nhãn hiệu, quy cách, phẩm #
+chất vật tư (sản phẩm, hàng hóa)#
+Mã số#
+Đơn vị #
+tính#
+Số lượng#
+Thực xuất##Thực nhập
+Đơn giá##Thành tiền
+1##Mạch in mềm đã lắp ráp dùng cho 
+điện thoại  VFA0135-0122000  #
+(GH59-15588A)#
+PCS##104.400,00#0,1302#13.592,88
+2##Mạch in mềm đã lắp ráp dùng cho 
+điện thoại VFA0536-0121000 #
+(GH59-15555A)#
+PCS##11.800,00#0,3348#3.950,64
+3##Mạch in mềm đã lắp ráp dùng cho 
+điện thoại VFA0536-0121000 #
+(GH59-15555A)#
+PCS##6.600,00#0,3348#2.209,68
+4##Mạch in mềm đã lắp ráp dùng cho 
+điện thoại di động VFA0546-#
+0122000  (GH59-15622A)#
+PCS##155.604,00#0,4338#67.501,01
+5##Mạch in đã lắp ráp dùng sản xuất 
+linh kiện điện thoại di động  #
+VFG0736-0121000 (GH96-15214A)#
+PCS##2.918,00#0,2721#793,98
+6##Mạch in đã lắp ráp dùng sản xuất 
+linh kiện điện thoại di động  #
+VFG0736-0121000 (GH96-15214A)#
+PCS##12.002,00#0,2721#3.265,74
+Tỷ giá##:# #23.420#Tổng cộng#91.313,93# USD
+Thủ trưởng đơn vị#
+(Chữ ký điện tử, Chữ ký số)#
+Ký bởi##:#CÔNG TY TNHH HOSIDEN 
+VIỆT NAM (BẮC GIANG)#
+Ký ngày##:#20/03/2023
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)#
+Đơn vị cung cấp giải pháp hóa đơn điện tử: Công ty Cổ phần Phần mềm Quản lý Doanh nghiệp, MST: 0100727825 (www.fast.com.vn)#
+Mã tra cứu hóa đơn##:# #ZV 499 BE4 45Z
+Tra cứu tại##:# #https://einvoice.fast.com.vn
