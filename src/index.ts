@@ -6,6 +6,7 @@ import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
 import { EInvoiceExtractor } from "./extractor/EInvoiceExtractor";
+import { FPTExtractor } from "./extractor/FPTExtractor";
 import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
@@ -19,21 +20,8 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-// let extractor = new SoftDreamsInvoiceExtractor(
-//   "src/pdf/2/A-TECK_49_29.09.2022_TEM.pdf"
-// );
+let extractor = new FPTExtractor("src/pdf/phiếu XK 00012313 (1).pdf");
 
-let extractor = new SoftDreamsInvoiceExtractor(
-  "src/pdf/ASIABOLT_385_28.03.2023.pdf"
-);
+extractor.saveRawText("fpt");
 
-// let extractor = new SoftDreamsInvoiceExtractor(
-//   "src/pdf/HOADON_0313828874-001_1C23TVN_85.pdf"
-// );
-
-// extractor.saveRawText("softdream1");
-// extractor.saveRawText("softdream2");
-// extractor.saveRawText("softdream3");
-extractor.getResult().then((res) => {
-  console.log(res);
-});
+extractor.getResult().then((res) => console.log(res));
