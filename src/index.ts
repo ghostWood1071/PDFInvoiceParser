@@ -7,6 +7,7 @@ import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
 import { EInvoiceExtractor } from "./extractor/EInvoiceExtractor";
 import { FPTExtractor } from "./extractor/FPTExtractor";
+import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
@@ -19,18 +20,15 @@ import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
-import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
-let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
-
-// let extractor = new SEOJINAUTOInvoiceExtractor(
-//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
+let extractor = new SoftDreamsInvoiceExtractor(
+  "src/pdf/softdreams/A-TECK_49_29.09.2022_TEM.pdf"
+);
+// let extractor = new SoftDreamsInvoiceExtractor(
+//   "src/pdf/softdreams/MIDO_116_28.12.2022.pdf"
 // );
 
-// extractor.saveRawText("seojin2");
-// extractor.saveRawText("logisall");
-// extractor.saveRawText("meinvoice2");
+// extractor.saveRawText("softdreams1");
+// extractor.saveRawText("softdreams2");
 
 extractor.getResult().then((res) => console.log(res));
