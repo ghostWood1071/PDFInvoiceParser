@@ -1,0 +1,37 @@
+
+
+#Ngày 13 tháng 01 năm 2023#
+Mã cơ quan thuế cấp: ##00##B##7##B##69##BF##014344##F##318##A##8##FE##54##C##72847027#
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG#
+Ký hiệu##:##1C23TGT#
+Số##:##77#
+Đơn vị bán hàng##:##CÔNG TY TNHH HOSIDEN VIỆT NAM (BẮC GIANG)#
+Mã số thuế##:#
+2400409721#
+Địa chỉ##:##Một phần lô C (C1), KCN Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam#
+Số tài khoản##:##700-001-487.855 (USD) - Shinhan Bank Việt Nam - CN Bắc Ninh#
+Điện thoại##:##(084-0240)3 868940##Fax: ##(84- 0240)3 868954#
+Họ tên người mua hàng##:#
+Tên đơn vị##:##Công ty TNHH Samsung Electronics Việt Nam#
+Địa chỉ##:#
+KCN Yên Phong I, Yên Trung, Yên Phong, Bắc Ninh#
+Số tài khoản##:#
+Hình thức thanh toán: ##Chuyển khoản##Mã số thuế : 2300325764#
+Stt##Tên hàng hóa, dịch vụ##Đvt##Số lượng##Đơn giá##Thành tiền#
+1##2##3##4##5##6=4x5#
+10#
+Băng ##dt##nh dạng miếng VMF0936-0801000 (GH81-22497A)#
+chiếc##10.000,00##0,0119##119,00#
+Tỷ giá##:##23.280##Cộng tiền hàng##:##58.063,83## USD#
+Thuế suất GTGT##:##0%##Tiền thuế GTGT##:##0,00## USD#
+Tổng cộng tiền thanh toán##:##58.063,83## USD#
+Số tiền viết bằng chữ##:##Năm mươi tám nghìn, không trăm sáu mươi ba đô la Mỹ và tám mươi ba xen#
+Người mua hàng##Người bán hàng#
+(Ký, họ tên)##(Ký, họ tên, đóng dấu)#
+Ký bởi##:##CÔNG TY TNHH HOSIDEN VIỆT #
+NAM (BẮC GIANG)#
+Ký ngày##:##13/01/2023#
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)#
+Mã tra cứu hóa đơn##:## ##ZV 9A6 ACD A1V#
+tiep theo trang truoc - ## ##Trang## 2/2#
+Đơn vị cung cấp giải pháp hóa đơn điện tử: Công ty Cổ phần Phần mềm Quản lý Doanh nghiệp, MST: 0100727825 (www.fast.com.vn)#
