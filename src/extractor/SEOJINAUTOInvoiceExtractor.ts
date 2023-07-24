@@ -47,7 +47,8 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
     let renderText = (textContent: any) => {
       let lastY,
-        text = "";
+        text = "",
+        lastVal;
       for (let item of textContent.items) {
         if (lastY == item.transform[5] || !lastY) {
           text += "#" + item.str;
@@ -170,6 +171,7 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
         str += "#" + pageLines[nextPos] + " ";
         nextPos++;
       }
+
       let lastIndexOfSharp = str.lastIndexOf("#");
       newTableContent.product_name = str
         .slice(0, lastIndexOfSharp)
@@ -177,32 +179,20 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
         .trim();
       newTableContent.unit = str.slice(lastIndexOfSharp + 1).trim();
 
-      var numArr = pageLines[nextPos].split("#");
-      var commaIndex = numArr.indexOf(",");
-
       if (numStrRegex.test(pageLines[nextPos])) {
-        newTableContent.quantity = +numArr
-          .slice(0, commaIndex + 2)
-          .filter((x) => x != ".")
-          .join("")
-          .replace(",", ".");
-
-        numArr = numArr.slice(commaIndex + 2);
-
-        commaIndex = numArr.indexOf(",");
-
-        newTableContent.unit_price = +numArr
-          .slice(0, commaIndex + 2)
-          .filter((x) => x != ".")
-          .join("")
-          .replace(",", ".");
-
-        numArr = numArr.slice(commaIndex + 2);
-
-        newTableContent.total = +numArr
-          .filter((x) => x != ".")
-          .join("")
-          .replace(",", ".");
+        var numArr = pageLines[nextPos]
+          .replace(/\#\.\#/g, ".")
+          .replace(/\#\,\#/g, ",")
+          .split("#");
+        newTableContent.quantity = +numArr[0]
+          .replace(/\./g, "")
+          .replace(/\,/g, ".");
+        newTableContent.unit_price = +numArr[1]
+          .replace(/\./g, "")
+          .replace(/\,/g, ".");
+        newTableContent.total = +numArr[2]
+          .replace(/\./g, "")
+          .replace(/\,/g, ".");
 
         result.table.push(newTableContent);
       } else break;
@@ -210,14 +200,13 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
       nextPos += 2;
     }
 
-    while (nextPos < pageLines.length) {
+    for (nextPos; nextPos < pageLines.length; nextPos++) {
       if (pageLines[nextPos] == "Tỷ giá") {
         result.exchange_rate = +pageLines[nextPos + 2]
           .replace(/\#/g, "")
           .replace(",", ".");
         break;
       }
-      nextPos++;
     }
 
     return result;
