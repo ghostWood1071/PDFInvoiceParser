@@ -2,6 +2,7 @@ import * as fs from "fs";
 import test from "node:test";
 import PdfParse from "pdf-parse";
 import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
+import { BKAVExtractor } from "./extractor/BKAVExtractor";
 import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
@@ -29,8 +30,9 @@ import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 //   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
 // );
 
-let extractor = new SEOJINAUTOInvoiceExtractor(
-  "src/pdf/TECH & INNOVATION_00000038_29.11.2022.pdf"
+let extractor = new BKAVExtractor(
+  "src/pdf/C22TSU-00001662-T5R4CL037U6-DPH.pdf"
 );
 
+// extractor.saveRawText("bkav");
 extractor.getResult().then((res) => console.log(res));
