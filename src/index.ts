@@ -21,8 +21,16 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new VNPT2Extractor("src/pdf/90-elentec.pdf");
+let extractor = new EInvoice2Extractor("src/pdf/1_C23TKH_260.pdf");
+// let extractor = new EInvoice2Extractor(
+//   "src/pdf/luxshare/2C23TLX5-305269815230.pdf"
+// );
+// let extractor = new EInvoice2Extractor("src/pdf/DOOWON_712_27.12.2022.pdf");
 
 // extractor.getDocInfo().then((res) => console.log(res));
-// extractor.saveRawText("vnpt2");
+
+// extractor.saveRawText("einvoice2-1");
+// extractor.saveRawText("einvoice2-2");
+// extractor.saveRawText("luxshare");
+
 extractor.getResult().then((res) => console.log(res));
