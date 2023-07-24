@@ -14,14 +14,15 @@ import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
+import { VNPT2Extractor } from "./extractor/VNPT2Extractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new CYBERLOTUSExtractor("src/pdf/HILIM SCG 202301 (HĐ14).pdf");
+let extractor = new VNPT2Extractor("src/pdf/90-elentec.pdf");
 
 // extractor.getDocInfo().then((res) => console.log(res));
-// extractor.saveRawText("CYBERLOTUS");
+// extractor.saveRawText("vnpt2");
 extractor.getResult().then((res) => console.log(res));
