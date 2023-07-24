@@ -1,5 +1,6 @@
 import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
 import { BKAVExtractor } from "./extractor/BKAVExtractor";
+import { CYBERLOTUSExtractor } from "./extractor/CYBERLOTUSExtractor";
 import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
@@ -19,21 +20,8 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
+let extractor = new CYBERLOTUSExtractor("src/pdf/HILIM SCG 202301 (HĐ14).pdf");
 
-// let extractor = new FastInvoiceExtractor("src/pdf/hosiden4.pdf");
-// extractor.saveRawText("hosiden4");
-// extractor.getResult().then((res) => console.log(res));
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
-
-// let extractor = new SEOJINAUTOInvoiceExtractor(
-//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
-// );
-
-let extractor = new BKAVExtractor(
-  "src/pdf/C22TSU-00001662-T5R4CL037U6-DPH.pdf"
-);
-
-// extractor.saveRawText("bkav");
+// extractor.getDocInfo().then((res) => console.log(res));
+// extractor.saveRawText("CYBERLOTUS");
 extractor.getResult().then((res) => console.log(res));
