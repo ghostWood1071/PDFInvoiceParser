@@ -1,6 +1,3 @@
-import * as fs from "fs";
-import test from "node:test";
-import PdfParse from "pdf-parse";
 import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
 import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
@@ -21,16 +18,7 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
 
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
-let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
-// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
 
-// let extractor = new SEOJINAUTOInvoiceExtractor(
-//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
-// );
-
-// extractor.saveRawText("seojin2");
-// extractor.saveRawText("logisall");
-// extractor.saveRawText("meinvoice2");
-
-extractor.getResult().then((res) => console.log(res));
+let extractor = new FastInvoiceExtractor("src/pdf/hosiden4.pdf");
+extractor.saveRawText("hosiden4");
+// extractor.getResult().then((res) => console.log(res));

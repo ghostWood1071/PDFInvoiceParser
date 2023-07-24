@@ -1,0 +1,39 @@
+
+
+#Ngày 13 tháng 02 năm 2023
+Mã cơ quan thuế cấp: ##009#B#8#F#87238#CF#649#C#2#A#1#D#6#A#39703#EBA#9#E#8
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG#
+Ký hiệu##:#1C23TGT
+Số##:#256
+Đơn vị bán hàng##:#CÔNG TY TNHH HOSIDEN VIỆT NAM (BẮC GIANG)
+Mã số thuế##:
+2400409721#
+Địa chỉ##:#Một phần lô C (C1), KCN Quang Châu, Xã Quang Châu, Huyện Việt Yên, Tỉnh Bắc Giang, Việt Nam
+Số tài khoản##:#700-001-487.855 (USD) - Shinhan Bank Việt Nam - CN Bắc Ninh
+Điện thoại##:#(084-0240)3 868940#Fax: #(84- 0240)3 868954
+Họ tên người mua hàng##:
+Tên đơn vị##:#Công ty TNHH Samsung Electronics Việt Nam Thái Nguyên
+Địa chỉ##:
+Khu Công nghiệp Yên Bình , Phường Đồng Tiến, Thành phố Phổ Yên, tỉnh Thái Nguyên#
+Số tài khoản##:
+Hình thức thanh toán: ##Chuyển khoản#Mã số thuế : 4601124536
+Stt##Tên hàng hóa, dịch vụ#Đvt#Số lượng#Đơn giá#Thành tiền
+1##2#3#4#5#6=4x5
+1##Mạch in mềm đã lắp ráp dùng cho điện thoại di động VMA0145-
+01220000 (GH96-15779A)#
+chiếc##218.684,00#1,3671#298.962,91
+Tỷ giá##:#23.405#Cộng tiền hàng#:#298.962,91# USD
+Thuế suất GTGT##:#0%#Tiền thuế GTGT#:#0,00# USD
+Tổng cộng tiền thanh toán##:#298.962,91# USD
+Số tiền viết bằng chữ##:#Hai trăm chín mươi tám nghìn, chín trăm sáu mươi hai đô la Mỹ và chín mươi mốt xen
+Người chuyển đổi##Người mua hàng#Người bán hàng
+(Ký, họ tên)##(Ký, họ tên)#(Ký, họ tên, đóng dấu)
+Nguyễn Thanh Tùng#
+Ngày chuyển đổi##:# #13/02/2023
+Ký bởi##:#CÔNG TY TNHH HOSIDEN 
+VIỆT NAM (BẮC GIANG)#
+Ký ngày##:#13/02/2023
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)#
+Hóa đơn chuyển đổi từ hóa đơn điện tử#
+Mã tra cứu hóa đơn##:# #ZV 143 BE7 63X
+Đơn vị cung cấp giải pháp hóa đơn điện tử: Công ty Cổ phần Phần mềm Quản lý Doanh nghiệp, MST: 0100727825 (www.fast.com.vn)#

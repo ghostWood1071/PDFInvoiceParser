@@ -49,6 +49,7 @@ export class FastInvoiceExtractor extends PdfExtractor{
     }
 
     private processTableRow(rowStr: string){
+        console.log(rowStr);
         let result = new TableContent();
         let numStartRegex = /^[0-9]+\#+/g;
         rowStr = rowStr.replace(numStartRegex, "").replace(/\#\#/g,"#");
@@ -68,8 +69,9 @@ export class FastInvoiceExtractor extends PdfExtractor{
     }
 
     private extractVAT(pageLines: string[], pageResult:PageContent){
-        let nextPos = this.getUntil(pageLines, 0, "Ngày").nextPos;
+        let nextPos = this.getUntil(pageLines, 0, "#Ngày").nextPos;
         let tmpL = this.getUntil(pageLines,nextPos, "Mã cơ quan thuế cấp");
+        console.log(tmpL.strResult);
         pageResult.date = this.getDate(tmpL.strResult); 
         nextPos = this.getUntil(pageLines,nextPos,"Ký hiệu").nextPos;
         tmpL = this.getUntil(pageLines,nextPos,"Số")
@@ -141,7 +143,8 @@ export class FastInvoiceExtractor extends PdfExtractor{
             } 
             tmpLine = tmpLine + pageLines[linePos];
         }
-        pageResult.table.push(this.processTableRow(tmpLine));
+        if(rowRegex.test(tmpLine))
+            pageResult.table.push(this.processTableRow(tmpLine));
         if(exchangeRegex.test(pageLines[nextPos])){
            pageResult.exchange_rate = parseFloat(pageLines[nextPos].replace(/\s/g, "").replace(/\#\#/g, "#").split("#")[2]);
         }
