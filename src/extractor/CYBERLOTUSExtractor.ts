@@ -21,6 +21,7 @@ export class CYBERLOTUSExtractor extends PdfExtractor {
     let renderText = (textContent: any) => {
       let lastY,
         text = "";
+    
       for (let item of textContent.items) {
         if (lastY == item.transform[5] || !lastY) {
           text += "#" + item.str;
