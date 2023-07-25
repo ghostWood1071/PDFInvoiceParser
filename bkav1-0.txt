@@ -1,0 +1,71 @@
+
+
+#HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày# (day) # 27  #tháng# (month) # 12  #năm# (year) # 2022
+
+Mã của Cơ quan thuế: #001B3BD4E29CB445B1BE7BBB7F9936A47E
+Đơn vị bán# (Seller)#:#CÔNG TY TNHH SUNGWOO VINA
+MST# (Tax Code)#:#2300530192
+Địa chỉ# (Address)#:#KCN Thuận Thành 3 - Xã Thanh Khương - Huyện Thuận Thành - Tỉnh Bắc Ninh
+Điện thoại# (Tel.)#:#02223798785
+STK# (Account No.)#:
+Người mua# (Buyer)#:
+Đơn vị# (Co. name)#:#CÔNG TY TNHH ELENTEC VIỆT NAM
+MST# (Tax Code)#:#2500243660
+Địa chỉ# (Address)#:#Lô 44F, 44J, Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố
+Hà Nội, Việt Nam
+HTTT# (Pay. method)#:#Chuyển khoản
+STK# (Account No.)#:
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+ĐVT
+(Unit)
+SL
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+1#2#3#4#5#6 = 4 x 5
+1
+Khay đựng sim dùng để sản xuất vỏ điện thoại
+di động mã hàng GH61-13916A
+Chiếc#43,680#920#40,185,600
+2
+Tấm linh kiện bằng thép chống gỉ mã hàng
+GH98-45314A
+Chiếc#24,620#637#15,682,940
+3
+Tấm linh kiện bằng thép chống gỉ mã hàng
+GH61-16128A
+Chiếc#826,000#370#305,620,000
+4
+Tấm linh kiện bằng thép chống gỉ mã hàng
+GH61-16237A
+Chiếc#14,400#961#13,838,400
+5
+Tấm linh kiện bằng thép chống gỉ mã hàng
+GH61-17057A
+Chiếc#237,000#1,093#259,041,000
+6
+Tấm linh kiện bằng thép chống gỉ mã hàng
+GH61-17060A
+Chiếc#234,000#480#112,320,000
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+(Cần kiểm tra đối chiếu khi lập, giao, nhận hóa đơn)
+
+Giải pháp Hóa đơn Điện tử #được cung cấp bởi #Công ty Cổ phần Bkav #- MST 0101360697 - ĐT 1900 545414 - #http://ehoadon.vn
+Hóa đơn Điện tử (HĐĐT) được tra cứu trực tuyến tại #http://tracuu.ehoadon.vn#. Mã tra cứu HĐĐT này: #T5R4CL037U6
+Mẫu số - Ký hiệu# (Serial No.)#: #1C22TSU
+Số# (Invoice No.)#: #00001662

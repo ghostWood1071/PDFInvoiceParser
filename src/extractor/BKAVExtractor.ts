@@ -151,8 +151,6 @@ export class BKAVExtractor extends PdfExtractor {
         ] = this.processTotal(quantity, unit_price, total);
         newTableContent.unit = rowArr.pop()!;
 
-        newTableContent.unit = rowArr.pop()!;
-
         newTableContent.product_name = rowArr.join(" ");
 
         result.table.push(newTableContent);

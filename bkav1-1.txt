@@ -1,0 +1,50 @@
+
+
+#HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày# (day) # 27  #tháng# (month) # 12  #năm# (year) # 2022
+
+Mã của Cơ quan thuế: #001B3BD4E29CB445B1BE7BBB7F9936A47E
+Đơn vị bán# (Seller)#:#CÔNG TY TNHH SUNGWOO VINA
+MST# (Tax Code)#:#2300530192
+Địa chỉ# (Address)#:#KCN Thuận Thành 3 - Xã Thanh Khương - Huyện Thuận Thành - Tỉnh Bắc Ninh
+Điện thoại# (Tel.)#:#02223798785
+STK# (Account No.)#:
+Người mua# (Buyer)#:
+Đơn vị# (Co. name)#:#CÔNG TY TNHH ELENTEC VIỆT NAM
+MST# (Tax Code)#:#2500243660
+Địa chỉ# (Address)#:#Lô 44F, 44J, Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh, Thành phố
+Hà Nội, Việt Nam
+HTTT# (Pay. method)#:#Chuyển khoản
+STK# (Account No.)#:
+STT
+(No.)
+Tên hàng hóa, dịch vụ
+(Description)
+ĐVT
+(Unit)
+SL
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+1#2#3#4#5#6 = 4 x 5
+#####
+Cộng tiền hàng# (Sub total)#:#746,687,940
+Thuế suất GTGT# (Tax rate)#: #10%#Cộng tiền thuế GTGT# (VAT amount)#:#74,668,794
+Tổng cộng tiền thanh toán# (Total payment)#:#821,356,734
+Số tiền viết bằng chữ# (Amount in words)#: #Tám trăm hai mươi mốt triệu ba trăm năm mươi sáu nghìn bảy trăm ba
+mươi tư đồng chẵn./.
+Người mua hàng #(Buyer)#Người bán hàng #(Seller)
+Đã được ký điện tử bởi
+(Signed digitally by)
+CÔNG TY TNHH SUNGWOO VINA
+Ngày: 27/12/2022
+(Cần kiểm tra đối chiếu khi lập, giao, nhận hóa đơn)
+
+Giải pháp Hóa đơn Điện tử #được cung cấp bởi #Công ty Cổ phần Bkav #- MST 0101360697 - ĐT 1900 545414 - #http://ehoadon.vn
+Hóa đơn Điện tử (HĐĐT) được tra cứu trực tuyến tại #http://tracuu.ehoadon.vn#. Mã tra cứu HĐĐT này: #T5R4CL037U6
+Mẫu số - Ký hiệu# (Serial No.)#: #1C22TSU
+Số# (Invoice No.)#: #00001662
+[Tiep theo trang truoc - Trang 2/2]
