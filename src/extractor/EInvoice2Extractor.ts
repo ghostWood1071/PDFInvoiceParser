@@ -92,7 +92,10 @@ export class EInvoice2Extractor extends PdfExtractor {
     let bankAccount = /[\d\-]+\#.+|[\d ]+\(\w+\).+/;
 
     for (nextPos; nextPos < pageLength; nextPos++) {
-      if (bankAccount.test(pageLines[nextPos])) {
+      if (
+        pageLines[nextPos].trim() == "" ||
+        bankAccount.test(pageLines[nextPos])
+      ) {
         nextPos++;
         break;
       }
@@ -116,7 +119,7 @@ export class EInvoice2Extractor extends PdfExtractor {
     result.date = this.processDate(pageLines[dateLineIndex]);
 
     nextPos = serialLineIndex > dateLineIndex ? serialLineIndex : dateLineIndex;
-
+    let prevNextPos = nextPos;
     for (nextPos; nextPos < pageLength; nextPos++) {
       if (
         pageLines[nextPos] == "1#2#3#4#5#6 = 4 x 5" ||
@@ -129,39 +132,85 @@ export class EInvoice2Extractor extends PdfExtractor {
 
     let endRowRegex = /\D+\#[\d\.\, ]+\#[\d\,\. ]+\#[\d\,\. ]+$/;
 
-    for (nextPos; nextPos < pageLines.length; nextPos++) {
-      if (pageLines[nextPos].trim() != "" && !isNaN(+pageLines[nextPos][0])) {
-        let rowTmp = "";
+    if (nextPos == pageLength) {
+      nextPos = this.getUntil(
+        pageLines,
+        prevNextPos,
+        "1# #2#3#4#5#6 = 4 x 5"
+      ).nextPos;
 
-        for (nextPos; nextPos < pageLines.length; nextPos++) {
-          if (!endRowRegex.test(pageLines[nextPos])) {
-            rowTmp += pageLines[nextPos] + "#";
-          } else {
-            rowTmp += pageLines[nextPos] + "#";
-            break;
+      nextPos++;
+
+      for (nextPos; nextPos < pageLines.length; nextPos++) {
+        if (pageLines[nextPos].trim() != "" && !isNaN(+pageLines[nextPos][0])) {
+          let rowTmp = "";
+
+          for (nextPos; nextPos < pageLines.length; nextPos++) {
+            if (!endRowRegex.test(pageLines[nextPos])) {
+              rowTmp += pageLines[nextPos] + "#";
+            } else {
+              rowTmp += pageLines[nextPos] + "#";
+              break;
+            }
           }
-        }
 
-        let newTableContent: TableContent = new TableContent();
+          let newTableContent: TableContent = new TableContent();
 
-        let rowArr = rowTmp.split("#").filter((x) => x != "");
-        rowArr.shift();
+          let rowArr = rowTmp.split("#").filter((x) => x != "");
+          rowArr.shift();
+          newTableContent.product_id = rowArr.shift()!.trim();
 
-        let total: string = rowArr.pop()!;
-        let unit_price: string = rowArr.pop()!;
-        let quantity: string = rowArr.pop()!;
+          let total: string = rowArr.pop()!;
+          let unit_price: string = rowArr.pop()!;
+          let quantity: string = rowArr.pop()!;
 
-        [
-          newTableContent.quantity,
-          newTableContent.unit_price,
-          newTableContent.total,
-        ] = this.processTotal(quantity, unit_price, total);
-        newTableContent.unit = rowArr.pop()!;
+          [
+            newTableContent.quantity,
+            newTableContent.unit_price,
+            newTableContent.total,
+          ] = this.processTotal(quantity, unit_price, total);
+          newTableContent.unit = rowArr.pop()!;
 
-        newTableContent.product_name = rowArr.join(" ");
+          newTableContent.product_name = rowArr.join(" ");
 
-        result.table.push(newTableContent);
-      } else break;
+          result.table.push(newTableContent);
+        } else break;
+      }
+    } else {
+      for (nextPos; nextPos < pageLines.length; nextPos++) {
+        if (pageLines[nextPos].trim() != "" && !isNaN(+pageLines[nextPos][0])) {
+          let rowTmp = "";
+
+          for (nextPos; nextPos < pageLines.length; nextPos++) {
+            if (!endRowRegex.test(pageLines[nextPos])) {
+              rowTmp += pageLines[nextPos] + "#";
+            } else {
+              rowTmp += pageLines[nextPos] + "#";
+              break;
+            }
+          }
+
+          let newTableContent: TableContent = new TableContent();
+
+          let rowArr = rowTmp.split("#").filter((x) => x != "");
+          rowArr.shift();
+
+          let total: string = rowArr.pop()!;
+          let unit_price: string = rowArr.pop()!;
+          let quantity: string = rowArr.pop()!;
+
+          [
+            newTableContent.quantity,
+            newTableContent.unit_price,
+            newTableContent.total,
+          ] = this.processTotal(quantity, unit_price, total);
+          newTableContent.unit = rowArr.pop()!;
+
+          newTableContent.product_name = rowArr.join(" ");
+
+          result.table.push(newTableContent);
+        } else break;
+      }
     }
 
     for (nextPos; nextPos < pageLength; nextPos++) {
