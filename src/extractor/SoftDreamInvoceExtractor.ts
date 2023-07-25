@@ -76,7 +76,7 @@ export class SoftDreamsInvoiceExtractor extends PdfExtractor {
     result.seller.companyName = pageLines[++nextPos].replace(/\#/g, "").trim();
     result.seller.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
 
-    let endRowRegex = /\D+\#[\d\.\, ]+\#[\d\,\. ]+\#[\d\,\. ]+$$/;
+    let endRowRegex = /\D+\#[\d\.\, ]+\#[\d\,\. ]+\#[\d\,\. ]+$/;
 
     let prevLine = nextPos;
     nextPos = this.getUntil(

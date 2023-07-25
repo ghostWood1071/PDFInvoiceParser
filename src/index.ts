@@ -11,6 +11,7 @@ import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
+import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
@@ -21,14 +22,12 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-// let extractor = new BKAVExtractor(
-//   "src/pdf/C22TSU-00001662-T5R4CL037U6-DPH.pdf"
-// );
-let extractor = new BKAVExtractor("src/pdf/SENA TECH_00000068_trung.pdf");
+let extractor = new MeInvoiceDBExtractor(
+  "src/pdf/1C23TTV_00000013 haicheng.pdf"
+);
 
 // extractor.getDocInfo().then((res) => console.log(res));
 
-// extractor.saveRawText("bkav1");
-// extractor.saveRawText("bkav2");
+// extractor.saveRawText("meInvoiceDB");
 
 extractor.getResult().then((res) => console.log(res));
