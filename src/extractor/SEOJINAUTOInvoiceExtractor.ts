@@ -65,7 +65,7 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
   private processPage(pageLines: string[]) {
     let result: PageContent = new PageContent();
-
+    let pageLength = pageLines.length;
     let lineTmp = this.getUntil(pageLines, 0, "(#Invoice code#):");
     let nextPos = lineTmp.nextPos;
 
@@ -142,12 +142,11 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
         .trim();
     }
 
-    while (
-      nextPos < pageLines.length &&
-      !pageLines[nextPos].trim().includes("(#Company#'#s name#):")
-    ) {
-      nextPos++;
-    }
+    nextPos = this.getUntil(
+      pageLines,
+      nextPos,
+      "(#Company#'#s name#):"
+    ).nextPos;
 
     result.buyer.companyName = pageLines[nextPos - 1]
       .replace(/#/g, "")
@@ -156,10 +155,9 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
 
     nextPos = this.getUntil(pageLines, nextPos, "A#B#C#1#2#3#=#1#x#2").nextPos;
     nextPos++;
-
     let numStrRegex = /^\d[\#\.\,\d]*\d$/;
 
-    while (nextPos < pageLines.length) {
+    for (nextPos; nextPos < pageLength; nextPos += 2) {
       if (numStrRegex.test(pageLines[nextPos].trim())) {
         break;
       }
@@ -167,9 +165,12 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
       let newTableContent: TableContent = new TableContent();
 
       let str = "";
-      while (!numStrRegex.test(pageLines[nextPos])) {
-        str += "#" + pageLines[nextPos] + " ";
-        nextPos++;
+      for (nextPos; nextPos < pageLength; nextPos++) {
+        if (!numStrRegex.test(pageLines[nextPos])) {
+          str += "#" + pageLines[nextPos] + " ";
+        } else {
+          break;
+        }
       }
 
       let lastIndexOfSharp = str.lastIndexOf("#");
@@ -179,28 +180,23 @@ export class SEOJINAUTOInvoiceExtractor extends PdfExtractor {
         .trim();
       newTableContent.unit = str.slice(lastIndexOfSharp + 1).trim();
 
-      if (numStrRegex.test(pageLines[nextPos])) {
-        var numArr = pageLines[nextPos]
-          .replace(/\#\.\#/g, ".")
-          .replace(/\#\,\#/g, ",")
-          .split("#");
-        newTableContent.quantity = +numArr[0]
-          .replace(/\./g, "")
-          .replace(/\,/g, ".");
-        newTableContent.unit_price = +numArr[1]
-          .replace(/\./g, "")
-          .replace(/\,/g, ".");
-        newTableContent.total = +numArr[2]
-          .replace(/\./g, "")
-          .replace(/\,/g, ".");
+      var numArr = pageLines[nextPos]
+        .replace(/\#\.\#/g, ".")
+        .replace(/\#\,\#/g, ",")
+        .split("#")
+        .filter((x) => x != "");
+      newTableContent.quantity = +numArr[0]
+        .replace(/\./g, "")
+        .replace(/\,/g, ".");
+      newTableContent.unit_price = +numArr[1]
+        .replace(/\./g, "")
+        .replace(/\,/g, ".");
+      newTableContent.total = +numArr[2].replace(/\./g, "").replace(/\,/g, ".");
 
-        result.table.push(newTableContent);
-      } else break;
-
-      nextPos += 2;
+      result.table.push(newTableContent);
     }
 
-    for (nextPos; nextPos < pageLines.length; nextPos++) {
+    for (nextPos; nextPos < pageLength; nextPos++) {
       if (pageLines[nextPos] == "Tỷ giá") {
         result.exchange_rate = +pageLines[nextPos + 2]
           .replace(/\#/g, "")

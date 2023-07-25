@@ -21,14 +21,21 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new BKAVExtractor(
-  "src/pdf/C22TSU-00001662-T5R4CL037U6-DPH.pdf"
-);
-// let extractor = new BKAVExtractor("src/pdf/SENA TECH_00000068_trung.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000214.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/2C23TAT_00000215.pdf");
+// let extractor = new SEOJINAUTOInvoiceExtractor("src/pdf/meInvoice2.pdf");
 
-// extractor.getDocInfo().then((res) => console.log(res));
+// let extractor = new SEOJINAUTOInvoiceExtractor(
+//   "src/pdf/10/LOGISALL_00000064_30.05.2023.pdf"
+// );
 
-// extractor.saveRawText("bkav1");
-// extractor.saveRawText("bkav2");
+// let extractor = new SEOJINAUTOInvoiceExtractor(
+//   "src/pdf/TECH & INNOVATION_00000038_29.11.2022.pdf"
+// );
 
-extractor.getResult().then((res) => console.log(res));
+// extractor.saveRawText("meinvoice2-1");
+// extractor.saveRawText("meinvoice2-2");
+// extractor.saveRawText("meinvoice2-3");
+// extractor.saveRawText("meinvoice2-4");
+
+// extractor.getResult().then((res) => console.log(res));
