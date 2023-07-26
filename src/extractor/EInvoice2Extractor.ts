@@ -130,6 +130,7 @@ export class EInvoice2Extractor extends PdfExtractor {
       }
     }
 
+    let startRowRegex = /\d+\#\D+/;
     let endRowRegex = /\D+\#[\d\.\, ]+\#[\d\,\. ]+\#[\d\,\. ]+$/;
 
     if (nextPos == pageLength) {
@@ -142,7 +143,7 @@ export class EInvoice2Extractor extends PdfExtractor {
       nextPos++;
 
       for (nextPos; nextPos < pageLines.length; nextPos++) {
-        if (pageLines[nextPos].trim() != "" && !isNaN(+pageLines[nextPos][0])) {
+        if (startRowRegex.test(pageLines[nextPos])) {
           let rowTmp = "";
 
           for (nextPos; nextPos < pageLines.length; nextPos++) {
@@ -232,7 +233,7 @@ export class EInvoice2Extractor extends PdfExtractor {
   async getResult() {
     let pageLines = await this.docLines;
     if (pageLines) {
-      if (pageLines.length >= 1) {
+      if (pageLines.length == 1) {
         let data = this.processPage(pageLines[0]);
         return data;
       } else {

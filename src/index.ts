@@ -23,9 +23,9 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
 // let extractor = new EInvoice2Extractor("src/pdf/1_C23TKH_260.pdf");
-let extractor = new EInvoice2Extractor(
-  "src/pdf/luxshare/2C23TLX5-305269815230.pdf"
-);
+// let extractor = new EInvoice2Extractor(
+//   "src/pdf/luxshare/2C23TLX5-305269815230.pdf"
+// );
 // let extractor = new EInvoice2Extractor("src/pdf/DOOWON_712_27.12.2022.pdf");
 
 // extractor.getDocInfo().then((res) => console.log(res));
@@ -33,7 +33,7 @@ let extractor = new EInvoice2Extractor(
 // extractor.saveRawText("einvoice2-1");
 // extractor.saveRawText("einvoice2-2");
 // extractor.saveRawText("einvoice2-3");
-// let extractor = new EInvoice2Extractor("src/pdf/1_C23TST_942 SEOWON-01.pdf");
+let extractor = new EInvoice2Extractor("src/pdf/1_C23TST_942 SEOWON-01.pdf");
 
 // extractor.getDocInfo().then((res) => console.log(res));
 //
