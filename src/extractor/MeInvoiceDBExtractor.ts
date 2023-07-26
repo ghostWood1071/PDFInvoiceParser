@@ -161,9 +161,12 @@ export class MeInvoiceDBExtractor extends PdfExtractor {
       }
       nextPos++;
       let productNameTmp = "";
-      for (nextPos; nextPos < pageLines.length; nextPos++) {
-        if (!startRowRegex.test(pageLines[nextPos])) {
-          productNameTmp += pageLines[nextPos].replace(/\#/g, "") + " ";
+      for (nextPos; nextPos <= pageLines.length; nextPos++) {
+        if (
+          !startRowRegex.test(pageLines[nextPos]) &&
+          nextPos < pageLines.length
+        ) {
+          productNameTmp += pageLines[nextPos].replace(/\#/g, "");
         } else {
           tableContent.product_name = productNameTmp.trim();
           result.table.push(tableContent);

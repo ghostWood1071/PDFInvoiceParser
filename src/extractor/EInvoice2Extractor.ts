@@ -89,6 +89,7 @@ export class EInvoice2Extractor extends PdfExtractor {
 
     nextPos++;
 
+    let prevIndex = nextPos;
     let bankAccount = /[\d\-]+\#.+|[\d ]+\(\w+\).+/;
 
     for (nextPos; nextPos < pageLength; nextPos++) {
@@ -101,8 +102,18 @@ export class EInvoice2Extractor extends PdfExtractor {
       }
     }
 
-    result.buyer.companyName = pageLines[nextPos].replace(/\#/g, "").trim();
-    result.buyer.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
+    if (nextPos == pageLength) {
+      nextPos = prevIndex;
+    }
+
+    let taxCodeRegex = /^\d+$/;
+    for (nextPos; nextPos < pageLength; nextPos++) {
+      if (taxCodeRegex.test(pageLines[nextPos + 1].trim())) {
+        result.buyer.companyName = pageLines[nextPos].replace(/\#/g, "").trim();
+        result.buyer.taxCode = pageLines[++nextPos].replace(/\#/g, "").trim();
+        break;
+      }
+    }
 
     let lineTmp = this.getUntil(pageLines, ++nextPos, "Ký hiệu#");
 
