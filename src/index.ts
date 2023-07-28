@@ -22,10 +22,10 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new MeInvoiceDBExtractor(
-  "src/pdf/1C23TTV_00000013 haicheng.pdf"
+let extractor = new EFYInvoiceExtractor(
+  "src/pdf/JWORLD_1595_27.12.2022 JW-02.pdf"
 );
 
-// extractor.saveRawText("meInvoiceDB")
+extractor.saveRawText("efy2");
 
 extractor.getResult().then((res) => console.log(res));

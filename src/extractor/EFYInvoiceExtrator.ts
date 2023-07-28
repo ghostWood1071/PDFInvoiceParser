@@ -110,7 +110,7 @@ export class EFYInvoiceExtractor extends PdfExtractor {
 
     let rowRegex = /^\d+\#.+\#.+\#[\d\.]+\#[\d\.]+\#[\d\.]+$/;
 
-    while (nextPos < pageLines.length) {
+    for (nextPos; nextPos < pageLines.length; nextPos++) {
       if (rowRegex.test(pageLines[nextPos])) {
         let newTableContent = new TableContent();
         let arrStr = pageLines[nextPos].split("#");
@@ -129,12 +129,10 @@ export class EFYInvoiceExtractor extends PdfExtractor {
         result.table.push(newTableContent);
       } else if (
         pageLines[nextPos].includes("trang") ||
-        pageLines[nextPos].endsWith("#Cộng tiền #hàng #(Total before VAT):")
+        pageLines[nextPos].endsWith("#(Buyer)")
       ) {
         break;
       }
-
-      nextPos++;
     }
 
     return result;
@@ -143,7 +141,7 @@ export class EFYInvoiceExtractor extends PdfExtractor {
   async getResult() {
     let pageLines = await this.docLines;
     if (pageLines) {
-      if (pageLines.length >= 1) {
+      if (pageLines.length == 1) {
         let data = this.processPage(pageLines[0]);
         return data;
       } else {
