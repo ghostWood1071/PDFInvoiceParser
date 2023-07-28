@@ -403,4 +403,6 @@ export class PdfExtractor {
       console.log(e);
     }
   }
+
+  
 }
