@@ -12,6 +12,7 @@ import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
+import { MeInvoice3Extractor } from "./extractor/MeInvoice3Extractor";
 import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
@@ -22,12 +23,13 @@ import { Viettel2Extractor } from "./extractor/Viettel2Extractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
+import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new Viettel2Extractor(
-  "src/pdf/Viettel/0700641312-C23TMI70.pdf"
+let extractor = new MeInvoice4Extractor(
+  "src/pdf/MeInvoice/1C23TYY_00000469.pdf"
 );
 
-// extractor.saveRawText("viettel-2");
+// extractor.saveRawText("meinvoice3");
 
 extractor.getResult().then((res) => console.log(res));

@@ -1,0 +1,68 @@
+
+
+Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+ 2/2
+Mã tra cứu hóa đơn#ZATQU#11#WK#3#K
+Tra cứu tại Website#https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/
+(#Search on Website#):
+(#Invoice code#):
+Tiep theo trang truoc - trang 2/2
+Mã CQT (Code):#00FE415B51B1574CC395362D0CC717FAA1
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(#Sign#):
+Ký hiệu#1#C#23#TSK
+Số#00000299
+(#No#):
+(#VAT Invoice#)
+Ngày#19#tháng#7#năm#2023
+(#Date#)#(#month#)#(#year#)
+(#E#-#Invoice viewer#)
+Đơn vị bán hàng#CÔNG TY TNHH CƠ KHÍ SEIKI VIỆT NAM
+Mã số thuế#2300875408
+Địa chỉ
+Đường D#2#, #Khu công nghiệp Đại Đồng #- #Hoàn Sơn #- #Xã Hoàn Sơn #- #Huyện Tiên Du #- #tỉnh Bắc Ninh #-
+Việt Nam
+(#Supplier#):
+(#Tax code#):
+(#Address#):
+Mã số thuế#0315752109
+Địa chỉ
+Tầng #19#, #Tòa nhà Friendship#, #Số #31 #Đường Lê Duẩn#, #Phường Bến Nghé#, #Quận #1#,
+Thành phố Hồ Chí Minh#, #Việt Nam
+CÔNG TY TNHH ABB AUTOMATION AND ELECTRIFICATION
+(#VIỆT NAM#)
+Tên đơn vị
+(#Company#'#s name#):
+(#Tax code#):
+(#Address#):
+Họ tên người mua hàng
+(#Buyer#):
+STT#Tên hàng hóa#, #dịch vụ#Số lượng#Đơn giá#Thành tiền
+Đơn vị
+tính
+(#No#)#(#Name of goods and services#)#(#Quantity#)#(#Unit price#)#(#Amount#)
+(#Unit#)
+A#B#C#1#2#3#=#1#x#2
+21#.#191#.#602
+Cộng tiền hàng#:
+(#Total before VAT#):
+23#.#310#.#762
+Tổng tiền thanh toán
+(#Total amount#):
+Thuế suất GTGT#Tiền thuế GTGT
+(#VAT rate#):#(#VAT amount#):
+10 #%#2#.#119#.#160
+Số tiền viết bằng chữ
+Hai mươi ba triệu ba trăm mười nghìn bảy trăm sáu mươi hai đồng chẵn#.
+(#Total amount in words#):
+(#Signature#, #full name#)#(#Signature#, #full name#)
+Người mua hàng#Người bán hàng
+(#Ký#, #ghi rõ họ#, #tên#)#(#Ký#, #ghi rõ họ#, #tên#)
+Ký bởi#:
+Ký ngày#:
+CÔNG TY TNHH CƠ KHÍ SEIKI
+VIỆT NAM
+19/07/2023
+(#Buyer#)#(#Seller#)
+(#Cần kiểm tra#, #đối chiếu trước khi lập#, #giao#, #nhận hóa đơn#)
