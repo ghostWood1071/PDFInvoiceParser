@@ -1,4 +1,5 @@
 import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
+import { BKAV2Extractor } from "./extractor/BKAV2Extractor";
 import { BKAVExtractor } from "./extractor/BKAVExtractor";
 import { CYBERLOTUSExtractor } from "./extractor/CYBERLOTUSExtractor";
 import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
@@ -17,15 +18,16 @@ import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtract
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
 import { VNPT2Extractor } from "./extractor/VNPT2Extractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
+import { Viettel2Extractor } from "./extractor/Viettel2Extractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
 import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new EFYInvoiceExtractor(
-  "src/pdf/JWORLD_1595_27.12.2022 JW-02.pdf"
+let extractor = new Viettel2Extractor(
+  "src/pdf/Viettel/0700641312-C23TMI70.pdf"
 );
 
-extractor.saveRawText("efy2");
+// extractor.saveRawText("viettel-2");
 
 extractor.getResult().then((res) => console.log(res));

@@ -1,0 +1,77 @@
+
+
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Bản thể hiện của hóa đơn điện tử
+(Electronic invoice display)
+Ngày #30 tháng #05 năm #2023
+(date) #(month) #(year) 
+Ký hiệu 
+(Serial):
+1C23TMI
+Số 
+(No.):
+70
+Đơn vị bán hàng 
+(Seller): 
+CÔNG TY TNHH MINATO RUBBER VIỆT NAM
+Mã số thuế 
+(Tax code): 
+0700641312
+Địa chỉ 
+(Address): 
+Khu Công Nghiệp Đồng Văn II, Phường Duy Minh, Thị xã Duy Tiên, Tỉnh Hà Nam, Việt Nam
+Điện thoại 
+(Tel): 
+0226.6262.155
+Số tài khoản #Ngân hàng
+(Account No.):# (Bank):
+0901000010818 #Ngân hàng Vietcombank - Chi nhánh Hà Nam 
+H15-795-013238#Ngân hàng Mizuho - Chi nhánh Hà Nội
+Họ tên người mua hàng 
+(Customer's name): 
+Nguyễn Thị Thu Hà -0359345304
+Tên đơn vị 
+(Company's name): 
+Công ty TNHH ABB Automation and Electrification (Việt Nam)
+Mã số thuế 
+(Tax code): 
+0315752109
+Địa chỉ 
+(Address): 
+Tầng 19, toà nhà Friendship, số 31 đường Lê Duẩn, phường Bến Nghé, quận 1, thành phố Hồ Chí Minh, Việt
+Nam
+Hình thức thanh toán #Số tài khoản 
+(Payment method): #(Account No.):
+TM/CK
+Ghi chú 
+(Note):
+STT#Tên hàng hóa, dịch vụ#Đơn#Số lượng#Đơn giá#Thành tiền
+(No.)#(Description)#(Quantity)#(Unit price)#(Amount)
+vị tính
+(Unit)
+1#2#3#4#5#6 = 4 x 5
+1#1VL7700077P0101 -Gioăng cao su (RUBBER INSERT)#Chiếc#300#12.550#3.765.000
+2#1VL7700077P0102 -Gioăng cao su (RUBBER INSERT 2)#Chiếc#300#11.300#3.390.000
+Theo PO: 3184127708
+Cộng tiền hàng 
+(Total amount):
+7.155.000
+Thuế suất GTGT #Tiền thuế GTGT 
+ (VAT rate): 10%#(VAT amount):
+715.500
+TỔNG CỘNG TIỀN THANH TOÁN 
+(Total payment):
+7.870.500
+Số tiền viết bằng chữ 
+(Amount in words): 
+Bảy triệu tám trăm bảy mươi nghìn năm trăm đồng
+Người mua hàng #Người bán hàng 
+(Buyer)#(Seller)
+Ký bởi CÔNG TY TNHH MINATO RUBBER VIỆT NAM
+Ký ngày 30/05/2023
+Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn
+Đơn vị cung cấp dịch vụ Hóa đơn điện tử: Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel), MST: 0100109106
+Tra cứu hóa đơn điện tử tại Website: https://vinvoice.viettel.vn/utilities/invoice-search . Mã số bí
+mật: 
+EZLGIHXAJL0TB4M. Mã của cơ quan thuế: 00CE6B162F93C6444C8DE5580D741E4D6A

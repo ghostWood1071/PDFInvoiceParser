@@ -1,0 +1,51 @@
+
+
+CÔNG TY TNHH THƯƠNG MẠI VÀ KỸ THUẬT ÂU CƠ
+Mã số thuế# (Tax Code)#:#0 1 0 1 3 9 9 2 5 3
+Địa chỉ# (Address)#:#Tầng 4, tòa nhà AC, số 3 ngõ 78, phố Duy Tân, Phường Dịch Vọng
+Hậu, Quận Cầu Giấy, Thành phố Hà Nội
+Điện thoại# (Tel)#:#02422464636
+Số tài khoản# (Account No.)#:
+Mã của Cơ quan thuế: #0017BD203C183545C8822EFF45FAA7EC77
+#
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Ngày# (day) # 28  #tháng# (month) # 06  #năm# (year) # 2023
+Người mua# (Buyer)#:
+Đơn vị# (Company name)#: # CÔNG TY TNHH ABB AUTOMATION AND ELECTRIFICATION (VIỆT NAM)
+Mã số thuế# (Tax Code)#: # 0315752109
+Địa chỉ# (Address)#:  Tầng 19, Tòa nhà Friendship, Số 31 đường Lê Duẩn, Phường Bến Nghé, Quận 1, Thành phố Hồ
+Chí Minh, Việt Nam
+Hình thức thanh toán# (Payment method)#:  Tiền mặt/Chuyển khoản
+Số tài khoản# (Account No.)#:
+STT#Tên hàng hóa, dịch vụ#Số lượng#Đơn giá#Thành tiền
+(No.)#(Description)#(Quantity)#(Unit Price)#(Amount)
+Đơn vị
+tính
+(Unit)
+1#2#3#4#5#6 = 4 x 5
+1#cái#1#1.800.000#1.800.000
+(Thiết bị điện theo PO số : 3184128155)
+Bộ điều chỉnh độ ẩm RHC-5090/5M
+#####
+#####
+#####
+#####
+#####
+#####
+Cộng tiền hàng# (Sub total)#:#1.800.000
+Thuế suất GTGT# (Tax rate)#: #10%#Tiền thuế GTGT# (VAT amount)#:#180.000
+Tổng cộng tiền thanh toán# (Total payment)#:#1.980.000
+Số tiền viết bằng chữ# (Amount in words)#: #Một triệu chín trăm tám mươi nghìn đồng chẵn./.
+Người mua hàng #(Buyer)#Người bán hàng #(Seller)
+Đã được ký điện tử bởi
+(Signed digitally by)
+CÔNG TY TNHH THƯƠNG MẠI VÀ
+KỸ THUẬT ÂU CƠ
+Ngày: 28/06/2023
+(Cần kiểm tra đối chiếu khi lập, giao, nhận hóa đơn)
+
+Giải pháp Hóa đơn Điện tử #được cung cấp bởi #Công ty Cổ phần Bkav #- MST 0101360697 - ĐT 1900 545414 - #http://ehoadon.vn
+Hóa đơn Điện tử (HĐĐT) được tra cứu trực tuyến tại #http://tracuu.ehoadon.vn#. Mã tra cứu HĐĐT này: #P6XNAXX7R3A
+Mẫu số - Ký hiệu# (Serial No.)#: #1C23TAC
+Số# (Invoice No.)#: #00000083
