@@ -1,0 +1,60 @@
+
+
+#Điện thoại#(Tel):#0222.3952.313
+Số tài khoản#(A/C):
+CÔNG TY TNHH JWORLD VINA
+Mã số thuế#(Tax code):#2 3 0 0 7 5 5 0 9 0
+Địa chỉ#(Address):#Lô số 085/086A1, Số 11, Đường 10, Khu công nghiệp, Đô thị và Dịch vụ
+VSIP Bắc Ninh, Xã Đại Đồng, Huyện Tiên Du, Tỉnh Bắc Ninh, Việt Nam
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+(Bản thể hiện của hóa đơn điện tử)
+(E-Invoice viewer)
+Mã CQT:#00EE13D62B85DF4D4F9461CE74020DBBFB
+Ngày# #(Date)# #27# tháng# #(month)# #12# #năm# #(year)# #2022
+Ký hiệu# #(Serial No):
+1C22TVN
+Số# #(No):
+1595
+Mã số thuế#(Tax code):#2500243660
+Số tài khoản#(A/C):
+Hình thức thanh #toán#(Pay.method):#TM/CK#Đơn vị tiền tệ#(Currency):#VND
+Họ tên người mua hàng#(Buyer):
+Tên đơn vị#(Co.name):#CÔNG TY TNHH ELENTEC VIỆT NAM
+Địa chỉ#(Address):#Lô 44F, 44J Khu công nghiệp Quang Minh, Thị trấn Chi Đông, Huyện Mê Linh,
+Thành phố Hà Nội, Việt Nam
+STT
+(No)
+Tên hàng hóa, dịch vụ
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Unit Price)
+Thành tiền
+(Amount)
+20#Băng dính dạng miếng - GH02-21828A#Chiếc#33.000#46#1.518.000
+21#Băng dính dạng miếng - GH02-21829A#Chiếc#21.000#106#2.226.000
+22#Băng dính dạng miếng - GH02-21830A#Chiếc#20.000#115#2.300.000
+23#Băng dính dạng miếng - GH02-21981A#Chiếc#15.000#114#1.710.000
+24#Băng dính dạng miếng - GH02-21982A#Chiếc#15.800#120#1.896.000
+25#Băng dính dạng miếng - GH02-22017A#Chiếc#12.000#256#3.072.000
+26#Băng dính dạng miếng - GH02-22128A#Chiếc#113.000#42#4.746.000
+27#Băng dính dạng miếng - GH02-21826A#Chiếc#15.000#809#12.135.000
+28#Băng dính dạng miếng - GH02-22258A#Chiếc#10.000#288#2.880.000
+29#Băng dính dạng miếng - GH02-22419A#Chiếc#5.000#7.303#36.515.000
+30#Băng dính dạng miếng - GH02-22187A#Chiếc#6.000#2.208#13.248.000
+31#Băng dính dạng miếng - GH02-23926A#Chiếc#578.500#295#170.657.500
+32#Băng dính dạng miếng - GH02-23911A#Chiếc#97.000#334#32.398.000
+33#Băng dính dạng miếng - GH02-23679A#Chiếc#473.500#142#67.237.000
+34#Băng dính dạng miếng - GH02-23680A#Chiếc#468.340#498#233.233.320
+35#Băng dính dạng miếng - GH02-23912A#Chiếc#917.500#439#402.782.500
+36#Băng dính dạng miếng - GH02-23849A#Chiếc#113.770#3.997#454.738.690
+37#Băng dính dạng miếng - GH02-23682A#Chiếc#452.510#404#182.814.040
+38#Băng dính dạng miếng - GH02-23749A#Chiếc#109.150#538#58.722.700
+39#Băng dính dạng miếng - GH02-23754A#Chiếc#85.000#104#8.840.000
+tiep theo trang truoc trang 2/4
+Tra cứu Hóa đơn điện tử tại: #http://tracuu.ihoadon.vn#Mã tra cứu: #KJFAU3K9SF22
+(Tổ chức truyền nhận và cung cấp giải pháp HĐĐT: Công ty CP công nghệ tin học EFY Việt Nam, MST: 0102519041, #www.efy.com.vn#, ĐT: 19006142)

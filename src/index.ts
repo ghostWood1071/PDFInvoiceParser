@@ -16,6 +16,7 @@ import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
+import { Test } from "./extractor/Test";
 import { VNPT3Extractor } from "./extractor/VNPT3Extractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
@@ -23,10 +24,5 @@ import { WinTechExtractor } from "./extractor/WinTechExtractor";
 import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new EInvoice4Extractor(
-  "src/pdf/ONE_0000018_30.08.21.pdf"
-);
-
-// extractor.saveRawText("one");
-
-extractor.getResult().then((res) => console.log(res));
+let extractor = new Test("src/pdf/1C23TCM-16449.pdf");
+extractor.saveRawText("minvoice-1");
