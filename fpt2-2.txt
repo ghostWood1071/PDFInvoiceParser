@@ -1,0 +1,83 @@
+
+
+ 
+STT
+(No.)
+Tên hàng hóa, dịch vụ 
+(Description)
+Đơn vị tính
+(Unit)
+Số lượng
+(Quantity)
+Đơn giá
+(Price)
+Thành tiền 
+(Amount)
+1#2#3#4#56 = 4 x 5
+23
+NHÃN ACCIDENT HAZARD
+(Theo PO3184127181 - 04/05/2023)
+(1VL0000016P0106) 
+chiếc#100#5.000#500.000
+24
+NHÃN 37700024
+(Theo PO3184127181 - 04/05/2023)
+(E5735552035) 
+chiếc#50#5.000#250.000
+25
+NHÃN 4001651
+(Theo PO3184127181 - 04/05/2023)
+(E5735552602) 
+chiếc#50#5.000#250.000
+26
+NHÃN 47700070 UNBLOCK
+(Theo PO3184127181 - 04/05/2023)
+(E5735552031) 
+chiếc#50#5.000#250.000
+Cộng tiền hàng (Total amount):  #5.950.000
+Thuế suất GTGT (VAT rate): 10%Tiền thuế GTGT (VAT amount):  #595.000
+Tổng cộng tiền thanh toán (Total payment):  #6.545.000
+Số tiền viết bằng chữ (Words):
+Sáu triệu năm trăm bốn mươi lăm nghìn đồng  
+Người mua hàng (Buyer)Người bán hàng (Seller)
+(Đã được ký điện tử )
+(Signed digitally)
+Signature Valid
+Được ký bởi: CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ
+QUẢNG CÁO BIỂN ĐỎ
+Ngày ký: 10/05/2023
+ 
+ 
+Mã tra cứu hóa đơn (Invoice code): r962n8yp1r     Trang tra cứu (Search on Website): https://tracuuhoadon.fpt.com.vn/search.html 
+(Cần kiểm tra, đối chiếu khi giao và nhận hóa đơn)(Need to check, compare before delivering and receiving invoice)
+Đơn vị cung cấp hóa đơn điện tử: CÔNG TY TNHH HỆ THỐNG THÔNG TIN FPT - MST: 0104128565 - Điện thoại: 1900636191
+Tiep theo trang truoc - trang 3/3
+ 
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG 
+(VAT INVOICE)
+Bản thể hiện hóa đơn điện tử 
+Ngày (Date) 10  tháng (month) 05  năm (year)  2023     
+Mã CQT: 00A17FACDA7BC941B4BB356D2573D75A98
+Ký hiệu (Series): 1C23TBD
+Số (No.): #00000181
+Đơn vị bán hàng (Seller)
+: CÔNG TY CỔ PHẦN THƯƠNG MẠI VÀ QUẢNG CÁO BIỂN ĐỎ
+Mã số thuế (Tax code): 0104168494
+Địa chỉ (Address)
+: số 15 ngách 97 ngõ 219 phố Định Công Thượng, Phường Định Công, Quận Hoàng Mai, Thành phố Hà Nội,
+Việt Nam
+Điện thoại (Phone): 0904 661343
+Số tài khoản (Acc No.): 14024158999888 tại Ngân hàng TMCP Kỹ Thương Việt Nam_ PGD Láng Hạ, Chi Nhánh Thăng Long
+Họ tên người mua hàng (Buyer):
+  
+Tên đơn vị (Company):
+ Công Ty TNHH ABB Automation and Electrification (Việt Nam)
+Địa chỉ (Address):
+ Tầng 19, Tòa nhà Friendship, Số 31 Đường Lê Duẩn, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt
+Nam
+Số tài khoản (Acc No.):
+ 
+Hình thức thanh toán (Payment method):
+CK
+Mã số thuế (Tax code):
+ 0315752109 
