@@ -13,7 +13,6 @@ import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
-import { MeInvoice3Extractor } from "./extractor/MeInvoice3Extractor";
 import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
@@ -28,10 +27,8 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new MeInvoice4Extractor(
-  "src/pdf/MeInvoice/1C23TYY_00000469.pdf"
+let extractor = new PdfExtractor(
+  "src/pdf/181.pdf"
 );
 
-// extractor.saveRawText("meinvoice3");
-
-extractor.getResult().then((res) => console.log(res));
+extractor.saveRawText("fpt2");
