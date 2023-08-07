@@ -9,7 +9,7 @@ export class BKAV2Extractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
-  private processDate(dataStr: string): Date {
+  protected processDate(dataStr: string): Date {
     return new Date(
       dataStr
         .trim()
@@ -80,7 +80,7 @@ export class BKAV2Extractor extends PdfExtractor {
     }
   }
 
-  private processPage(pageLines: string[]) {
+  protected processPage(pageLines: string[]) {
     let result = new PageContent();
     let pageLenght = pageLines.length;
 

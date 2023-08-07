@@ -1,5 +1,6 @@
 import { ThreeAInvoiceExtractor } from "./extractor/3AInvoiceExtractor";
 import { BKAV2Extractor } from "./extractor/BKAV2Extractor";
+import { BKAV3Extractor } from "./extractor/BKAV3Extractor";
 import { BKAVExtractor } from "./extractor/BKAVExtractor";
 import { CYBERLOTUSExtractor } from "./extractor/CYBERLOTUSExtractor";
 import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
@@ -26,10 +27,10 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new MeInvoice4Extractor(
-  "src/pdf/MeInvoice/1C23TYY_00000469.pdf"
+let extractor = new BKAV3Extractor(
+  "src/pdf/BKAV/KCC C23TKC-00000500-Y65799M2UL1-DPH.pdf"
 );
 
-// extractor.saveRawText("meinvoice3");
+// extractor.saveRawText("bkav3");
 
 extractor.getResult().then((res) => console.log(res));
