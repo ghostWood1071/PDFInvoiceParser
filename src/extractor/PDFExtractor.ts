@@ -225,6 +225,7 @@ export class PdfExtractor {
       let regex = /^[\d,.]+$/;
       let lastY,
         text = "";
+      fs.writeFileSync("data.json", JSON.stringify(textContent.items));
       for (let item of textContent.items) {
         if (lastY == item.transform[5] || !lastY) {
           if (regex.test(item.str)) text += "#" + item.str;
@@ -402,4 +403,6 @@ export class PdfExtractor {
       console.log(e);
     }
   }
+
+  
 }

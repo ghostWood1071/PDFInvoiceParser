@@ -8,7 +8,7 @@ export class VNPInvoiceExtractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
-  private getDate(str: string) {
+  protected getDate(str: string) {
     let rawNumA = str.split(" ");
     return new Date(
       `${rawNumA[5].replace("#", "")}-${rawNumA[2].replace(
@@ -46,7 +46,7 @@ export class VNPInvoiceExtractor extends PdfExtractor {
     return pageData.getTextContent(render_options).then(renderText);
   }
 
-  private processTableRow(line: string): TableContent {
+  protected processTableRow(line: string): TableContent {
     let result = new TableContent();
     let numStartRegex = /^[0-9]+/g;
     line = line.replace(numStartRegex, "");
@@ -59,7 +59,7 @@ export class VNPInvoiceExtractor extends PdfExtractor {
     return result;
   }
 
-  private processPage(pageLines: string[]) {
+  protected processPage(pageLines: string[]) {
     let tmpLine = "";
     let rowRegex = /[0-9]+[A-Z]+|^\d+$/;
     let exchangeRegex = /Tỷ giá:/g;
