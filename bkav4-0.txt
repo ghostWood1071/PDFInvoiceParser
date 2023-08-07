@@ -1,0 +1,71 @@
+
+
+#CÔNG TY CỔ PHẦN SƠN HẢI PHÒNG
+HAIPHONG PAINT JOINT STOCK COMPANY
+Địa chỉ #/Add#: #Số 12 Lạch Tray, Phường Lạch Tray, Quận Ngô Quyền, Thành phố Hải Phòng, Việt Nam
+Điện thoại #/Tel#: 02253593681
+MST #/VAT code#: #0 2 0 0 5 7 5 5 8 0
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+Mã khách hàng# /Customer code#:#Mẫu số - Ký hiệu# /Serial No#:
+1C23TSP
+Đơn đặt hàng số# /Order No#:
+Người mua# /Buyer#:
+Hóa đơn số# /Inv. No#: #00001052#Phiếu giao hàng - HĐ số# /D.O -
+P.O No.#: #283B/2
+Đơn vị mua hàng# /Bill to#: #Công ty TNHH Seojin Việt Nam
+Địa chỉ# /Add#: #Lô B1, B2, B3, B6, B7 KCN Song Khê - Nội Hoàng
+(phía Bắc), Xã Song Khê,  thành phố Bắc Giang, Tỉnh Bắc
+Giang, Việt Nam
+Hóa đơn ngày# /Inv. Date#:
+21/02/2023
+Hình thức thanh toán# /Payment#:
+Chuyển khoản
+Số tài khoản# /Bank A/c#: #-
+Mã số thuế# /VAT code#: #2400859625
+
+
+Mã của Cơ quan thuế: #000C54EBD4AD89401AB8F7FF09C2D18505
+Mã hàng hóa
+Produce code
+Tên, quy cách hàng hóa
+Description
+Đơn vị
+Unit
+Số lượng
+Quantity
+Đơn giá
+Unit price
+Thành tiền
+Amount
+138386-00AN4#SƠN UNIVAN HS PRIMER GREY, BASE#Lít#700#163.920#114.744.000
+230501-00ZN4#DUNG MÔI EPOXY THINNER A#Lít#300#78.890#23.667.000
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+Cộng tiền hàng# /Total#:#138.411.000
+Thuế suất GTGT# /VAT rate#: # 10%#Tiền thuế GTGT# /VAT#:#13.841.100
+Tổng tiền thanh toán# /Gross total#:#152.252.100
+Số tiền viết bằng chữ# /Say#: # Một trăm năm mươi hai triệu hai trăm năm mươi hai nghìn một trăm đồng chẵn./.
+Khách hàng# /Customer
+ (Ký, ghi rõ họ tên)
+ (Sign & Full name)
+Người bán hàng# /Salesman
+ (Ký, ghi rõ họ tên)
+ (Sign & Full name)
+Thủ trưởng đơn vị# /Hea of Co.,
+ (Ký, ghi rõ họ tên)
+ (Sign & Full name)
+Đã được ký điện tử bởi
+(Signed digitally by)
+CÔNG TY CỔ PHẦN SƠN HẢI PHÒNG
+Ngày: 21/02/2023
+(Cần kiểm tra đối chiếu khi lập, giao, nhận hóa đơn)
+
+Giải pháp Hóa đơn Điện tử #được cung cấp bởi #Công ty Cổ phần Bkav #- MST 0101360697 - ĐT 1900 545414 - #http://ehoadon.vn
+Hóa đơn Điện tử (HĐĐT) được tra cứu trực tuyến tại #http://tracuu.ehoadon.vn#. Mã tra cứu HĐĐT này: #M63O85K67RD

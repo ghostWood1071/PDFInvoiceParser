@@ -9,7 +9,7 @@ export class BKAVExtractor extends PdfExtractor {
     this.docLines = this.getDocLines();
   }
 
-  private processDate(dataStr: string): Date {
+  protected processDate(dataStr: string): Date {
     return new Date(
       dataStr
         .trim()
@@ -71,7 +71,7 @@ export class BKAVExtractor extends PdfExtractor {
     }
   }
 
-  private processPage(pageLines: string[]) {
+  protected processPage(pageLines: string[]) {
     let result = new PageContent();
 
     let lineTmp = this.getUntil(pageLines, 0, "(VAT INVOICE)");
