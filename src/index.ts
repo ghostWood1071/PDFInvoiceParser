@@ -15,6 +15,8 @@ import { LOGISALInvoiceExtractor } from "./extractor/LogisallExtractor";
 import { MInvoice2Extractor } from "./extractor/MInvoice2Extractor";
 import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
+import { MeInvoice5Extractor } from "./extractor/MeInvoice5Extractor";
+import { MeInvoice6Extractor } from "./extractor/MeInvoice6Extractor";
 import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
@@ -29,10 +31,8 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new BKAV4Extractor(
-  "src/pdf/BKAV/sơn hải phòng C23TSP-00001052-M63O85K67RD-DPH.pdf"
-);
+let extractor = new MeInvoice6Extractor("src/pdf/01GTKT0_0000842.pdf");
 
-// extractor.saveRawText("bkav4");
+extractor.saveRawText("seojinauto");
 
 extractor.getResult().then((res) => console.log(res));
