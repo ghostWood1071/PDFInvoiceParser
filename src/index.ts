@@ -8,6 +8,7 @@ import { EFYInvoiceExtractor } from "./extractor/EFYInvoiceExtrator";
 import { EInvoice2Extractor } from "./extractor/EInvoice2Extractor";
 import { EInvoice3Extractor } from "./extractor/EInvoice3Extractor";
 import { EInvoice4Extractor } from "./extractor/EInvoice4Extractor";
+import { EInvoice5Extractor } from "./extractor/EInvoice5Extractor";
 import { EInvoiceExtractor } from "./extractor/EInvoiceExtractor";
 import { FPTExtractor } from "./extractor/FPTExtractor";
 import { FastInvoiceExtractor } from "./extractor/FastInvoiceExtractor";
@@ -23,6 +24,7 @@ import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtract
 import { SoftDreamsInvoiceExtractor } from "./extractor/SoftDreamInvoceExtractor";
 import { Test } from "./extractor/Test";
 import { VNPT3Extractor } from "./extractor/VNPT3Extractor";
+import { VNPT4Extractor } from "./extractor/VNPT4Extractor";
 import { VNPInvoiceExtractor } from "./extractor/VNPTInvoiceExtractor";
 import { Viettel2Extractor } from "./extractor/Viettel2Extractor";
 import { ViettelInvoiceExtractor } from "./extractor/ViettelInvoiceExtractor";
@@ -31,8 +33,8 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new MeInvoice6Extractor("src/pdf/01GTKT0_0000842.pdf");
+let extractor = new VNPT4Extractor("src/pdf/POSCO_349.pdf");
 
-extractor.saveRawText("seojinauto");
+// extractor.saveRawText("vnpt4");
 
 extractor.getResult().then((res) => console.log(res));
