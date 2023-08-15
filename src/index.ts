@@ -29,10 +29,10 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new BKAV4Extractor(
-  "src/pdf/BKAV/sơn hải phòng C23TSP-00001052-M63O85K67RD-DPH.pdf"
+let extractor = new Test(
+  "src/pdf/8-Aug, 11 Aug to 22 Aug.pdf"
 );
 
-// extractor.saveRawText("bkav4");
+extractor.saveRawText("Shindengen");
 
-extractor.getResult().then((res) => console.log(res));
+// extractor.getResult().then((res) => console.log(res));

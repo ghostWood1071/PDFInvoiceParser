@@ -1,0 +1,63 @@
+
+
+
+Delivery Schedule
+Bucket No#: 2023-017#Section:#1#PIC:09#Firm Period#: 01#[#2023-08-11 - 2023-08-24#]
+Ship Loc#: 0000#Item Class#: 2#[#2:Parts#]
+Supplier#: 1099#SHINDENGEN VIETNAM LTD., CO#Calendar ID#: 01#[#YAMAHA MOTOR VIETNAM#]
+User#: VSP1#YAMAHA MOTOR VIETNAM CO.,LTD.
+MRP Date#:#2023-08-03
+Page#:#3#/#3
+10.Aug#11.Aug#14.Aug#15.Aug#16.Aug#17.Aug#18.Aug#21.Aug#22.Aug#23.Aug#24.Aug#25.Aug#28.Aug#29.Aug#30.Aug#31.Aug#05.Sep#06.Sep#07.Sep
+-24.Aug#-07.Sep#-30.Sep#-31.Oct#-30.Nov#-31.Dec
+25.Aug#08.Sep#01.Oct#01.Nov#01.Dec
+Item No#Supplier#User#Deli P/F#Process#Color#Unit#STS#Item Clsf.#Packing Name#Packing Qty
+Item Name
+#########################
+##########################
+60#180#180#180
+1DB-H1960-00-00-80#1099#1099
+VSP1#00#PCS#Parts#81960#1
+RECTIFIER REGULATOR ASSY.
+#########################
+##########################
+105#130#130
+1FC-H1960-00-00-80#1099#1099
+VSP1#00#PCS#81960#1
+RECTIFIER REGULATOR ASSY.
+#########################
+##########################
+70#70
+1S9-H1960-01-00-80#1099#1099
+VSP1#00#PCS#Parts#81960#1
+RECTIFIER REGULATOR ASSY.
+####J1793######################
+####560######################
+560#1050#2030#2170#2030
+2B5-H1960-01-00-80#1099#1099
+VSP1#00#PCS#Parts#81960#1
+RECTIFIER REGULATOR ASSY.
+####J1175######################
+####155######################
+155#354#1077#1094#1074
+2ND-H1960-00-00-80#1099#1099
+VSP1#00#PCS#Parts#81960#1
+RECTIFIER REGULATOR ASSY.
+####J0180######################
+####100######################
+100#321#377#363#188
+2ND-H1960-11-00-80#1099#1099
+VSP1#00#PCS#81960#1
+RECTIFIER REGULATOR ASSY.
+####J1456######################
+####10######################
+10#70#70#70#70
+5VT-H1960-11-00-80#1099#1099
+VSP1#00#PCS#81960#1
+RECTIFIER REGULATOR ASSY.
+#########################
+##########################
+30#60#90#60
+5WP-H1960-03-00-80#1099#1099
+VSP1#00#PCS#Parts#81960#1
+RECTIFIER REGULATOR ASSY.

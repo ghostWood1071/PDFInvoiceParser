@@ -1,0 +1,21 @@
+
+
+
+Delivery Schedule
+Bucket No#: 2023-017#Section:#1#PIC:09#Firm Period#: 01#[#2023-08-11 - 2023-08-24#]
+Ship Loc#: 0000#Item Class#: 2#[#2:Parts#]
+Supplier#: 1099#SHINDENGEN VIETNAM LTD., CO#Calendar ID#: 01#[#YAMAHA MOTOR VIETNAM#]
+User#: 9206#Export Warehouse NOI BAI#YAMAHA MOTOR VIETNAM CO.,LTD.
+MRP Date#:#2023-08-03
+Page#:#2#/#3
+10.Aug#11.Aug#14.Aug#15.Aug#16.Aug#17.Aug#18.Aug#21.Aug#22.Aug#23.Aug#24.Aug#25.Aug#28.Aug#29.Aug#30.Aug#31.Aug#05.Sep#06.Sep#07.Sep
+-24.Aug#-07.Sep#-30.Sep#-31.Oct#-30.Nov#-31.Dec
+25.Aug#08.Sep#01.Oct#01.Nov#01.Dec
+Item No#Supplier#User#Deli P/F#Process#Color#Unit#STS#Item Clsf.#Packing Name#Packing Qty
+Item Name
+#00054##00055####00056######################
+101##900###1000##########1000############
+2001#1000#2000#1200#2000#3400
+2ND-H1960-11-00-80#1099#9206
+00#PCS#81960#50
+RECTIFIER REGULATOR ASSY.
