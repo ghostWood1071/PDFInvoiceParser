@@ -1,0 +1,59 @@
+
+
+#Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+ 2/2
+Mã tra cứu hóa đơn #(#Invoice code#): #7#KIXC#6#B#22#L#3
+Tra cứu tại Website #(#Search on Website#):#https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/
+Tiep theo trang truoc - trang 2/2
+HÓA ĐƠN BÁN HÀNG
+(#Bản thể hiện của hóa đơn điện tử#)
+(#Sign#):#TX#/#21#E
+0000147#(#No#):
+Ký hiệu
+Số
+Mẫu số#(#Form no#):#07#KPTQ#0#/#001
+SALES INVOICE
+31#tháng #(#month#)#3#2022#Ngày #(#Date#)#năm #(#year#)
+(Dùng cho tổ chức, cá nhân trong khu phi thuế quan)
+CÔNG TY TNHH TEXON VIETNAM
+Đơn vị bán hàng
+2300954402#Mã số thuế
+Địa chỉ#Lô K#-#1#-#2#, #Khu công nghiệp Đại Đồng#-#Hoàn Sơn#, #Phường Tân Hồng#, #Thành phố Từ
+Sơn#, #Tỉnh Bắc Ninh#, #Việt Nam
+(#Supplier#):
+(#Tax code#):
+(#Address#):
+2400859625#Mã số thuế
+Địa chỉ
+Lô B#1#,#B#2#,#B#3#,#B#6#,#B#7 #KCN Song Khê #- #Nội Hoàng#(#phía Bắc#)#,#xã Song Khê#.#TP#.#Bắc
+Giang#,#Tỉnh Bắc Giang#,#Việt Nam#.
+CÔNG TY TNHH SEOJIN VIỆT NAM#Tên đơn vị#(#Company#'#s name#):
+(#Tax code#):
+(#Address#):
+STT#Mã hàng#Tên hàng hóa#, #dịch vụ
+Đơn vị
+tính
+Số lượng#Đơn giá#Thành tiền
+(#No#)#(#Item code#)#(#Name of goods and
+services#)
+(#Unit#)
+(#Quantity#)#(#Unit price#)#(#Amount#)
+A#B#C#D#1#2#3#=#1#x#2
+507#.#103#.#080
+(#Total amount#):
+Cộng tiền bán hàng hóa#, #dịch vụ
+Số tiền viết bằng chữ
+Năm trăm linh bảy triệu một trăm linh ba ngàn không trăm tám
+mươi đồng chẵn#.
+(#Total amount in words#):
+(#Signature#, #full name#)#(#Signature#, #full name#)
+Người mua hàng #(#Buyer#)
+(#Ký#, #ghi rõ họ#, #tên#)
+Người bán hàng #(#Seller#)
+(#Ký#, #ghi rõ họ#, #tên#)
+Ký bởi#:
+Ký ngày#:
+CÔNG TY TNHH TEXON VIETNAM
+31/03/2022
+(#Cần kiểm tra#, #đối chiếu trước khi lập#, #giao#, #nhận hóa đơn#)
+TEXON VIETNAM

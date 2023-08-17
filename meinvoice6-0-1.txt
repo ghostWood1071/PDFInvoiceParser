@@ -1,0 +1,97 @@
+
+
+
+Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+ 2/3
+32#U#6#F#2#LJV#88#Mã tra cứu hóa đơn
+https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/#Tra cứu tại Website
+(#Search on Website#):
+(#Invoice code#):
+2300683329
+Mã số thuế
+Địa chỉ
+Lô #23#, #đường TS #5#, #Khu công nghiệp Tiên Sơn#, #Phường Đồng Nguyên#, #Thành phố
+Từ Sơn#, #Tỉnh Bắc Ninh#, #Việt Nam
+(#Tax code#):
+(#Address#):
+Công Ty TNHH Seojin System Vina
+Số tài khoản
+(#Bank account#):
+02413734840#Điện thoại
+(#Tel#):
+Tiep theo trang truoc - trang 2/3
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(#Sign#):
+VN#/#20#E#Ký hiệu
+0000842#Số
+(#No#):
+Mẫu số#01#GTKT#0#/#001
+(#Form no#):
+(#VAT Invoice#)
+31#12#2021#tháng#năm#Ngày
+(#Date#)#(#month#)#(#year#)
+(#E#-#Invoice viewer#)
+Địa chỉ
+Lô B#1#, #B#2#, #B#3#, #B#6#, #B#7 #Khu công nghiệp Song Khê #– #Nội Hoàng #(#phía Bắc#)#, #Xã Song
+Khê#, #Thành phố Bắc Giang#, #Tỉnh Bắc Giang#, #Việt Nam
+(#Address#):
+2400859625#Mã số thuế
+(#Tax code#):
+CÔNG TY TNHH SEOJIN VIỆT NAM#Tên đơn vị
+(#Company#'#s name#):
+STT#Tên hàng hóa#, #dịch vụ#ĐVT#Số lượng#Đơn giá#Thành tiền#Số lô#Hạn dùng
+(#No#)#(#Name of goods and services#)#(#Unit#)#(#Quantity#)#(#Unit price#)#(#Amount#)#(#LotNo#)#(#ExpiryDate#)
+A#B#E#1#2#3#=#1#x#2#C#D
+Đai ốc bằng thép dùng cho
+thiết bị thu phát sóng PEM
+NUT M#6#,#2#.#0#T
+PCE#14# 
+18#.#286#,#00#1#.#970#36#.#016#.#106
+Đai ốc bằng thép PEM
+NUT M#5#*#3#.#0#T
+PCE#15# 
+1#.#865#,#00#2#.#217#4#.#133#.#852
+Bulong bằng thép STUD
+BOLT M#4#*#2#.#0#t#*#L#12#.#0
+Cái#16# 
+9#.#600#,#00#2#.#501#24#.#005#.#486
+Bulong bằng thép STUD
+BOLT M#6#*#2#.#0#t#*#L#12#.#0
+Cái#17# 
+45#.#400#,#00#3#.#476#157#.#797#.#429
+Bulong bằng thép STUD
+BOLT M#6#*#3#.#0#t#*#L#14#.#0
+Cái#18# 
+9#.#680#,#00#3#.#619#35#.#033#.#303
+Con lăn bằng nhựa dùng
+cho tủ điện ROLLER
+Cái#19# 
+730#,#00#50#.#595#36#.#934#.#569
+Bulong bằng thép STUD
+BOLT M#5#*#3#.#0#t#*#L#14#.#0
+Cái#20# 
+6#.#530#,#00#3#.#113#20#.#325#.#838
+Bulong bằng thép
+SPECIAL#-#BOLT#-#SHAFT#_
+M#10#,#H#20#, #L#40
+Cái#21# 
+316#,#00#22#.#887#7#.#232#.#296
+Đai ốc bằng thép PEM
+NUT M#6#,#1#.#0#T
+Cái#22# 
+3#.#615#,#00#1#.#970#7#.#120#.#104
+Vòng đệm bằng nhôm dùng
+cho tủ điện ADAPTER #?#4#,
+L#4#.#0
+Cái#23# 
+1#.#622#,#00#4#.#819#7#.#815#.#877
+Bu lông bằng thép
+SPECIAL#-#BOLT#-#AXIS#_
+M#10
+Cái#24# 
+320#,#00#18#.#304#5#.#857#.#373
+Vòng đệm bằng nhôm dùng
+cho tủ điện SPACER Ø#13
+Cái#25# 
+467#,#00#3#.#953#1#.#846#.#016
