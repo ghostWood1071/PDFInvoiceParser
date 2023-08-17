@@ -51,12 +51,14 @@ export class MeInvoice6Extractor extends PdfExtractor {
 
     lineTmp = this.getUntil(pageLines, nextPos, "Mã số thuế");
     nextPos = lineTmp.nextPos;
-    result.seller.taxCode = this.getBehind(lineTmp.strResult, ":");
+    result.seller.taxCode = this.getBehind(lineTmp.strResult, ":").replace(
+      / /g,
+      ""
+    );
 
     nextPos = this.getUntil(pageLines, nextPos, "(#Address#):").nextPos;
-    lineTmp = this.getUntil(pageLines, nextPos, "Số tài khoản");
-    nextPos = lineTmp.nextPos;
-    result.seller.companyName = this.getBehind(lineTmp.strResult, ":");
+    nextPos++;
+    result.seller.companyName = pageLines[nextPos].trim();
 
     nextPos = this.getUntil(pageLines, nextPos, "(#Sign#):").nextPos;
 

@@ -1,0 +1,72 @@
+
+
+
+Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+X#9#I#7#FAB#7#XVD#Mã tra cứu hóa đơn
+https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/#Tra cứu tại Website
+(#Search on Website#):
+(#Invoice code#):
+0 1 0 4 6 0 0 0 0 1
+Mã số thuế
+Địa chỉ
+Km#2#, #quốc lộ #3#, #thôn Du Nội#, #Xã Mai Lâm#, #Huyện Đông Anh#, #Thành phố Hà Nội#,
+Việt Nam
+(#Tax code#):
+(#Address#):
+CÔNG TY CỔ PHẦN DƯƠNG QUANG
+Email#: #duongquang#.#an#@#gmail#.#com
+Website#: #duongquang#.#com#.#vn
+024#.#39617133 #- #024#.#63278700#Điện thoại#Fax#: #024#.#39617132
+(#Tel#):
+Mã CQT (Code):#00574B2BE2F04E4337B2B09601DE02D265
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+Bản thể hiện của hóa đơn điện tử
+(#Sign#):
+1#C#22#TYY#Ký hiệu
+00000092#Số
+(#No#):
+(#VAT Invoice#)
+10#5#2022#tháng#năm#Ngày
+(#Date#)#(#month#)#(#year#)
+(#E#-#Invoice viewer#)
+Họ tên người mua hàng
+(#Buyer#):
+Địa chỉ
+Lô B#1#, #B#2#, #B#3#, #B#6#, #B#7 #KCN Song Khê#- #Nội Hoàng #(#phía Bắc#)#, #Xã Song Khê#, #TP Bắc
+Giang#, #Tỉnh Bắc Giang#, #VN
+(#Address#):
+2400859625#Mã số thuế
+(#Tax code#):
+CÔNG TY TNHH SEOJIN VIỆT NAM#Tên đơn vị
+(#Company#'#s name#):
+Chuyển khoản#Số tài khoản#Hình thức thanh toán
+(#Bank account#):#(#Payment method#):
+STT#Tên hàng hóa#, #dịch vụ#ĐVT#Số lượng#Đơn giá#Thành tiền#Số lô#Hạn dùng
+(#No#)#(#Name of goods and services#)#(#Unit#)#(#Quantity#)#(#Unit price#)#(#Amount#)#(#LotNo#)#(#ExpiryDate#)
+A#B#E#1#2#3#=#1#x#2#C#D
+Thép tấm #9#x#1550#x#3000#mm#Kg#1# 
+32#.#852#,#000#22#.#800#,#000#749#.#025#.#600
+Cộng tiền hàng
+749#.#025#.#600
+(#Total before VAT#):
+823#.#928#.#160
+Tổng tiền thanh toán
+(#Total amount#):
+Thuế suất GTGT#Tiền thuế GTGT
+(#VAT rate#):
+10 #%#74#.#902#.#560
+(#VAT amount#):
+Số tiền viết bằng chữ
+Tám trăm hai mươi ba triệu chín trăm hai mươi tám nghìn một trăm sáu
+mươi đồng chẵn#.
+(#Total amount in words#):
+(#Ký#, #ghi rõ họ#, #tên#)#(#Ký#, #ghi rõ họ#, #tên#)
+Ký bởi#:
+Ký ngày#:
+CÔNG TY CỔ PHẦN DƯƠNG
+QUANG
+10/05/2022
+Người mua hàng#Người bán hàng
+(#Buyer#)#(#Seller#)
+(#Signature#, #full name#)#(#Signature#, #full name#)
+(#Cần kiểm tra#, #đối chiếu trước khi lập#, #giao#, #nhận hóa đơn#)

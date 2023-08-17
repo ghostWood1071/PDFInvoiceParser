@@ -1,0 +1,117 @@
+
+
+#Phát hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
+ 1/2
+Mã tra cứu hóa đơn #(#Invoice code#): #7#KIXC#6#B#22#L#3
+Tra cứu tại Website #(#Search on Website#):#https#://#www#.#meinvoice#.#vn#/#tra#-#cuu#/
+HÓA ĐƠN BÁN HÀNG
+(#Bản thể hiện của hóa đơn điện tử#)
+(#Sign#):#TX#/#21#E
+0000147#(#No#):
+Ký hiệu
+Số
+Mẫu số#(#Form no#):#07#KPTQ#0#/#001
+SALES INVOICE
+31#tháng #(#month#)#3#2022#Ngày #(#Date#)#năm #(#year#)
+(Dùng cho tổ chức, cá nhân trong khu phi thuế quan)
+CÔNG TY TNHH TEXON VIETNAM
+Đơn vị bán hàng
+2300954402#Mã số thuế
+Địa chỉ#Lô K#-#1#-#2#, #Khu công nghiệp Đại Đồng#-#Hoàn Sơn#, #Phường Tân Hồng#, #Thành phố Từ
+Sơn#, #Tỉnh Bắc Ninh#, #Việt Nam
+(#Supplier#):
+(#Tax code#):
+(#Address#):
+Họ tên người mua hàng#(#Buyer#):
+Số tài khoản#(#Bank account#):
+2400859625#Mã số thuế
+Địa chỉ
+Lô B#1#,#B#2#,#B#3#,#B#6#,#B#7 #KCN Song Khê #- #Nội Hoàng#(#phía Bắc#)#,#xã Song Khê#.#TP#.#Bắc
+Giang#,#Tỉnh Bắc Giang#,#Việt Nam#.
+CÔNG TY TNHH SEOJIN VIỆT NAM#Tên đơn vị#(#Company#'#s name#):
+(#Tax code#):
+(#Address#):
+TM#/#CK#Số tài khoản#(#Bank account#):#(#Payment method#):#Hình thức thanh toán
+STT#Mã hàng#Tên hàng hóa#, #dịch vụ
+Đơn vị
+tính
+Số lượng#Đơn giá#Thành tiền
+(#No#)#(#Item code#)#(#Name of goods and
+services#)
+(#Unit#)
+(#Quantity#)#(#Unit price#)#(#Amount#)
+A#B#C#D#1#2#3#=#1#x#2
+Cửa chớp của tủ lưu trữ
+điện#,#ASSY#-#DOOR#_ #LOUVER
+CFLCUCS#-#33#-#000
+B#-#1
+Chiếc
+431#,#00#213#.#633#,#0000#92#.#075#.#823
+1
+Tấm ốp của tủ lưu trữ
+điện#,#ASSY#-#COVER#_
+DEFLAGRATION#_#Brown
+Color
+CFLCUBE#-#17#-#000
+B
+Chiếc
+389#,#00#186#.#457#,#0000#72#.#531#.#773
+2
+Tấm ốp của tủ lưu trữ
+điện#,#ASSY#_#COVER#_#AUX
+CFLCUBE#-#44#-#000
+B
+Chiếc
+282#,#00#68#.#118#,#0000#19#.#209#.#276
+3
+Tấm ốp của tủ lưu trữ
+điện#,#ASSY#_#COVER#_#FUSE
+CFLCUBE#-#46#-#000
+B
+Chiếc
+318#,#00#55#.#473#,#0000#17#.#640#.#414
+4
+Bảng điều khiển của tủ lưu trữ
+điện#,#BRACKET DOOR
+INNER PANEL Ass#'#y
+8402#-#000030#Chiếc
+137#,#00#895#.#572#,#0000#122#.#693#.#364
+5
+Aptomat của tủ lưu trữ
+điện#,#MCB ASS#'#Y
+8402#-#000200#Chiếc
+137#,#00#53#.#536#,#0000#7#.#334#.#432
+6
+Ống làm mát tủ lưu trữ
+điện#,#PLUMBING
+SCHEMATIC
+8402#-#040010#Chiếc
+481#,#00#200#.#886#,#0000#96#.#626#.#166
+7
+Thiết bị đóng ngắt của tủ lưu
+trữ điện#,#MAIN SWITCH
+ASS#'#Y
+8402#-#00022#L#Chiếc
+443#,#00#57#.#207#,#0000#25#.#342#.#701
+8
+Cầu chì của tủ lưu trữ
+điện#,#FUSE ASS#'#Y
+8402#-#00023#L#Chiếc
+480#,#00#36#.#863#,#0000#17#.#694#.#240
+9
+Dây kết nối của tủ lưu trữ
+điện#,#TD ASS#'#Y
+8402#-#00024#L#Chiếc
+238#,#00#80#.#201#,#0000#19#.#087#.#838
+10
+Thanh nối đất của tủ lưu trữ
+điện#,#EARTH BAR ASS#'#Y
+8402#-#000250#Chiếc
+466#,#00#18#.#814#,#0000#8#.#767#.#324
+11
+Aptomat của tủ lưu trữ
+điện#,#TB#-#PDB ASS#'#Y
+8402#-#000210#Chiếc
+319#,#00#25#.#391#,#0000#8#.#099#.#729
+12
+TEXON VIETNAM

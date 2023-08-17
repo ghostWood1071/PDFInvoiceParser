@@ -18,6 +18,7 @@ import { MInvoiceExtractor } from "./extractor/MInvoiceExtractor";
 import { MSTInvoiceExtractor } from "./extractor/MSTInvoiceExtractor";
 import { MeInvoice5Extractor } from "./extractor/MeInvoice5Extractor";
 import { MeInvoice6Extractor } from "./extractor/MeInvoice6Extractor";
+import { MeInvoice7Extractor } from "./extractor/MeInvoice7Extractor";
 import { MeInvoiceDBExtractor } from "./extractor/MeInvoiceDBExtractor";
 import { PdfExtractor } from "./extractor/PDFExtractor";
 import { SEOJINAUTOInvoiceExtractor } from "./extractor/SEOJINAUTOInvoiceExtractor";
@@ -33,8 +34,10 @@ import { meInvoice2Extractor } from "./extractor/meInvoice2Extractor";
 import { MeInvoice4Extractor } from "./extractor/meInvoice4Extractor";
 import { meInvoiceExtractor } from "./extractor/meInvoiceExtractor";
 
-let extractor = new VNPT4Extractor("src/pdf/POSCO_349.pdf");
+// let extractor = new MeInvoice6Extractor("src/pdf/00000092 - Dương Quang.pdf");
+let extractor = new MeInvoice6Extractor("src/pdf/01GTKT0_0000842.pdf");
 
-// extractor.saveRawText("vnpt4");
+// extractor.saveRawText("meinvoice6-0");
+// extractor.saveRawText("meinvoice6");
 
 extractor.getResult().then((res) => console.log(res));
