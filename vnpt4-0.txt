@@ -1,0 +1,48 @@
+
+
+
+ 
+Đơn vị cung cấp giải pháp hóa đơn điện tử: Tổng Công ty Dịch vụ Viễn thông, MST:0106869738, Điện thoại:18001260
+Tra cứu hoá đơn tại: https://0800342877-tt78.vnpt-invoice.com.vn với mã hoá đơn sau: 163981001C22TPC349687432
+ 
+  #644.340.000
+Thuế suất thuế GTGT #(VAT rate)#:#  #10%
+64.434.000#Tiền thuế GTGT #(VAT amount)#:
+Tỷ giá #(Exchange rate)#:#  #708.774.000#Tổng cộng tiền thanh toán #(Total payment)#:
+  #Bảy #trăm #linh #tám #triệu, bảy #trăm #bảy #mươi bốn #nghìn đồng#Số tiền viết bằng chữ#(Amount in words)#:
+STT #Tên hàng hóa, dịch vụ #Đơn vị tính #Số lượng #Đơn giá #Thành tiền 
+(No.)#(Description)#(Unit)#(Quantity)#(Unit Price)#(Amount)
+1#2#3#4#5#6=4x5
+1#Thép cán nóng JS-SS400 (3.2x1219x2438)#KG#14.990#21.478#321.955.220
+2#Thép cán nóng JS-SS400 (3.2x1219x1900)#KG#15.010#21.478#322.384.780
+3# # 
+Theo hợp đồng số: POSCO-SJVN/211126-1 ngày
+26/11/2021
+Cộng tiền hàng #(Total amount)#:
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG 
+(VAT INVOICE)
+Ngày #  #31# #  tháng #  #05# #  năm #  #2022
+Mã của cơ quan thuế:
+00B3A51A1F84844086AEF746A3AA48D42E
+Ký hiệu #(Series)#: #1C22TPC
+Số #(No)#: #00000349
+CÔNG TY TNHH TRUNG TÂM GIA CÔNG POSCO VIỆT NAM#Đơn vị bán hàng#(Issued)#:
+0800342877#Mã số thuế#(TAX code)#:
+Lô D5,khu công nghiệp Phúc Điền, Xã Cẩm Phúc, Huyện Cẩm Giàng, Tỉnh Hải Dương, Việt Nam#Địa chỉ#(Address)#:
+02203545818#Điện thoại#(Tel)#:
+ #Số tài khoản#(AC No.)#:
+ #Ngân hàng#(Bank)#:
+ #Họ tên người mua hàng#(Customer's name)#:
+CÔNG TY TNHH SEOJIN VIỆT NAM#Tên đơn vị#(Company's name)#:
+2400859625#Mã số thuế#(TAX code)#:
+Lô B1, B2, B3, B6, B7 Khu công nghiệp Song Khê – Nội Hoàng (phía Bắc), Xã Song Khê, Thành phố Bắc Giang,#Địa chỉ#(Address)#:
+Tỉnh Bắc Giang, Việt Nam
+Thanh toán chuyển khoản#Hình thức thanh toán#(Payment method)#:# #Số tài khoản#(AC No.)#:
+ #Ngân hàng#(Bank)#:
+ #THUẾ,O=BỘ TÀI CHÍNH,L=Hà#TRUNG TÂM GIA CÔNG
+Signature Valid#Signature Valid
+Ký bởi: CN=TỔNG CỤC#Ký bởi: CÔNG TY TNHH
+Nội,C=VN#POSCO VIỆT NAM
+Ký ngày:31/05/2022 17:12:24#Ký ngày:31/05/2022 17:11:38
+Người mua hàng#Cơ quan thuế#Người bán hàng
+(Ký, ghi rõ họ tên)#(Ký, đóng dấu, ghi rõ họ tên)#(Ký, ghi rõ họ tên)
